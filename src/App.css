@@ -40,29 +40,56 @@
 
 .header-app {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 4px;
   width: 100%;
   height: 58px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.header-app-content-lr {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 100%,
+}
+
+.header-app-icon {
+  width: 30px;
+  height: 30px;
+}
+
 .header-app-logo {
+  display: flex;
   flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-header-app-logo {
   height: 70%;
-  width: auto;
-  margin-top: 10px;
 }
 
+.container-products {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+}
 
 .scrollmenu {
   display: flex;
+  align-items: center;
+  background-color: #eee;
   overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 }
 
 .iteamcard {
-  width: 215
+  flex: none;
+  width: calc(40vw - 4px);
+  margin-right: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
