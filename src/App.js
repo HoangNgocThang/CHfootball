@@ -30,6 +30,9 @@ import giaohangW from '../src/images/giao-hang-white.png';
 import tuvanthietkeW from '../src/images/tu-van-thiet-ke-white.png';
 import baogiaW from '../src/images/bao-gia-white.png';
 import tiepnhanyeucauW from '../src/images/tiep-nhan-yeu-cau-white.png';
+import icArrowDown from '../src/images/down-arrow-white.png';
+import user from '../src/images/user.png';
+import userWhite from '../src/images/userWhite.png';
 
 const items = [
   {
@@ -118,7 +121,7 @@ function App() {
         </div>
       </div>
       <div style={{ display: 'flex', width: '100%', height: 5 }}></div>
-      <Carousel
+       <Carousel
         activeIndex={activeIndex}
         next={next}
         previous={previous}

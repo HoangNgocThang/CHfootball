@@ -84,7 +84,7 @@
   flex-direction: column;
   /*background: #2f5acf;*/
   /*background: #f1f1f1;*/
-  background: #C2E7FF;
+  background: #2F2973;
   margin: 10px 8px;
   padding: 20px 16px;
   border-radius: 28px;
@@ -119,7 +119,7 @@
   flex: 1;
   flex-direction: column;
   text-align: left;
-  color: black;
+  color: white;
   margin-left: 20px;
 }
 /* Procedure --- end */
