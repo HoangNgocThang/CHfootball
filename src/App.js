@@ -8,7 +8,7 @@ import {
   CarouselCaption,
   Card,
   CardBody,
-  // CardText,
+  //CardText,
   CardTitle,
   Button,
   CardSubtitle
@@ -17,6 +17,7 @@ import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 // import banner1 from '../src/images/banner1.jpg';
 import ic_right from '../src/images/ic_right.png';
+import abc from '../src/images/11.png';
 
 const items = [
   {
@@ -127,6 +128,9 @@ function App() {
           onClickHandler={next}
         />
       </Carousel>
+
+
+      {/* <img src={'https://picsum.photos/id/456/1200/400'}  style={{width:'100%', height:500}}/> */}
 
       <div className={'container-title'}>
         <div className='container-title-chil'>
@@ -273,7 +277,8 @@ function App() {
       <div style={{ width: '100%', height: 200 }}>
 
       </div>
-
+      
+   
     </div>
   );
 }
