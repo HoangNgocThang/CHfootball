@@ -220,6 +220,9 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
                   <p>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo : 037 484 1234</p>
               </div>
           </div>
+          <div>
+              <img src={icArrowDown} style={{width:20, height:20, marginBottom:10, marginTop:10}}/>
+          </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
                   <img src={tuvanthietkeW} className={"procedure-icon"}/>
@@ -229,6 +232,9 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
                   <p>CHFootball tư vấn mẫu, màu sắc ... và lên Market để khách hàng duyệt và chỉnh sửa.</p>
               </div>
           </div>
+          <div>
+              <img src={icArrowDown} style={{width:20, height:20, marginBottom:10, marginTop:10}}/>
+          </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
                   <img src={baogiaW} className={"procedure-icon"}/>
@@ -237,6 +243,9 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
                   <b>Báo giá</b>
                   <p>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn các loại vải và báo giá cho khách hàng</p>
               </div>
+          </div>
+          <div>
+              <img src={icArrowDown} style={{width:20, height:20, marginBottom:10, marginTop:10}}/>
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
