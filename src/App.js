@@ -19,6 +19,15 @@ import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 // import ic_right from '../src/images/ic_right.png';
 // import abc from '../src/images/11.png';
 
+import baogia from '../src/images/bao-gia.png';
+import chamsockhachhang from '../src/images/cham-soc-khach-hang.png';
+import giaohang from '../src/images/giao-hang.png';
+import maumadadang from '../src/images/mau-ma-da-dang.png';
+import nhieuchatlieuvai from '../src/images/nhieu-chat-lieu-vai.png';
+import tiepnhanyeucau from '../src/images/tiep-nhan-yeu-cau.png';
+import tuvantantam from '../src/images/tu-van-tan-tam.png';
+import tuvanthietke from '../src/images/tu-van-thiet-ke.png';
+
 const items = [
   {
     src: 'https://picsum.photos/id/123/1200/400',
@@ -169,8 +178,50 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
       </div>
 
+      <div className={"container-procedure"}>
 
-      {/* <img src={'https://picsum.photos/id/456/1200/400'}  style={{width:'100%', height:500}}/> */}
+          <div className={"procedure-header"}>
+              <h3 className={"procedure-header-text"}>CH FOOTBALL</h3>
+              <h3 className={"procedure-header-text"}>hoạt động như thế nào ?</h3>
+          </div>
+
+          <div className={"procedure-item"}>
+              <div className={"procedure-icon"}>
+                  <img src={tiepnhanyeucau} className={"procedure-icon"}/>
+              </div>
+              <div className={"procedure-content"}>
+                  <b>Tiếp nhận yêu cầu</b>
+                  <p>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo : 037 484 1234</p>
+              </div>
+          </div>
+          <div className={"procedure-item"}>
+              <div className={"procedure-icon"}>
+                  <img src={tuvanthietke} className={"procedure-icon"}/>
+              </div>
+              <div className={"procedure-content"}>
+                  <b>Tư vấn thiết kế</b>
+                  <p>CHFootball tư vấn mẫu, màu sắc ... và lên Market để khách hàng duyệt và chỉnh sửa.</p>
+              </div>
+          </div>
+          <div className={"procedure-item"}>
+              <div className={"procedure-icon"}>
+                  <img src={baogia} className={"procedure-icon"}/>
+              </div>
+              <div className={"procedure-content"}>
+                  <b>Báo giá</b>
+                  <p>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn các loại vải và báo giá cho khách hàng</p>
+              </div>
+          </div>
+          <div className={"procedure-item"}>
+              <div className={"procedure-icon"}>
+                  <img src={giaohang} className={"procedure-icon"}/>
+              </div>
+              <div className={"procedure-content"}>
+                  <b>Giao Hàng</b>
+                  <p>Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao hàng đến địa chỉ của khách hàng.</p>
+              </div>
+          </div>
+      </div>
 
       <div className={'container-title'}>
         <div className='container-title-chil'>

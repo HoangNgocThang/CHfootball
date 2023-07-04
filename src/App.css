@@ -72,6 +72,51 @@
 }
 /* Service --- end */
 
+/* Procedure --- start */
+.container-procedure {
+  display: flex;
+  flex-direction: column;
+  /*background: #2f5acf;*/
+  background: #f1f1f1;
+  margin: 10px 8px;
+  padding: 20px 16px;
+  border-radius: 28px;
+}
+
+.procedure-header {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.procedure-header-text {
+  color: black;
+}
+
+.procedure-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+
+.procedure-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.procedure-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+  margin-left: 20px;
+}
+/* Procedure --- end */
+
 .container-title {
   display: flex;
   flex-direction: row;
