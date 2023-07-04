@@ -33,3 +33,11 @@ body {
   /* color: var(--text-color); */
   overflow-y: overlay;
 }
+
+h3 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 0px;
+}

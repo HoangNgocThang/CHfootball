@@ -8,14 +8,15 @@ import {
   CarouselCaption,
   Card,
   CardBody,
-  CardText,
+  // CardText,
   CardTitle,
   Button,
   CardSubtitle
 } from 'reactstrap';
 import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
-import banner1 from '../src/images/banner1.jpg';
+// import banner1 from '../src/images/banner1.jpg';
+import ic_right from '../src/images/ic_right.png';
 
 const items = [
   {
@@ -85,7 +86,9 @@ function App() {
     );
   });
 
-  const [data, setData] = useState([{}, {}, {}, {}]);
+  const [data
+    // ,setData
+  ] = useState([{}, {}, {}, {}]);
 
   return (
     <div className="App">
@@ -124,111 +127,120 @@ function App() {
           onClickHandler={next}
         />
       </Carousel>
-      <div style={{ display: 'flex', width: '100%', height: 5 }}></div>
 
-      <div className={'container-products'}>
-        <h4>LOẠI SẢN PHẨM 1</h4>
-        <div className="scrollmenu">
-          {
-            data.map((e, i) => {
-              return (
-                <Card className='iteamcard'>
-                  <img
-                    alt="Sample"
-                    src="https://picsum.photos/300/200"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">
-                      Card title
-                    </CardTitle>
-                    <CardSubtitle
-                      className="mb-2 text-muted"
-                      tag="h6"
-                    >
-                      Card subtitle
-                    </CardSubtitle>
-                    {/* <CardText>
-              Some quick example text to build on the card title and make up the bulk of the card‘s content.
-            </CardText> */}
-                    <Button>
-                      Button
-                    </Button>
-                  </CardBody>
-                </Card>
-              )
-            })
-          }
+      <div className={'container-title'}>
+        <h4>Loại sản phẩm 1</h4>
+        <div className={'container-see-more'}>
+          <p className={'text-see-more'}>{`Xem thêm >`}</p>
         </div>
       </div>
-
-      <div className={'container-products'}>
-        <h4>LOẠI SẢN PHẨM 2</h4>
-        <div className="scrollmenu">
-          {
-            data.map((e, i) => {
-              return (
-                <Card className='iteamcard'>
-                  <img
-                    alt="Sample"
-                    src="https://picsum.photos/300/200"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">
-                      Card title
-                    </CardTitle>
-                    <CardSubtitle
-                      className="mb-2 text-muted"
-                      tag="h6"
-                    >
-                      Card subtitle
-                    </CardSubtitle>
-                    {/* <CardText>
+      <div className="container-products">
+        {
+          data.map((e, i) => {
+            return (
+              <Card className='iteamcard'>
+                <img
+                  alt="Sample"
+                  // src="https://picsum.photos/300/200"
+                  src='https://firebasestorage.googleapis.com/v0/b/nhuahvt.appspot.com/o/IMG_4814.JPG?alt=media&token=f962e0c1-7156-44b2-8566-1f5cba0721c8'
+                />
+                <CardBody>
+                  <CardTitle tag="h5">
+                    Card title
+                  </CardTitle>
+                  <CardSubtitle
+                    className="mb-2 text-muted"
+                    tag="h6"
+                  >
+                    Card subtitle
+                  </CardSubtitle>
+                  {/* <CardText>
               Some quick example text to build on the card title and make up the bulk of the card‘s content.
             </CardText> */}
-                    <Button>
-                      Button
-                    </Button>
-                  </CardBody>
-                </Card>
-              )
-            })
-          }
-        </div>
+                  <Button>
+                    Xem
+                  </Button>
+                </CardBody>
+              </Card>
+            )
+          })
+        }
       </div>
 
-      <div className={'container-products'}>
-        <h4>LOẠI SẢN PHẨM 3</h4>
-        <div className="scrollmenu">
-          {
-            data.map((e, i) => {
-              return (
-                <Card className='iteamcard'>
-                  <img
-                    alt="Sample"
-                    src="https://picsum.photos/300/200"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">
-                      Card title
-                    </CardTitle>
-                    <CardSubtitle
-                      className="mb-2 text-muted"
-                      tag="h6"
-                    >
-                      Card subtitle
-                    </CardSubtitle>
-                    {/* <CardText>
+      <div className={'container-title'}>
+        <h4>Loại sản phẩm 1</h4>
+        <div className={'container-see-more'}>
+          <p className={'text-see-more'}>{`Xem thêm >`}</p>
+        </div>
+      </div>
+      <div className="container-products">
+        {
+          data.map((e, i) => {
+            return (
+              <Card className='iteamcard'>
+                <img
+                  alt="Sample"
+                  src="https://picsum.photos/300/200"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">
+                    Card title
+                  </CardTitle>
+                  <CardSubtitle
+                    className="mb-2 text-muted"
+                    tag="h6"
+                  >
+                    Card subtitle
+                  </CardSubtitle>
+                  {/* <CardText>
               Some quick example text to build on the card title and make up the bulk of the card‘s content.
             </CardText> */}
-                    <Button>
-                      Button
-                    </Button>
-                  </CardBody>
-                </Card>
-              )
-            })
-          }
+                  <Button>
+                    Xem
+                  </Button>
+                </CardBody>
+              </Card>
+            )
+          })
+        }
+      </div>
+
+      <div className={'container-title'}>
+        <h4>Loại sản phẩm 2</h4>
+        <div className={'container-see-more'}>
+          <p className={'text-see-more'}>{`Xem thêm >`}</p>
         </div>
+      </div>
+      <div className="container-products">
+        {
+          data.map((e, i) => {
+            return (
+              <Card className='iteamcard'>
+                <img
+                  alt="Sample"
+                  src="https://picsum.photos/300/200"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">
+                    Card title
+                  </CardTitle>
+                  <CardSubtitle
+                    className="mb-2 text-muted"
+                    tag="h6"
+                  >
+                    Card subtitle
+                  </CardSubtitle>
+                  {/* <CardText>
+              Some quick example text to build on the card title and make up the bulk of the card‘s content.
+            </CardText> */}
+                  <Button>
+                    Xem
+                  </Button>
+                </CardBody>
+              </Card>
+            )
+          })
+        }
       </div>
 
       <div style={{ width: '100%', height: 200 }}>
