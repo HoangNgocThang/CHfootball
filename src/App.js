@@ -77,7 +77,7 @@ function App() {
         <img
           src={item.src}
           alt={item.altText}
-          style={{ width: '100%', height: 360 }} />
+          style={{ width: '100%', height: 250 }} />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
@@ -129,7 +129,9 @@ function App() {
       </Carousel>
 
       <div className={'container-title'}>
-        <h4>Loại sản phẩm 1</h4>
+        <div className='container-title-chil'>
+          <p className='title'>{`Đồng Phục Thiết Kế theo yêu cầu`}</p>
+        </div>
         <div className={'container-see-more'}>
           <p className={'text-see-more'}>{`Xem thêm >`}</p>
         </div>
@@ -140,26 +142,33 @@ function App() {
             return (
               <Card className='iteamcard'>
                 <img
+                  className={'itemcard-img'}
                   alt="Sample"
                   // src="https://picsum.photos/300/200"
                   src='https://firebasestorage.googleapis.com/v0/b/nhuahvt.appspot.com/o/IMG_4814.JPG?alt=media&token=f962e0c1-7156-44b2-8566-1f5cba0721c8'
                 />
                 <CardBody>
                   <CardTitle tag="h5">
-                    Card title
+                    CHF 2501
                   </CardTitle>
                   <CardSubtitle
-                    className="mb-2 text-muted"
+                    className="mb-2 text-muted itemcard-subtitle"
                     tag="h6"
                   >
-                    Card subtitle
+                    Make Football Great
                   </CardSubtitle>
                   {/* <CardText>
               Some quick example text to build on the card title and make up the bulk of the card‘s content.
             </CardText> */}
-                  <Button>
-                    Xem
-                  </Button>
+                  <div className={'itemcard-buttons'}>
+                    <Button color="primary">
+                      Xem
+                    </Button>
+                    <div style={{ width: '100%', height: 5 }}></div>
+                    <Button color="warning">
+                      Tư vấn
+                    </Button>
+                  </div>
                 </CardBody>
               </Card>
             )
@@ -168,7 +177,9 @@ function App() {
       </div>
 
       <div className={'container-title'}>
-        <h4>Loại sản phẩm 1</h4>
+        <div className='container-title-chil'>
+          <p className='title'>{`Đồng Phục Sẵn (in ấn trả hàng 24h)`}</p>
+        </div>
         <div className={'container-see-more'}>
           <p className={'text-see-more'}>{`Xem thêm >`}</p>
         </div>
@@ -179,25 +190,32 @@ function App() {
             return (
               <Card className='iteamcard'>
                 <img
+                  className={'itemcard-img'}
                   alt="Sample"
-                  src="https://picsum.photos/300/200"
+                  src="https://firebasestorage.googleapis.com/v0/b/nhuahvt.appspot.com/o/IMG_4800.JPG?alt=media&token=d8aa986b-6386-4c9b-a99d-0496f9bfac4b"
                 />
                 <CardBody>
                   <CardTitle tag="h5">
-                    Card title
+                    CHF 2501
                   </CardTitle>
                   <CardSubtitle
-                    className="mb-2 text-muted"
+                    className="mb-2 text-muted itemcard-subtitle"
                     tag="h6"
                   >
-                    Card subtitle
+                    Make Football Great
                   </CardSubtitle>
                   {/* <CardText>
               Some quick example text to build on the card title and make up the bulk of the card‘s content.
             </CardText> */}
-                  <Button>
-                    Xem
-                  </Button>
+                  <div className={'itemcard-buttons'}>
+                    <Button color="primary">
+                      Xem
+                    </Button>
+                    <div style={{ width: '100%', height: 5 }}></div>
+                    <Button color="warning">
+                      Tư vấn
+                    </Button>
+                  </div>
                 </CardBody>
               </Card>
             )
@@ -206,7 +224,9 @@ function App() {
       </div>
 
       <div className={'container-title'}>
-        <h4>Loại sản phẩm 2</h4>
+        <div className='container-title-chil'>
+          <p className='title'>{`Phụ Kiện`}</p>
+        </div>
         <div className={'container-see-more'}>
           <p className={'text-see-more'}>{`Xem thêm >`}</p>
         </div>
@@ -217,25 +237,32 @@ function App() {
             return (
               <Card className='iteamcard'>
                 <img
+                  className={'itemcard-img'}
                   alt="Sample"
-                  src="https://picsum.photos/300/200"
+                  src="https://firebasestorage.googleapis.com/v0/b/nhuahvt.appspot.com/o/IMG_0063.JPG?alt=media&token=89292224-b5f0-4b9c-b7d9-1d393572bc5b"
                 />
                 <CardBody>
                   <CardTitle tag="h5">
-                    Card title
+                    CHF 2501
                   </CardTitle>
                   <CardSubtitle
-                    className="mb-2 text-muted"
+                    className="mb-2 text-muted itemcard-subtitle"
                     tag="h6"
                   >
-                    Card subtitle
+                    Make Football Great
                   </CardSubtitle>
                   {/* <CardText>
               Some quick example text to build on the card title and make up the bulk of the card‘s content.
             </CardText> */}
-                  <Button>
-                    Xem
-                  </Button>
+                  <div className={'itemcard-buttons'}>
+                    <Button color="primary">
+                      Xem
+                    </Button>
+                    <div style={{ width: '100%', height: 5 }}></div>
+                    <Button color="warning">
+                      Tư vấn
+                    </Button>
+                  </div>
                 </CardBody>
               </Card>
             )
