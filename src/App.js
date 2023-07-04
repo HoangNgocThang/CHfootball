@@ -18,15 +18,18 @@ import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 // import banner1 from '../src/images/banner1.jpg';
 // import ic_right from '../src/images/ic_right.png';
 // import abc from '../src/images/11.png';
-
-import baogia from '../src/images/bao-gia.png';
 import chamsockhachhang from '../src/images/cham-soc-khach-hang.png';
-import giaohang from '../src/images/giao-hang.png';
 import maumadadang from '../src/images/mau-ma-da-dang.png';
 import nhieuchatlieuvai from '../src/images/nhieu-chat-lieu-vai.png';
-import tiepnhanyeucau from '../src/images/tiep-nhan-yeu-cau.png';
 import tuvantantam from '../src/images/tu-van-tan-tam.png';
+import giaohang from '../src/images/giao-hang.png';
 import tuvanthietke from '../src/images/tu-van-thiet-ke.png';
+import baogia from '../src/images/bao-gia.png';
+import tiepnhanyeucau from '../src/images/tiep-nhan-yeu-cau.png';
+import giaohangW from '../src/images/giao-hang-white.png';
+import tuvanthietkeW from '../src/images/tu-van-thiet-ke-white.png';
+import baogiaW from '../src/images/bao-gia-white.png';
+import tiepnhanyeucauW from '../src/images/tiep-nhan-yeu-cau-white.png';
 
 const items = [
   {
@@ -146,34 +149,54 @@ function App() {
       <div className={'container-service'}>
         <div className={"service-row"}>
           <div className={"service-item"}>
-            <p className={"service-title"}>Tư vấn tận tâm</p>
-            <p className={"service-sub-title"}>
-              {`CHFootball có đội ngũ nhân viên có kinh nghiệm trong lĩnh vực thiết kế đồng phục.
+              <div style={{marginBottom:12}}>
+                 <img src={tuvantantam} className={"service-img"}/>
+             </div>
+              <div style={{display:"flex", flexDirection: 'column'}}>
+                  <p className={"service-title"}>Tư vấn tận tâm</p>
+                  <p className={"service-sub-title"}>
+                      {`CHFootball có đội ngũ nhân viên có kinh nghiệm trong lĩnh vực thiết kế đồng phục.
                 Chúng tôi có thể tư vấn và đề xuất các ý tưởng thiết kế phù hợp với yêu cầu của bạn cho đến khi ưng ý, giúp bạn tạo ra đồng phục độc đáo và phù hợp với thương hiệu của bạn.`}
-            </p>
+                  </p>
+              </div>
           </div>
           <div className={"service-item"}>
-            <p className={"service-title"}>Mẫu mã đa dạng</p>
-            <p className={"service-sub-title"}>
-              {`CHFootball có đa dạng các mẫu mã đồng phục để bạn lựa chọn.
+              <div style={{marginBottom:12}}>
+                  <img src={maumadadang} className={"service-img"}/>
+              </div>
+              <div style={{display:"flex", flexDirection: 'column'}}>
+                  <p className={"service-title"}>Mẫu mã đa dạng</p>
+                  <p className={"service-sub-title"}>
+                      {`CHFootball có đa dạng các mẫu mã đồng phục để bạn lựa chọn.
                 Điều này giúp bạn tìm được thiết kế và kiểu dáng phù hợp với nhu cầu và phong cách cho đội bóng, doanh nghiệp của mình.`}
-            </p>
+                  </p>
+              </div>
           </div>
         </div>
           <div className={"service-row"}>
               <div className={"service-item"}>
-                  <p className={"service-title"}>Nhiều chất liệu vải</p>
-                  <p className={"service-sub-title"}>
-                      {`CHFootball có nhiều dòng vải từ bình dân đến cao cấp, phù hợp với nhu cầu của hầu hết các khách hàng 
+                  <div style={{marginBottom:12}}>
+                      <img src={nhieuchatlieuvai} className={"service-img"}/>
+                  </div>
+                  <div style={{display:"flex", flexDirection: 'column'}}>
+                      <p className={"service-title"}>Nhiều chất liệu vải</p>
+                      <p className={"service-sub-title"}>
+                          {`CHFootball có nhiều dòng vải từ bình dân đến cao cấp, phù hợp với nhu cầu của hầu hết các khách hàng 
 Các sản phẩm được sản xuất bởi CHFootball luôn mang đến cho khách hàng những trải nghiệm tốt nhất.`}
-                  </p>
+                      </p>
+                  </div>
               </div>
               <div className={"service-item"}>
-                  <p className={"service-title"}>Chăm sóc khách hàng</p>
-                  <p className={"service-sub-title"}>
-                      {`CHFootball có các chương trình khuyến mãi cho khách hàng tuỳ thuộc vào số lượng.
+                  <div style={{marginBottom:12}}>
+                      <img src={chamsockhachhang} className={"service-img"}/>
+                  </div>
+                  <div style={{display:"flex", flexDirection: 'column'}}>
+                      <p className={"service-title"}>Chăm sóc khách hàng</p>
+                      <p className={"service-sub-title"}>
+                          {`CHFootball có các chương trình khuyến mãi cho khách hàng tuỳ thuộc vào số lượng.
 Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
-                  </p>
+                      </p>
+                  </div>
               </div>
           </div>
       </div>
@@ -187,7 +210,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
 
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={tiepnhanyeucau} className={"procedure-icon"}/>
+                  <img src={tiepnhanyeucauW} className={"procedure-icon"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Tiếp nhận yêu cầu</b>
@@ -196,7 +219,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={tuvanthietke} className={"procedure-icon"}/>
+                  <img src={tuvanthietkeW} className={"procedure-icon"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Tư vấn thiết kế</b>
@@ -205,7 +228,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={baogia} className={"procedure-icon"}/>
+                  <img src={baogiaW} className={"procedure-icon"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Báo giá</b>
@@ -214,7 +237,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={giaohang} className={"procedure-icon"}/>
+                  <img src={giaohangW} className={"procedure-icon"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Giao Hàng</b>
