@@ -16,8 +16,8 @@ import {
 import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 // import banner1 from '../src/images/banner1.jpg';
-import ic_right from '../src/images/ic_right.png';
-import abc from '../src/images/11.png';
+// import ic_right from '../src/images/ic_right.png';
+// import abc from '../src/images/11.png';
 
 const items = [
   {
@@ -128,6 +128,46 @@ function App() {
           onClickHandler={next}
         />
       </Carousel>
+
+      <div>
+        <h1>Vì sao lựa chọn</h1>
+        <h1>CH Foootball ?</h1>
+      </div>
+
+      <div className={'container-service'}>
+        <div className={"service-row"}>
+          <div className={"service-item"}>
+            <p className={"service-title"}>Tư vấn tận tâm</p>
+            <p className={"service-sub-title"}>
+              {`CHFootball có đội ngũ nhân viên có kinh nghiệm trong lĩnh vực thiết kế đồng phục.
+                Chúng tôi có thể tư vấn và đề xuất các ý tưởng thiết kế phù hợp với yêu cầu của bạn cho đến khi ưng ý, giúp bạn tạo ra đồng phục độc đáo và phù hợp với thương hiệu của bạn.`}
+            </p>
+          </div>
+          <div className={"service-item"}>
+            <p className={"service-title"}>Mẫu mã đa dạng</p>
+            <p className={"service-sub-title"}>
+              {`CHFootball có đa dạng các mẫu mã đồng phục để bạn lựa chọn.
+                Điều này giúp bạn tìm được thiết kế và kiểu dáng phù hợp với nhu cầu và phong cách cho đội bóng, doanh nghiệp của mình.`}
+            </p>
+          </div>
+        </div>
+          <div className={"service-row"}>
+              <div className={"service-item"}>
+                  <p className={"service-title"}>Nhiều chất liệu vải</p>
+                  <p className={"service-sub-title"}>
+                      {`CHFootball có nhiều dòng vải từ bình dân đến cao cấp, phù hợp với nhu cầu của hầu hết các khách hàng 
+Các sản phẩm được sản xuất bởi CHFootball luôn mang đến cho khách hàng những trải nghiệm tốt nhất.`}
+                  </p>
+              </div>
+              <div className={"service-item"}>
+                  <p className={"service-title"}>Chăm sóc khách hàng</p>
+                  <p className={"service-sub-title"}>
+                      {`CHFootball có các chương trình khuyến mãi cho khách hàng tuỳ thuộc vào số lượng.
+Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
+                  </p>
+              </div>
+          </div>
+      </div>
 
 
       {/* <img src={'https://picsum.photos/id/456/1200/400'}  style={{width:'100%', height:500}}/> */}
@@ -277,8 +317,8 @@ function App() {
       <div style={{ width: '100%', height: 200 }}>
 
       </div>
-      
-   
+
+
     </div>
   );
 }
