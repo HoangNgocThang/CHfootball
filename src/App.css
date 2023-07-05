@@ -114,6 +114,11 @@
   height: 75px;
 }
 
+.procedure-icon-img {
+  width: 60px;
+  height: 60px;
+}
+
 .procedure-content {
   display: flex;
   flex: 1;
@@ -123,6 +128,14 @@
   margin-left: 20px;
 }
 /* Procedure --- end */
+
+/* ProductType --- start */
+.container-product-type {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ProductType --- end */
 
 .container-title {
   display: flex;
@@ -195,3 +208,4 @@ scrollbar-width: none;  /* Firefox */
   flex-direction: column;
   width: auto;
 }
+

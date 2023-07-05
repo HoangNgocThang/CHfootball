@@ -34,6 +34,11 @@ import icArrowDown from '../src/images/down-arrow-white.png';
 import user from '../src/images/user.png';
 import userWhite from '../src/images/userWhite.png';
 
+import maucaulacbocosan from '../src/images/maucaulacbocosan.png';
+import maukhonglogocosan from '../src/images/maukhonglogocosan.png';
+import mauthietke from '../src/images/mauthietke.png';
+import phukien from '../src/images/phukien.png';
+
 const items = [
   {
     src: 'https://picsum.photos/id/123/1200/400',
@@ -158,8 +163,7 @@ function App() {
               <div style={{display:"flex", flexDirection: 'column'}}>
                   <p className={"service-title"}>Tư vấn tận tâm</p>
                   <p className={"service-sub-title"}>
-                      {`CHFootball có đội ngũ nhân viên có kinh nghiệm trong lĩnh vực thiết kế đồng phục.
-                Chúng tôi có thể tư vấn và đề xuất các ý tưởng thiết kế phù hợp với yêu cầu của bạn cho đến khi ưng ý, giúp bạn tạo ra đồng phục độc đáo và phù hợp với thương hiệu của bạn.`}
+                      {`CHFootball có đội ngũ nhân viên có kinh nghiệm trong lĩnh vực thiết kế đồng phục sẽ tận tình tư vấn và đề xuất các ý tưởng thiết kế phù hợp với yêu cầu của bạn.`}
                   </p>
               </div>
           </div>
@@ -170,8 +174,7 @@ function App() {
               <div style={{display:"flex", flexDirection: 'column'}}>
                   <p className={"service-title"}>Mẫu mã đa dạng</p>
                   <p className={"service-sub-title"}>
-                      {`CHFootball có đa dạng các mẫu mã đồng phục để bạn lựa chọn.
-                Điều này giúp bạn tìm được thiết kế và kiểu dáng phù hợp với nhu cầu và phong cách cho đội bóng, doanh nghiệp của mình.`}
+                      {`CHFootball có đa dạng các mẫu mã đồng phục để bạn lựa chọn, giúp bạn tìm được thiết kế và kiểu dáng phù hợp với nhu cầu và phong cách cho đội bóng/ doanh nghiệp của mình.`}
                   </p>
               </div>
           </div>
@@ -184,8 +187,7 @@ function App() {
                   <div style={{display:"flex", flexDirection: 'column'}}>
                       <p className={"service-title"}>Nhiều chất liệu vải</p>
                       <p className={"service-sub-title"}>
-                          {`CHFootball có nhiều dòng vải từ bình dân đến cao cấp, phù hợp với nhu cầu của hầu hết các khách hàng 
-Các sản phẩm được sản xuất bởi CHFootball luôn mang đến cho khách hàng những trải nghiệm tốt nhất.`}
+                          {`CHFootball có nhiều dòng vải từ bình dân đến cao cấp, phù hợp với nhu cầu của hầu hết các khách hàng. Chất lượng in ấn sắc nét, tươi sáng. Đường may chắc chắn.`}
                       </p>
                   </div>
               </div>
@@ -194,10 +196,10 @@ Các sản phẩm được sản xuất bởi CHFootball luôn mang đến cho k
                       <img src={chamsockhachhang} className={"service-img"}/>
                   </div>
                   <div style={{display:"flex", flexDirection: 'column'}}>
-                      <p className={"service-title"}>Chăm sóc khách hàng</p>
+                      <p className={"service-title"}>Chương trình ưu đãi</p>
                       <p className={"service-sub-title"}>
                           {`CHFootball có các chương trình khuyến mãi cho khách hàng tuỳ thuộc vào số lượng.
-Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
+Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân thiết`}
                       </p>
                   </div>
               </div>
@@ -213,7 +215,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
 
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={tiepnhanyeucauW} className={"procedure-icon"}/>
+                  <img src={tiepnhanyeucauW} className={"procedure-icon-img"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Tiếp nhận yêu cầu</b>
@@ -225,7 +227,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={tuvanthietkeW} className={"procedure-icon"}/>
+                  <img src={tuvanthietkeW} className={"procedure-icon-img"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Tư vấn thiết kế</b>
@@ -237,7 +239,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={baogiaW} className={"procedure-icon"}/>
+                  <img src={baogiaW} className={"procedure-icon-img"}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Báo giá</b>
@@ -249,7 +251,7 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
           </div>
           <div className={"procedure-item"}>
               <div className={"procedure-icon"}>
-                  <img src={giaohangW} className={"procedure-icon"}/>
+                  <img src={giaohangW} style={{width:60, height: 50}}/>
               </div>
               <div className={"procedure-content"}>
                   <b>Giao Hàng</b>
@@ -274,7 +276,6 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
                 <img
                   className={'itemcard-img'}
                   alt="Sample"
-                  // src="https://picsum.photos/300/200"
                   src='https://firebasestorage.googleapis.com/v0/b/nhuahvt.appspot.com/o/IMG_4814.JPG?alt=media&token=f962e0c1-7156-44b2-8566-1f5cba0721c8'
                 />
                 <CardBody>
@@ -398,6 +399,17 @@ Các chương trình cho khách hàng quay lại, khách hàng thân thiết.`}
             )
           })
         }
+      </div>
+
+      <div className={"container-product-type"}>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
       </div>
 
       <div style={{ width: '100%', height: 200 }}>
