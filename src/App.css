@@ -135,6 +135,26 @@
   flex-direction: column;
 }
 
+.container-product-type-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.container-product-type-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(50vw - 16px);
+  background-color: #f1f1f1;
+  border-radius: 16px;
+}
+
+.container-product-type-img {
+  width: calc(50vw - 16px);
+  height: 168px;
+}
+
 /* ProductType --- end */
 
 .container-title {
