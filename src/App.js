@@ -1,8 +1,8 @@
 import './App.css';
 import React, {useState} from 'react';
 import {
-    Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, Card, CardBody, //CardText,
-    CardTitle, Button, CardSubtitle
+    Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, // Card, CardBody, CardText,
+    // CardTitle, Button, CardSubtitle
 } from 'reactstrap';
 import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
@@ -13,19 +13,19 @@ import chamsockhachhang from '../src/images/cham-soc-khach-hang.png';
 import maumadadang from '../src/images/mau-ma-da-dang.png';
 import nhieuchatlieuvai from '../src/images/nhieu-chat-lieu-vai.png';
 import tuvantantam from '../src/images/tu-van-tan-tam.png';
-import giaohang from '../src/images/giao-hang.png';
-import tuvanthietke from '../src/images/tu-van-thiet-ke.png';
-import baogia from '../src/images/bao-gia.png';
-import tiepnhanyeucau from '../src/images/tiep-nhan-yeu-cau.png';
-import giaohangW from '../src/images/giao-hang-white.png';
+// import giaohang from '../src/images/giao-hang.png';
+// import tuvanthietke from '../src/images/tu-van-thiet-ke.png';
+// import baogia from '../src/images/bao-gia.png';
+// import tiepnhanyeucau from '../src/images/tiep-nhan-yeu-cau.png';
+// import giaohangW from '../src/images/giao-hang-white.png';
 import tuvanthietkeW from '../src/images/tu-van-thiet-ke-white.png';
 import baogiaW from '../src/images/bao-gia-white.png';
-import tiepnhanyeucauW from '../src/images/tiep-nhan-yeu-cau-white.png';
+// import tiepnhanyeucauW from '../src/images/tiep-nhan-yeu-cau-white.png';
 import giaohangfix from '../src/images/giao-hang-fix.png';
 import tiepnhanfix from '../src/images/tiep-nhan-fix.png';
 import icArrowDown from '../src/images/down-arrow-white.png';
-import user from '../src/images/user.png';
-import userWhite from '../src/images/userWhite.png';
+// import user from '../src/images/user.png';
+// import userWhite from '../src/images/userWhite.png';
 
 import maucaulacbocosan from '../src/images/maucaulacbocosan.png';
 import maukhonglogocosan from '../src/images/maukhonglogocosan.png';
@@ -92,17 +92,17 @@ function App() {
     return (<div className="App">
         <div className={"header-app"}>
             <div className={"header-app-content-lr"}>
-                <img src={menu} className={"header-app-icon"}/>
+                <img src={menu} className={"header-app-icon"} alt={"menu"}/>
             </div>
             <div className="header-app-logo">
                 <img src={logoCHFootballBL}
-                     alt="Logo CH Foootball"
+                     alt="Logo CH Football"
                      className={"sub-header-app-logo"}/>
             </div>
             <div className={"header-app-content-lr"}>
             </div>
         </div>
-        <div style={{display: 'flex', width: '100%', height: 5}}></div>
+        <div style={{display: 'flex', width: '100%', height: 5}}/>
         <Carousel
             activeIndex={activeIndex}
             next={next}
@@ -135,7 +135,7 @@ function App() {
             <div className={"service-row"}>
                 <div className={"service-item"}>
                     <div style={{marginBottom: 12}}>
-                        <img src={tuvantantam} className={"service-img"}/>
+                        <img src={tuvantantam} className={"service-img"} alt={"tư vấn"}/>
                     </div>
                     <div style={{display: "flex", flexDirection: 'column'}}>
                         <p className={"service-title"}>Tư vấn tận tâm</p>
@@ -146,7 +146,7 @@ function App() {
                 </div>
                 <div className={"service-item"}>
                     <div style={{marginBottom: 12}}>
-                        <img src={maumadadang} className={"service-img"}/>
+                        <img src={maumadadang} className={"service-img"} alt={"mẫu mã"}/>
                     </div>
                     <div style={{display: "flex", flexDirection: 'column'}}>
                         <p className={"service-title"}>Mẫu mã đa dạng</p>
@@ -159,7 +159,7 @@ function App() {
             <div className={"service-row"}>
                 <div className={"service-item"}>
                     <div style={{marginBottom: 12}}>
-                        <img src={nhieuchatlieuvai} className={"service-img"}/>
+                        <img src={nhieuchatlieuvai} className={"service-img"} alt={"chất liệu vải"}/>
                     </div>
                     <div style={{display: "flex", flexDirection: 'column'}}>
                         <p className={"service-title"}>Nhiều chất liệu vải</p>
@@ -170,7 +170,7 @@ function App() {
                 </div>
                 <div className={"service-item"}>
                     <div style={{marginBottom: 12}}>
-                        <img src={chamsockhachhang} className={"service-img"}/>
+                        <img src={chamsockhachhang} className={"service-img"} alt={"chăm sóc khách hàng"}/>
                     </div>
                     <div style={{display: "flex", flexDirection: 'column'}}>
                         <p className={"service-title"}>Chương trình ưu đãi</p>
@@ -190,7 +190,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
-                    <img src={tiepnhanfix} className={"procedure-icon-img"}/>
+                    <img src={tiepnhanfix} className={"procedure-icon-img"} alt={"tiếp nhận"}/>
                 </div>
                 <div className={"procedure-content"}>
                     <b>Tiếp nhận yêu cầu</b>
@@ -198,11 +198,15 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
             <div>
-                <img src={icArrowDown} style={{width: 20, height: 20, marginBottom: 10, marginTop: 10}}/>
+                <img
+                    src={icArrowDown}
+                    style={{width: 20, height: 20, marginBottom: 10, marginTop: 10}}
+                    alt={"mũi tên"}
+                />
             </div>
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
-                    <img src={tuvanthietkeW} className={"procedure-icon-img"}/>
+                    <img src={tuvanthietkeW} className={"procedure-icon-img"} alt={"thiết kế"}/>
                 </div>
                 <div className={"procedure-content"}>
                     <b>Tư vấn thiết kế</b>
@@ -210,11 +214,15 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
             <div>
-                <img src={icArrowDown} style={{width: 20, height: 20, marginBottom: 10, marginTop: 10}}/>
+                <img
+                    src={icArrowDown}
+                    style={{width: 20, height: 20, marginBottom: 10, marginTop: 10}}
+                    alt={"mũi tên"}
+                />
             </div>
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
-                    <img src={baogiaW} className={"procedure-icon-img"}/>
+                    <img src={baogiaW} className={"procedure-icon-img"} alt={"báo giá"}/>
                 </div>
                 <div className={"procedure-content"}>
                     <b>Báo giá</b>
@@ -222,11 +230,15 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
             <div>
-                <img src={icArrowDown} style={{width: 20, height: 20, marginBottom: 10, marginTop: 10}}/>
+                <img
+                    src={icArrowDown}
+                    style={{width: 20, height: 20, marginBottom: 10, marginTop: 10}}
+                    alt={"mũi tên"}
+                />
             </div>
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
-                    <img src={giaohangfix} style={{width: 60, height: 60}}/>
+                    <img src={giaohangfix} style={{width: 60, height: 60}} alt={"giao hàng"}/>
                 </div>
                 <div className={"procedure-content"}>
                     <b>Giao Hàng</b>
@@ -241,58 +253,57 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"container-product-type-row"}>
                 <div className={"container-product-type-item"}>
                     <div>
-                        <img src={mauthietke} className={"container-product-type-img"}/>
+                        <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Mẫu thiết kế</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 7</p>
                         <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
-                    <div style={{width:'100%', height:20}}></div>
+                    <div style={{width: '100%', height: 20}}/>
                 </div>
                 <div className={"container-product-type-item"}>
                     <div>
-                        <img src={maukhonglogocosan} className={"container-product-type-img"}/>
+                        <img src={maukhonglogocosan} className={"container-product-type-img"} alt={"mẫu không logo"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Mẫu không Logo có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
                         <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
-                    <div style={{width:'100%', height:20}}></div>
+                    <div style={{width: '100%', height: 20}}/>
                 </div>
             </div>
             <div className={"container-product-type-row"}>
                 <div className={"container-product-type-item"}>
                     <div>
-                        <img src={maucaulacbocosan} className={"container-product-type-img"}/>
+                        <img src={maucaulacbocosan} className={"container-product-type-img"} alt={"mẫu câu lạc bộ"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Mẫu câu lạc bộ có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
                         <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
-                    <div style={{width:'100%', height:20}}></div>
+                    <div style={{width: '100%', height: 20}}/>
                 </div>
                 <div className={"container-product-type-item"}>
                     <div>
-                        <img src={phukien} className={"container-product-type-img"}/>
+                        <img src={phukien} className={"container-product-type-img"} alt={"phụ kiện"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Phụ kiện</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 1</p>
                         <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
-                    <div style={{width:'100%', height:20}}></div>
+                    <div style={{width: '100%', height: 20}}/>
                 </div>
             </div>
         </div>
 
-
         <div className="container-products">
             {data.map((e, i) => {
-                if(i== 0) {
-                    return <div className='iteamcard' key={i+""}>
+                if (i === 0) {
+                    return <div className='iteamcard' key={i + ""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -310,8 +321,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         />
                     </div>
                 }
-                if(i==1) {
-                    return <div className='iteamcard' key={i+""}>
+                if (i === 1) {
+                    return <div className='iteamcard' key={i + ""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -329,8 +340,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         />
                     </div>
                 }
-                if(i==2) {
-                    return <div className='iteamcard' key={i+""}>
+                if (i === 2) {
+                    return <div className='iteamcard' key={i + ""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -348,8 +359,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         />
                     </div>
                 }
-                if(i==3) {
-                    return <div className='iteamcard' key={i+""}>
+                if (i === 3) {
+                    return <div className='iteamcard' key={i + ""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -367,8 +378,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         />
                     </div>
                 }
-                if(i==4) {
-                    return <div className='iteamcard' key={i+""}>
+                if (i === 4) {
+                    return <div className='iteamcard' key={i + ""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -387,8 +398,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         />
                     </div>
                 }
-                if(i==5) {
-                    return <div className='iteamcard' key={i+""}>
+                if (i === 5) {
+                    return <div className='iteamcard' key={i + ""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -406,6 +417,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         />
                     </div>
                 }
+                return <></>
             })}
         </div>
 
