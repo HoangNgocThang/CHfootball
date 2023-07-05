@@ -292,7 +292,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         <div className="container-products">
             {data.map((e, i) => {
                 if(i== 0) {
-                    return <div className='iteamcard'>
+                    return <div className='iteamcard' key={i+""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -311,7 +311,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 }
                 if(i==1) {
-                    return <div className='iteamcard'>
+                    return <div className='iteamcard' key={i+""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -330,7 +330,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 }
                 if(i==2) {
-                    return <div className='iteamcard'>
+                    return <div className='iteamcard' key={i+""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -349,7 +349,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 }
                 if(i==3) {
-                    return <div className='iteamcard'>
+                    return <div className='iteamcard' key={i+""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -368,7 +368,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 }
                 if(i==4) {
-                    return <div className='iteamcard'>
+                    return <div className='iteamcard' key={i+""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
@@ -388,7 +388,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 }
                 if(i==5) {
-                    return <div className='iteamcard'>
+                    return <div className='iteamcard' key={i+""}>
                         <img
                             className={'itemcard-img'}
                             alt="Sample"
