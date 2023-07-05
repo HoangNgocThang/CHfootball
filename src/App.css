@@ -110,8 +110,10 @@
 }
 
 .procedure-icon {
+  display: flex;
+  align-self: center;
   width: 75px;
-  height: 75px;
+  height: 100%;
 }
 
 .procedure-icon-img {
