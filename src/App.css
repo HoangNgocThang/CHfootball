@@ -222,9 +222,10 @@
 .container-products {
   display: flex;
   align-items: center;
-  background-color: #eee;
+  background-color: white;
   overflow-x: scroll;
   white-space: nowrap;
+  margin-top: 20px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -239,14 +240,19 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .iteamcard {
+  display: flex;
+  flex-direction: column;
   flex: none;
-  width: calc(40vw - 4px);
-  margin-right: 4px;
+  width: calc(25vw - 4px);
+  gap: 10px;
+  margin-right: 10px;
+  /*border-radius: 10px;*/
+  /*overflow: hidden;*/
 }
 
 .itemcard-img {
-  width: calc(40vw - 4px);
-  height: calc(40vw - 4px);
+  width: calc(25vw - 4px);
+  height: auto;
   object-fit: cover;
 }
 
