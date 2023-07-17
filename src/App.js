@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 import {
@@ -29,7 +28,7 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <Container>
+        <div className="container">
             <div className="App">
                 <div className={"header-app"}>
                     <div className={"header-app-content-lr"}>
@@ -46,7 +45,7 @@ function App() {
                 <div style={{display: 'flex', width: '100%', height: 5, marginTop: 58}}/>
                 <RouterProvider router={router} />
             </div>
-        </Container>
+        </div>
     );
 }
 
