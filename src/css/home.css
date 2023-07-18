@@ -1,27 +1,11 @@
-
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .cus_bottom {
-        bottom: 15%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199.98px) {
-    .cus_bottom {
-        bottom: 25%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .cus_bottom {
-        bottom: 30%;
-    }
-}
-
 .App {
     text-align: center;
 }
 
+.cus_bottom {
+    top: 20%;
+    bottom: 0;
+}
 
 /*// `xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {

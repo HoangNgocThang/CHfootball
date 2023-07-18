@@ -1,18 +1,9 @@
 import '../css/home.css';
 import React, {useState, useRef} from 'react';
-import {
-    Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption,
-} from 'reactstrap';
 import chamsockhachhang from '../images/cham-soc-khach-hang.png';
 import maumadadang from '../images/mau-ma-da-dang.png';
 import nhieuchatlieuvai from '../images/nhieu-chat-lieu-vai.png';
 import tuvantantam from '../images/tu-van-tan-tam.png';
-// import giaohang from '../images/giao-hang.png';
-// import tuvanthietke from '../images/tu-van-thiet-ke.png';
-// import baogia from '../images/bao-gia.png';
-// import tiepnhanyeucau from '../images/tiep-nhan-yeu-cau.png';
-// import giaohangW from '../images/giao-hang-white.png';
-// import tiepnhanyeucauW from '../images/tiep-nhan-yeu-cau-white.png';
 import tuvanthietkeW from '../images/tu-van-thiet-ke-white.png';
 import baogiaW from '../images/bao-gia-white.png';
 import giaohangfix from '../images/giao-hang-fix.png';
@@ -32,100 +23,32 @@ const items = [{
 }];
 
 function Home() {
-
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
     const windowWidth = useRef(window.innerWidth);
     const windowHeight = useRef(window.innerHeight);
 
     console.log('width: ', windowWidth.current);
     console.log('height: ', windowWidth.current);
 
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    };
-
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    };
-
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
-    };
-
-    const slides = items.map((item) => {
-        return (<CarouselItem
-            onExiting={() => setAnimating(true)}
-            onExited={() => setAnimating(false)}
-            key={item.src}
-        >
-            <img
-                src={item.src}
-                alt={item.altText}
-                style={{width: '100%', height: 300}}/>
-            <CarouselCaption
-                captionText={item.caption}
-                captionHeader={item.caption}
-            />
-        </CarouselItem>);
-    });
-
-    const [data
-        // ,setData
-    ] = useState([{}, {}, {}, {}, {}, {}]);
-
     return (<div>
-        {/*<Carousel*/}
-        {/*    activeIndex={activeIndex}*/}
-        {/*    next={next}*/}
-        {/*    previous={previous}*/}
-        {/*>*/}
-        {/*    <CarouselIndicators*/}
-        {/*        items={items}*/}
-        {/*        activeIndex={activeIndex}*/}
-        {/*        onClickHandler={goToIndex}*/}
-        {/*    />*/}
-        {/*    {slides}*/}
-        {/*    <CarouselControl*/}
-        {/*        direction="prev"*/}
-        {/*        directionText="Previous"*/}
-        {/*        onClickHandler={previous}*/}
-        {/*    />*/}
-        {/*    <CarouselControl*/}
-        {/*        direction="next"*/}
-        {/*        directionText="Next"*/}
-        {/*        onClickHandler={next}*/}
-        {/*    />*/}
-        {/*</Carousel>*/}
-
-        {/*<div className={"container-banner"}>*/}
-        {/*    <div className={"wrap-text-banner"}>*/}
-        {/*        <h1 style={{color: 'white'}}>CHFOOTBALL</h1>*/}
-        {/*        <p style={{color: 'white'}}>CHFootball đã có kinh nghiệm trong thiết kết và sản xuất đồng phục bóng*/}
-        {/*            đá</p>*/}
-        {/*        <p style={{color: 'white'}}>Nhận được nhiều sự tin tưởng của khách hàng lớn như: Trường Đại Học Công*/}
-        {/*            Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền thông...</p>*/}
-        {/*    </div>*/}
-        {/*</div>*/}
-
         <div id="carouselExampleCaptions" className="carousel slide">
-            <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-            </div>
+            {/*<div className="carousel-indicators">*/}
+            {/*    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"*/}
+            {/*            aria-current="true" aria-label="Slide 1"></button>*/}
+            {/*    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"*/}
+            {/*            aria-label="Slide 2"></button>*/}
+            {/*    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"*/}
+            {/*            aria-label="Slide 3"></button>*/}
+            {/*</div>*/}
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="https://picsum.photos/id/678/1200/400" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption d-none d-md-block cus_bottom">
+                    <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
+                        <img src="https://picsum.photos/id/678/1200/400" alt="carousel-img"/>
+                    </div>
+                    <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
+                        <img src="https://picsum.photos/id/678/1200/600" alt="carousel-img"/>
+                    </div>
+                    {/*Mobile --- start*/}
+                    <div className="carousel-caption d-block d-md-none" style={{top: '5%', bottom: 0}}>
                         <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
                         <p style={{
                             color: 'white',
@@ -136,42 +59,18 @@ function Home() {
                         }}>CHFootball đã có kinh
                             nghiệm trong thiết kết và sản xuất đồng phục
                             bóng đá</p>
-                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại
-                            Học Công
-                            Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="https://picsum.photos/id/123/1200/400" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption d-none d-md-block cus_bottom">
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center',}}>CHFOOTBALL</h1>
                         <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại
-                            Học Công
-                            Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            color: 'white', padding: 0, margin: 0, textAlign: 'center'
+                        }}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại Học
+                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
                             thông...</p>
                         <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
                             hàng
                         </button>
                     </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="https://picsum.photos/id/456/1200/400" className="d-block w-100" alt="..."/>
+                    {/*Mobile --- end*/}
+                    {/*Desktop --- start*/}
                     <div className="carousel-caption d-none d-md-block cus_bottom">
                         <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
                         <p style={{
@@ -191,28 +90,134 @@ function Home() {
                             hàng
                         </button>
                     </div>
+                    {/*Desktop --- end*/}
+                </div>
+                <div className="carousel-item">
+                    <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
+                        <img src="https://picsum.photos/id/123/1200/400" alt="carousel-img"/>
+                    </div>
+                    <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
+                        <img src="https://picsum.photos/id/123/1200/600" alt="carousel-img"/>
+                    </div>
+                    {/*Mobile --- start*/}
+                    <div className="carousel-caption d-block d-md-none" style={{top: '5%', bottom: 0}}>
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{
+                            color: 'white', padding: 0, margin: 0, textAlign: 'center'
+                        }}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại Học
+                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
+                    {/*Mobile --- end*/}
+                    {/*Desktop --- start*/}
+                    <div className="carousel-caption d-none d-md-block cus_bottom">
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại Học
+                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
+                    {/*Desktop --- end*/}
+                </div>
+                <div className="carousel-item">
+                    <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
+                        <img src="https://picsum.photos/id/456/1200/400" alt="carousel-img"/>
+                    </div>
+                    <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
+                        <img src="https://picsum.photos/id/456/1200/600" alt="carousel-img"/>
+                    </div>
+                    {/*Mobile --- start*/}
+                    <div className="carousel-caption d-block d-md-none" style={{top: '25%', bottom: 0}}>
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{
+                            color: 'white', padding: 0, margin: 0, textAlign: 'center'
+                        }}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại Học
+                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
+                    {/*Mobile --- end*/}
+                    {/*Desktop --- start*/}
+                    <div className="carousel-caption d-none d-md-block cus_bottom">
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại Học
+                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
+                    {/*Desktop --- end*/}
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="carousel-control-prev-icon" aria-hidden="true"/>
                 <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="carousel-control-next-icon" aria-hidden="true"/>
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
 
         {/*Mobile* ---start */}
-        <div className={"d-flex flex-column d-md-none"}>
+        <div style={{marginTop: 20}}
+             className={"d-flex flex-column d-md-none"}>
             <h1>Vì sao lựa chọn</h1>
             <h1>CHFoootball ?</h1>
         </div>
         {/*Mobile ---end*/}
         {/*Desktop ---start*/}
-        <div style={{marginTop: 10}}
+        <div style={{marginTop: 20}}
              className={"d-none d-md-flex flex-row align-items-center justify-content-center"}>
             <h1 className={"text-center"}>Vì sao lựa chọn CHFoootball ?</h1>
         </div>
@@ -440,126 +445,126 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
         </div>
 
-        <div className="container-products">
-            {data.map((e, i) => {
-                if (i === 0) {
-                    return <div className='iteamcard' key={i + ""}>
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/342972352_747609960370931_4792094069670198249_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=cFH3RlTRPMEAX_Csl_c&_nc_ht=scontent.fhan3-3.fna&oh=00_AfD2OutI2WpFWf0Kqe_CYqpl39mp3C3ilrLP4OWU0IzRIQ&oe=64A93409"
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/301953345_126103930171998_7526762796660612478_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=wXxJ3DgAyVMAX89mXua&_nc_ht=scontent.fhan3-2.fna&oh=00_AfCed9CmMAHYZgD6fEfF6J00EomLM_uXNqwxrIQRbDbSRQ&oe=64AA3752"}
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/307703674_129639756485082_3073392131615707292_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=NIlpQ88bx2IAX8cdmEw&_nc_ht=scontent.fhan3-3.fna&oh=00_AfBF5AGBE_XaH9IC5c1TJ9v4C_wPkRJAWD2Guqti90H0Ng&oe=64A99904"}
-                        />
-                    </div>
-                }
-                if (i === 1) {
-                    return <div className='iteamcard' key={i + ""}>
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/306355429_129393236509734_7510365682179228330_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=kkkVXgxXot4AX-7_wqc&_nc_ht=scontent.fhan4-1.fna&oh=00_AfCCvLKkTeRPT_erRg24oW9q1JwfDtYc46cMqtBafL_eNg&oe=64A9FDB7"
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/306000102_127792343336490_8860810274989650270_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=eScOzB8skOwAX-EeiPh&_nc_ht=scontent.fhan3-4.fna&oh=00_AfA5JoEELj-4b_zTMdvS7TJ6y6AvPCiDIiNURD2itbO3WA&oe=64AA1175"}
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/306086195_127385943377130_4820730886942250421_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YpFpePIGmwwAX_A5Kb8&_nc_ht=scontent.fhan3-4.fna&oh=00_AfAEmdUHEEUhY9MyTeLDuT0Yl0RAxBljs_EwdUH3HQ8T1w&oe=64AAA4CC"}
-                        />
-                    </div>
-                }
-                if (i === 2) {
-                    return <div className='iteamcard' key={i + ""}>
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/299111645_120607507388307_3699044204930310152_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jEsDUerkpWsAX_biCKS&_nc_ht=scontent.fhan3-2.fna&oh=00_AfBFjSbvo4IT_QExoJ1eiexqh8r43Zmxbn4QaYLIbpbP2w&oe=64A9A7E2"}
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/342982898_935689507745872_1801466322926761694_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_L0cvfHY484AX81sb2i&_nc_ht=scontent.fhan4-3.fna&oh=00_AfCPf3Jxxn8X4HmakZDkSnD10ipe_gB7iAnibckXwT61sA&oe=64AA5CAE"}
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/306948536_129999626449095_62413514750212951_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4g7C72RiVEUAX8L5Z1M&_nc_ht=scontent.fhan4-2.fna&oh=00_AfA556fLUeVitWjfsSeXxNsHaNdrcDTaI1JcmKK-3loxNA&oe=64AA0403"}
-                        />
-                    </div>
-                }
-                if (i === 3) {
-                    return <div className='iteamcard' key={i + ""}>
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/305979129_127792336669824_4878188787227361786_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=fGqVMztiG8kAX8NVRxd&_nc_ht=scontent.fhan3-1.fna&oh=00_AfAZ1G0YFwZs-VAMgOhZpa8Ms1j9sQQpLS1nUSQIHSoHbQ&oe=64A9CB17"
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/300969367_123442587104799_760124374553361034_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=6ZdBNc8iomkAX_Ifmno&_nc_ht=scontent.fhan4-1.fna&oh=00_AfByNvThxU6LMxuBXm1mEULjP1KICnxwAKhVxyYMp4Cm5g&oe=64A93319"}
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://firebasestorage.googleapis.com/v0/b/tintucmoi24h-6c17a.appspot.com/o/347589927_2256513847854980_3155375348178503441_n.jpg?alt=media&token=bbea583b-90a6-4ad3-855d-a1537e883d57"}
-                        />
-                    </div>
-                }
-                if (i === 4) {
-                    return <div className='iteamcard' key={i + ""}>
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src="https://firebasestorage.googleapis.com/v0/b/tintucmoi24h-6c17a.appspot.com/o/v.png?alt=media&token=d6b80be7-b2b0-4a6f-ae65-f4757c3172d8"
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/309224583_132556372860087_3199277604602885980_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=XFUeOLeSIp4AX_KRHtK&_nc_ht=scontent.fhan3-4.fna&oh=00_AfAnp6_ouPw0rvaqKZ1gSVGzvfirgV8lvsJA1bI7pcGnLQ&oe=64AAEF0C"}
-                        />
+        {/*<div className="container-products">*/}
+        {/*    {data.map((e, i) => {*/}
+        {/*        if (i === 0) {*/}
+        {/*            return <div className='iteamcard' key={i + ""}>*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/342972352_747609960370931_4792094069670198249_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=cFH3RlTRPMEAX_Csl_c&_nc_ht=scontent.fhan3-3.fna&oh=00_AfD2OutI2WpFWf0Kqe_CYqpl39mp3C3ilrLP4OWU0IzRIQ&oe=64A93409"*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/301953345_126103930171998_7526762796660612478_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=wXxJ3DgAyVMAX89mXua&_nc_ht=scontent.fhan3-2.fna&oh=00_AfCed9CmMAHYZgD6fEfF6J00EomLM_uXNqwxrIQRbDbSRQ&oe=64AA3752"}*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/307703674_129639756485082_3073392131615707292_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=NIlpQ88bx2IAX8cdmEw&_nc_ht=scontent.fhan3-3.fna&oh=00_AfBF5AGBE_XaH9IC5c1TJ9v4C_wPkRJAWD2Guqti90H0Ng&oe=64A99904"}*/}
+        {/*                />*/}
+        {/*            </div>*/}
+        {/*        }*/}
+        {/*        if (i === 1) {*/}
+        {/*            return <div className='iteamcard' key={i + ""}>*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/306355429_129393236509734_7510365682179228330_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=kkkVXgxXot4AX-7_wqc&_nc_ht=scontent.fhan4-1.fna&oh=00_AfCCvLKkTeRPT_erRg24oW9q1JwfDtYc46cMqtBafL_eNg&oe=64A9FDB7"*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/306000102_127792343336490_8860810274989650270_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=eScOzB8skOwAX-EeiPh&_nc_ht=scontent.fhan3-4.fna&oh=00_AfA5JoEELj-4b_zTMdvS7TJ6y6AvPCiDIiNURD2itbO3WA&oe=64AA1175"}*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/306086195_127385943377130_4820730886942250421_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YpFpePIGmwwAX_A5Kb8&_nc_ht=scontent.fhan3-4.fna&oh=00_AfAEmdUHEEUhY9MyTeLDuT0Yl0RAxBljs_EwdUH3HQ8T1w&oe=64AAA4CC"}*/}
+        {/*                />*/}
+        {/*            </div>*/}
+        {/*        }*/}
+        {/*        if (i === 2) {*/}
+        {/*            return <div className='iteamcard' key={i + ""}>*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/299111645_120607507388307_3699044204930310152_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jEsDUerkpWsAX_biCKS&_nc_ht=scontent.fhan3-2.fna&oh=00_AfBFjSbvo4IT_QExoJ1eiexqh8r43Zmxbn4QaYLIbpbP2w&oe=64A9A7E2"}*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/342982898_935689507745872_1801466322926761694_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_L0cvfHY484AX81sb2i&_nc_ht=scontent.fhan4-3.fna&oh=00_AfCPf3Jxxn8X4HmakZDkSnD10ipe_gB7iAnibckXwT61sA&oe=64AA5CAE"}*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/306948536_129999626449095_62413514750212951_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4g7C72RiVEUAX8L5Z1M&_nc_ht=scontent.fhan4-2.fna&oh=00_AfA556fLUeVitWjfsSeXxNsHaNdrcDTaI1JcmKK-3loxNA&oe=64AA0403"}*/}
+        {/*                />*/}
+        {/*            </div>*/}
+        {/*        }*/}
+        {/*        if (i === 3) {*/}
+        {/*            return <div className='iteamcard' key={i + ""}>*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/305979129_127792336669824_4878188787227361786_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=fGqVMztiG8kAX8NVRxd&_nc_ht=scontent.fhan3-1.fna&oh=00_AfAZ1G0YFwZs-VAMgOhZpa8Ms1j9sQQpLS1nUSQIHSoHbQ&oe=64A9CB17"*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/300969367_123442587104799_760124374553361034_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=6ZdBNc8iomkAX_Ifmno&_nc_ht=scontent.fhan4-1.fna&oh=00_AfByNvThxU6LMxuBXm1mEULjP1KICnxwAKhVxyYMp4Cm5g&oe=64A93319"}*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://firebasestorage.googleapis.com/v0/b/tintucmoi24h-6c17a.appspot.com/o/347589927_2256513847854980_3155375348178503441_n.jpg?alt=media&token=bbea583b-90a6-4ad3-855d-a1537e883d57"}*/}
+        {/*                />*/}
+        {/*            </div>*/}
+        {/*        }*/}
+        {/*        if (i === 4) {*/}
+        {/*            return <div className='iteamcard' key={i + ""}>*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src="https://firebasestorage.googleapis.com/v0/b/tintucmoi24h-6c17a.appspot.com/o/v.png?alt=media&token=d6b80be7-b2b0-4a6f-ae65-f4757c3172d8"*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/309224583_132556372860087_3199277604602885980_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=XFUeOLeSIp4AX_KRHtK&_nc_ht=scontent.fhan3-4.fna&oh=00_AfAnp6_ouPw0rvaqKZ1gSVGzvfirgV8lvsJA1bI7pcGnLQ&oe=64AAEF0C"}*/}
+        {/*                />*/}
 
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/347621983_240535082062215_7841174145727718490_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ihrGPtyZ7LUAX91_Jxj&_nc_ht=scontent.fhan4-2.fna&oh=00_AfAm_zcF60k9JfDYT5evi9QxR93wVTmdtnnW3GNHkmG-TA&oe=64A9AFA1"}
-                        />
-                    </div>
-                }
-                if (i === 5) {
-                    return <div className='iteamcard' key={i + ""}>
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src="https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/314958447_145141584934899_4660768754789138922_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d_j14U3efYsAX8xnYAB&_nc_ht=scontent.fhan4-3.fna&oh=00_AfBWEV3gE4HOELufgbjEDOjZjllsXw3gDtcPF1avEkbUBA&oe=64AA7F76"
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/315889205_146744751441249_9082638654701276282_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=rZpIq3ol4ugAX-mA4yk&_nc_ht=scontent.fhan3-3.fna&oh=00_AfBf0jmZHTIlu-yz9Itwkb7k_4tOUbHctC11N4n4bP04JQ&oe=64AB0C61"}
-                        />
-                        <img
-                            className={'itemcard-img'}
-                            alt="Sample"
-                            src={"https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/316414969_148190024630055_2555280542635369633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uhj7tD4eZaMAX_QVhRI&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCj4etg21dY2uInC96BfzUcqoTeEj9lV-DLC7jpLngfJg&oe=64AA585D"}
-                        />
-                    </div>
-                }
-                return <></>
-            })}
-        </div>
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/347621983_240535082062215_7841174145727718490_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ihrGPtyZ7LUAX91_Jxj&_nc_ht=scontent.fhan4-2.fna&oh=00_AfAm_zcF60k9JfDYT5evi9QxR93wVTmdtnnW3GNHkmG-TA&oe=64A9AFA1"}*/}
+        {/*                />*/}
+        {/*            </div>*/}
+        {/*        }*/}
+        {/*        if (i === 5) {*/}
+        {/*            return <div className='iteamcard' key={i + ""}>*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src="https://scontent.fhan4-3.fna.fbcdn.net/v/t39.30808-6/314958447_145141584934899_4660768754789138922_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=d_j14U3efYsAX8xnYAB&_nc_ht=scontent.fhan4-3.fna&oh=00_AfBWEV3gE4HOELufgbjEDOjZjllsXw3gDtcPF1avEkbUBA&oe=64AA7F76"*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/315889205_146744751441249_9082638654701276282_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=rZpIq3ol4ugAX-mA4yk&_nc_ht=scontent.fhan3-3.fna&oh=00_AfBf0jmZHTIlu-yz9Itwkb7k_4tOUbHctC11N4n4bP04JQ&oe=64AB0C61"}*/}
+        {/*                />*/}
+        {/*                <img*/}
+        {/*                    className={'itemcard-img'}*/}
+        {/*                    alt="Sample"*/}
+        {/*                    src={"https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/316414969_148190024630055_2555280542635369633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uhj7tD4eZaMAX_QVhRI&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCj4etg21dY2uInC96BfzUcqoTeEj9lV-DLC7jpLngfJg&oe=64AA585D"}*/}
+        {/*                />*/}
+        {/*            </div>*/}
+        {/*        }*/}
+        {/*        return <></>*/}
+        {/*    })}*/}
+        {/*</div>*/}
 
         <div style={{width: '100%', height: 200}}>
             <a href={"https://zalo.me/0374841234"}>Website</a>

@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import menu from '../src/images/menu.png';
+// import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 import {
     createBrowserRouter,
