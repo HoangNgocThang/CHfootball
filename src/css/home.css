@@ -1,48 +1,55 @@
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .cus_bottom {
+        bottom: 15%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .cus_bottom {
+        bottom: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cus_bottom {
+        bottom: 30%;
+    }
+}
+
 .App {
     text-align: center;
 }
 
-/* Header --- start */
-.header-app {
+
+/*// `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+    .cus_bottom {
+        bottom: 30%;
+    }
+}
+
+/*banner ---start */
+.container-banner {
+    position: absolute;
+    top: 100px;
+    z-index: 3;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: 0 8px;
-    width: 100%;
-    height: 58px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
-    position: fixed;
-    top:0;
-    right: 0;
-    background-color: white;
-    z-index: 10;
-    /*box-shadow: rgba(0, 0, 0, 0.16) 0 2px 0;*/
+    align-content: center;
 }
 
-.header-app-content-lr {
+.wrap-text-banner {
     display: flex;
-    align-items: center;
-    width: 40px;
-    height: 100%;
-    padding-right: 10px;
-}
-
-.header-app-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.header-app-logo {
-    display: flex;
-    flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 70%;
+    height: 250px;
 }
 
-.sub-header-app-logo {
-    height: 70%;
-}
-/* Header --- end */
+/*banner ---end */
 
 /* Service --- start */
 .container-service {
@@ -89,6 +96,7 @@
     font-size: 12px;
     color: #6b818c;;
 }
+
 /* Service --- end */
 
 /* Procedure --- start */
@@ -142,6 +150,7 @@
     color: white;
     margin-left: 20px;
 }
+
 /* Procedure --- end */
 
 /* ProductType --- start */
@@ -248,8 +257,8 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .container-products {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 .iteamcard {

@@ -1,5 +1,5 @@
 import '../css/home.css';
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import {
     Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption,
 } from 'reactstrap';
@@ -24,17 +24,22 @@ import mauthietke from '../images/mauthietke.png';
 import phukien from '../images/phukien.png';
 
 const items = [{
-    src: 'https://picsum.photos/id/123/1200/400', altText: 'Slide 1', caption: 'Slide 1', key: 1,
+    src: 'https://picsum.photos/id/123/1200/400', altText: 'CHFOOTBALL', caption: 'CHFOOTBALL', key: 1,
 }, {
-    src: 'https://picsum.photos/id/456/1200/400', altText: 'Slide 2', caption: 'Slide 2', key: 2,
+    src: 'https://picsum.photos/id/456/1200/400', altText: 'CHFOOTBALL', caption: 'Slide 2', key: 2,
 }, {
-    src: 'https://picsum.photos/id/678/1200/400', altText: 'Slide 3', caption: 'Slide 3', key: 3,
+    src: 'https://picsum.photos/id/678/1200/400', altText: 'CHFOOTBALL', caption: 'Slide 3', key: 3,
 }];
 
 function Home() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
+    const windowWidth = useRef(window.innerWidth);
+    const windowHeight = useRef(window.innerHeight);
+
+    console.log('width: ', windowWidth.current);
+    console.log('height: ', windowWidth.current);
 
     const next = () => {
         if (animating) return;
@@ -98,24 +103,102 @@ function Home() {
         {/*    />*/}
         {/*</Carousel>*/}
 
-        <div id="carouselExample" className="carousel slide">
+        {/*<div className={"container-banner"}>*/}
+        {/*    <div className={"wrap-text-banner"}>*/}
+        {/*        <h1 style={{color: 'white'}}>CHFOOTBALL</h1>*/}
+        {/*        <p style={{color: 'white'}}>CHFootball đã có kinh nghiệm trong thiết kết và sản xuất đồng phục bóng*/}
+        {/*            đá</p>*/}
+        {/*        <p style={{color: 'white'}}>Nhận được nhiều sự tin tưởng của khách hàng lớn như: Trường Đại Học Công*/}
+        {/*            Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền thông...</p>*/}
+        {/*    </div>*/}
+        {/*</div>*/}
+
+        <div id="carouselExampleCaptions" className="carousel slide">
+            <div className="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="https://via.placeholder.com/750x250" className="d-block w-100" alt="..."/>
+                    <img src="https://picsum.photos/id/678/1200/400" className="d-block w-100" alt="..."/>
+                    <div className="carousel-caption d-none d-md-block cus_bottom">
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại
+                            Học Công
+                            Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
                 </div>
                 <div className="carousel-item">
-                    <img src="https://via.placeholder.com/750x250" className="d-block w-100" alt="..."/>
+                    <img src="https://picsum.photos/id/123/1200/400" className="d-block w-100" alt="..."/>
+                    <div className="carousel-caption d-none d-md-block cus_bottom">
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center',}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại
+                            Học Công
+                            Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
                 </div>
                 <div className="carousel-item">
-                    <img src="https://via.placeholder.com/750x250" className="d-block w-100" alt="..."/>
+                    <img src="https://picsum.photos/id/456/1200/400" className="d-block w-100" alt="..."/>
+                    <div className="carousel-caption d-none d-md-block cus_bottom">
+                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
+                        <p style={{
+                            color: 'white',
+                            padding: 0,
+                            margin: 0,
+                            textAlign: 'center',
+                            marginTop: 20
+                        }}>CHFootball đã có kinh
+                            nghiệm trong thiết kết và sản xuất đồng phục
+                            bóng đá</p>
+                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
+                            tưởng của khách hàng lớn như: Trường Đại Học
+                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
+                            thông...</p>
+                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
+                            hàng
+                        </button>
+                    </div>
                 </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample"
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
