@@ -52,6 +52,13 @@
     gap: 10px;
 }
 
+.container-service__desktop {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    gap: 10px;
+}
+
 .service-row {
     display: flex;
     flex-direction: row;

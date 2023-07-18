@@ -32,11 +32,11 @@ function App() {
             <div className="App">
                 <div className={"header-app"}>
                     <div className={"header-app-content-lr"}>
-                        <img src={menu} className={"header-app-icon"} alt={"menu"}/>
+                        {/*<img src={menu} className={"header-app-icon"} alt={"menu"}/>*/}
                     </div>
                     <div className="header-app-logo">
                         <img src={logoCHFootballBL}
-                             alt="Logo CH Football"
+                             alt="Logo CHFootball"
                              className={"sub-header-app-logo"}/>
                     </div>
                     <div className={"header-app-content-lr"}>
