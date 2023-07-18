@@ -7,13 +7,6 @@
     bottom: 0;
 }
 
-/*// `xxl` applies to x-large devices (large desktops, less than 1400px)*/
-@media (max-width: 1399.98px) {
-    .cus_bottom {
-        bottom: 30%;
-    }
-}
-
 /*banner ---start */
 .container-banner {
     position: absolute;
@@ -91,7 +84,7 @@
     /*background: #f1f1f1;*/
     background: #2F2973;
     margin: 10px 8px;
-    padding: 20px 16px;
+    padding: 20px;
     border-radius: 28px;
 }
 
@@ -106,6 +99,7 @@
 
 .procedure-header-text {
     color: black;
+    font-weight: bold;
 }
 
 .procedure-item {
@@ -137,6 +131,20 @@
 
 /* Procedure --- end */
 
+/* Procedure Desktop ---start*/
+
+.container-procedure__desktop {
+    display: flex;
+    flex-direction: row;
+}
+
+.procedure-header__desktop {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Procedure Desktop ---end*/
+
 /* ProductType --- start */
 .container-product-type {
     display: flex;
@@ -158,7 +166,6 @@
     width: calc(50vw - 16px);
     background-color: #f1f1f1;
     border-radius: 16px;
-    /*padding: 9px*/
 }
 
 .container-product-type-img {

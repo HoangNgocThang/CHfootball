@@ -13,213 +13,37 @@ import maucaulacbocosan from '../images/maucaulacbocosan.png';
 import maukhonglogocosan from '../images/maukhonglogocosan.png';
 import mauthietke from '../images/mauthietke.png';
 import phukien from '../images/phukien.png';
+import TCarousel from "../components/TCarousel";
+import TButtonOrder from "../components/TButtonOrder";
 
-const items = [{
-    src: 'https://picsum.photos/id/123/1200/400', altText: 'CHFOOTBALL', caption: 'CHFOOTBALL', key: 1,
-}, {
-    src: 'https://picsum.photos/id/456/1200/400', altText: 'CHFOOTBALL', caption: 'Slide 2', key: 2,
-}, {
-    src: 'https://picsum.photos/id/678/1200/400', altText: 'CHFOOTBALL', caption: 'Slide 3', key: 3,
-}];
+// const items = [{
+//     src: 'https://picsum.photos/id/123/1200/400', altText: 'CHFOOTBALL', caption: 'CHFOOTBALL', key: 1,
+// }, {
+//     src: 'https://picsum.photos/id/456/1200/400', altText: 'CHFOOTBALL', caption: 'Slide 2', key: 2,
+// }, {
+//     src: 'https://picsum.photos/id/678/1200/400', altText: 'CHFOOTBALL', caption: 'Slide 3', key: 3,
+// }];
 
 function Home() {
     const windowWidth = useRef(window.innerWidth);
     const windowHeight = useRef(window.innerHeight);
 
     console.log('width: ', windowWidth.current);
-    console.log('height: ', windowWidth.current);
+    console.log('height: ', windowHeight.current);
 
     return (<div>
-        <div id="carouselExampleCaptions" className="carousel slide">
-            {/*<div className="carousel-indicators">*/}
-            {/*    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"*/}
-            {/*            aria-current="true" aria-label="Slide 1"></button>*/}
-            {/*    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"*/}
-            {/*            aria-label="Slide 2"></button>*/}
-            {/*    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"*/}
-            {/*            aria-label="Slide 3"></button>*/}
-            {/*</div>*/}
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
-                        <img src="https://picsum.photos/id/678/1200/400" alt="carousel-img"/>
-                    </div>
-                    <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
-                        <img src="https://picsum.photos/id/678/1200/600" alt="carousel-img"/>
-                    </div>
-                    {/*Mobile --- start*/}
-                    <div className="carousel-caption d-block d-md-none" style={{top: '5%', bottom: 0}}>
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
-                        <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{
-                            color: 'white', padding: 0, margin: 0, textAlign: 'center'
-                        }}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại Học
-                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                    {/*Mobile --- end*/}
-                    {/*Desktop --- start*/}
-                    <div className="carousel-caption d-none d-md-block cus_bottom">
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
-                        <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại Học
-                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                    {/*Desktop --- end*/}
-                </div>
-                <div className="carousel-item">
-                    <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
-                        <img src="https://picsum.photos/id/123/1200/400" alt="carousel-img"/>
-                    </div>
-                    <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
-                        <img src="https://picsum.photos/id/123/1200/600" alt="carousel-img"/>
-                    </div>
-                    {/*Mobile --- start*/}
-                    <div className="carousel-caption d-block d-md-none" style={{top: '5%', bottom: 0}}>
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
-                        <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{
-                            color: 'white', padding: 0, margin: 0, textAlign: 'center'
-                        }}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại Học
-                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                    {/*Mobile --- end*/}
-                    {/*Desktop --- start*/}
-                    <div className="carousel-caption d-none d-md-block cus_bottom">
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
-                        <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại Học
-                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                    {/*Desktop --- end*/}
-                </div>
-                <div className="carousel-item">
-                    <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
-                        <img src="https://picsum.photos/id/456/1200/400" alt="carousel-img"/>
-                    </div>
-                    <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
-                        <img src="https://picsum.photos/id/456/1200/600" alt="carousel-img"/>
-                    </div>
-                    {/*Mobile --- start*/}
-                    <div className="carousel-caption d-block d-md-none" style={{top: '25%', bottom: 0}}>
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
-                        <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{
-                            color: 'white', padding: 0, margin: 0, textAlign: 'center'
-                        }}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại Học
-                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                    {/*Mobile --- end*/}
-                    {/*Desktop --- start*/}
-                    <div className="carousel-caption d-none d-md-block cus_bottom">
-                        <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
-                        <p style={{
-                            color: 'white',
-                            padding: 0,
-                            margin: 0,
-                            textAlign: 'center',
-                            marginTop: 20
-                        }}>CHFootball đã có kinh
-                            nghiệm trong thiết kết và sản xuất đồng phục
-                            bóng đá</p>
-                        <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
-                            tưởng của khách hàng lớn như: Trường Đại Học
-                            Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
-                            thông...</p>
-                        <button type="button" className="btn btn-dark rounded-pill" style={{marginTop: 15}}>Tư vấn đặt
-                            hàng
-                        </button>
-                    </div>
-                    {/*Desktop --- end*/}
-                </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"/>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"/>
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
-
+        <TCarousel/>
         {/*Mobile* ---start */}
         <div style={{marginTop: 20}}
              className={"d-flex flex-column d-md-none"}>
-            <h1>Vì sao lựa chọn</h1>
-            <h1>CHFoootball ?</h1>
+            <h1 style={{color:'black', fontWeight:'bold'}}>Vì sao lựa chọn</h1>
+            <h1 style={{color:'black', fontWeight:'bold'}}>CHFoootball ?</h1>
         </div>
         {/*Mobile ---end*/}
         {/*Desktop ---start*/}
         <div style={{marginTop: 20}}
              className={"d-none d-md-flex flex-row align-items-center justify-content-center"}>
-            <h1 className={"text-center"}>Vì sao lựa chọn CHFoootball ?</h1>
+            <h1 className={"text-center"} style={{color:'black', fontWeight:'bold'}}>Vì sao lựa chọn CHFoootball ?</h1>
         </div>
         {/*Desktop ---end*/}
 
@@ -326,10 +150,14 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         </div>
         {/*Desktop ---end*/}
 
-        <div className={"container-procedure"}>
+        {/*Mobile ---start*/}
+        <div className={"d-flex d-md-none container-procedure"}>
             <div className={"procedure-header"}>
                 <h3 className={"procedure-header-text"}>CHFootball</h3>
                 <h3 className={"procedure-header-text"}>hoạt động như thế nào ?</h3>
+                <div>
+                    <TButtonOrder/>
+                </div>
             </div>
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
@@ -353,7 +181,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
                 <div className={"procedure-content"}>
                     <b>Tư vấn thiết kế</b>
-                    <p>CHFootball tư vấn mẫu, màu sắc ... và lên Market để khách hàng duyệt và chỉnh sửa.</p>
+                    <p>CHFootball tư vấn mẫu, màu sắc và lên market để khách hàng duyệt và chỉnh sửa.</p>
                 </div>
             </div>
             <div>
@@ -389,6 +217,36 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
         </div>
+        {/*Mobile ---end*/}
+        {/*Desktop --start*/}
+        <div className={"d-none d-md-flex container-procedure__desktop"}>
+            <div className={"procedure-header__desktop"}>
+                <h3 className={"procedure-header-text"}>CHFootball</h3>
+                <h3 className={"procedure-header-text"}>hoạt động như thế nào ?</h3>
+
+            </div>
+            <div>
+                <img src={tiepnhanfix} className={"procedure-icon-img"} alt={"tiếp nhận"}/>
+                <b>Tiếp nhận yêu cầu</b>
+                <p>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo : 037 484 1234</p>
+            </div>
+            <div>
+                <img src={tuvanthietkeW} className={"procedure-icon-img"} alt={"thiết kế"}/>
+                <b>Tư vấn thiết kế</b>
+                <p>CHFootball tư vấn mẫu, màu sắc ... và lên Market để khách hàng duyệt và chỉnh sửa.</p>
+            </div>
+            <div>
+                <img src={baogiaW} className={"procedure-icon-img"} alt={"báo giá"}/>
+                <b>Báo giá</b>
+                <p>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn các loại vải và báo giá cho khách hàng</p>
+            </div>
+            <div>
+                <img src={giaohangfix} style={{width: 60, height: 60}} alt={"giao hàng"}/>
+                <b>Giao Hàng</b>
+                <p>Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao hàng đến địa chỉ của khách hàng.</p>
+            </div>
+        </div>
+        {/*Desktop --end*/}
 
         <div className={"container-product-type"}>
             <h3>Các sản phẩm của</h3>
