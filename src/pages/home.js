@@ -29,12 +29,7 @@ const items = [{
     src: 'https://picsum.photos/id/456/1200/400', altText: 'Slide 2', caption: 'Slide 2', key: 2,
 }, {
     src: 'https://picsum.photos/id/678/1200/400', altText: 'Slide 3', caption: 'Slide 3', key: 3,
-}, {
-    src: 'https://aressport.vn/wp-content/uploads/2020/04/Banner-Official.jpg',
-    altText: 'Slide 4',
-    caption: 'Slide 4',
-    key: 4,
-},];
+}];
 
 function Home() {
 
@@ -67,7 +62,7 @@ function Home() {
             <img
                 src={item.src}
                 alt={item.altText}
-                style={{width: '100%', height: 250}}/>
+                style={{width: '100%', height: 300}}/>
             <CarouselCaption
                 captionText={item.caption}
                 captionHeader={item.caption}
@@ -80,28 +75,52 @@ function Home() {
     ] = useState([{}, {}, {}, {}, {}, {}]);
 
     return (<div>
-        <Carousel
-            activeIndex={activeIndex}
-            next={next}
-            previous={previous}
-        >
-            <CarouselIndicators
-                items={items}
-                activeIndex={activeIndex}
-                onClickHandler={goToIndex}
-            />
-            {slides}
-            <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
-            />
-            <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
-            />
-        </Carousel>
+        {/*<Carousel*/}
+        {/*    activeIndex={activeIndex}*/}
+        {/*    next={next}*/}
+        {/*    previous={previous}*/}
+        {/*>*/}
+        {/*    <CarouselIndicators*/}
+        {/*        items={items}*/}
+        {/*        activeIndex={activeIndex}*/}
+        {/*        onClickHandler={goToIndex}*/}
+        {/*    />*/}
+        {/*    {slides}*/}
+        {/*    <CarouselControl*/}
+        {/*        direction="prev"*/}
+        {/*        directionText="Previous"*/}
+        {/*        onClickHandler={previous}*/}
+        {/*    />*/}
+        {/*    <CarouselControl*/}
+        {/*        direction="next"*/}
+        {/*        directionText="Next"*/}
+        {/*        onClickHandler={next}*/}
+        {/*    />*/}
+        {/*</Carousel>*/}
+
+        <div id="carouselExample" className="carousel slide">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src="https://via.placeholder.com/750x250" className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                    <img src="https://via.placeholder.com/750x250" className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                    <img src="https://via.placeholder.com/750x250" className="d-block w-100" alt="..."/>
+                </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+        </div>
 
         {/*Mobile* ---start */}
         <div className={"d-flex flex-column d-md-none"}>
