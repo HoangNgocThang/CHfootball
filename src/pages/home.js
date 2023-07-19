@@ -540,10 +540,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*        return <></>*/}
         {/*    })}*/}
         {/*</div>*/}
-
-        <div style={{width: '100%', height: 200}}>
-            <a href={"https://zalo.me/0374841234"}>Website</a>
-        </div>
+        
     </div>);
 }
 
