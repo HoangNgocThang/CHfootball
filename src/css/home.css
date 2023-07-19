@@ -236,7 +236,18 @@
     /*width: calc(50vw - 16px);*/
     height: 160px;
     width: auto;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
 }
+
+.container-product-type-img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 
 .container-product-type-wraptext {
     display: flex;
