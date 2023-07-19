@@ -233,11 +233,14 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         <img src={tiepnhanfix} className={"procedure-icon-img__desktop"} alt={"tiếp nhận"}/>
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
-                        <b className={"procedure-item-title__desktop"}>Tiếp nhận yêu cầu</b>
-                        <p className={"procedure-item-text__desktop"}>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo
-                            :
-                            037
-                            484 1234</p>
+                        <div style={{height: 45}}>
+                            <b className={"procedure-item-title__desktop"}>Tiếp nhận yêu cầu</b>
+                        </div>
+                        <div style={{display: 'flex', flex: 1}}>
+                            <p className={"procedure-item-text__desktop"}>Khách hàng gửi yêu cầu trực tiếp qua
+                                Hotline/Zalo:
+                                037 484 1234</p>
+                        </div>
                     </div>
                 </div>
                 <div className={"procedure-item-wrap-img__desktop"}>
@@ -252,11 +255,14 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         <img src={tuvanthietkeW} className={"procedure-icon-img__desktop"} alt={"thiết kế"}/>
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
-                        <b className={"procedure-item-title__desktop"}>Tư vấn thiết kế</b>
-                        <p className={"procedure-item-text__desktop"}>CHFootball tư vấn mẫu, màu sắc ... và lên Market
-                            để
-                            khách
-                            hàng duyệt và chỉnh sửa.</p>
+                        <div style={{height: 45}}>
+                            <b className={"procedure-item-title__desktop"}>Tư vấn thiết kế</b>
+                        </div>
+                        <div style={{display: 'flex', flex: 1}}>
+                            <p className={"procedure-item-text__desktop"}>CHFootball tư vấn mẫu, màu sắc ... và lên
+                                Market
+                                để khách hàng duyệt và chỉnh sửa.</p>
+                        </div>
                     </div>
                 </div>
                 <div className={"procedure-item-wrap-img__desktop"}>
@@ -271,11 +277,14 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         <img src={baogiaW} className={"procedure-icon-img__desktop"} alt={"báo giá"}/>
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
-                        <b className={"procedure-item-title__desktop"}>Báo giá</b>
-                        <p className={"procedure-item-text__desktop"}>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn
-                            các
-                            loại
-                            vải và báo giá cho khách hàng</p>
+                        <div style={{height: 45}}>
+                            <b className={"procedure-item-title__desktop"}>Báo giá</b>
+                        </div>
+                        <div style={{display: 'flex', flex: 1}}>
+                            <p className={"procedure-item-text__desktop"}>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư
+                                vấn
+                                các loại vải và báo giá cho khách hàng</p>
+                        </div>
                     </div>
                 </div>
                 <div className={"procedure-item-wrap-img__desktop"}>
@@ -290,12 +299,15 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         <img src={giaohangfix} className={"procedure-icon-img__desktop"} alt={"giao hàng"}/>
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
-                        <b className={"procedure-item-title__desktop"}>Giao Hàng</b>
-                        <p className={"procedure-item-text__desktop"}> Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao
-                            hàng
-                            đến
-                            địa chỉ của khách hàng.
-                        </p>
+                        <div style={{height: 45}}>
+                            <b className={"procedure-item-title__desktop"}>Giao Hàng</b>
+                        </div>
+                        <div style={{display: 'flex', flex: 1}}>
+                            <p className={"procedure-item-text__desktop"}> Sau khi hoàn thiện sản phẩm, CHFootball sẽ
+                                giao
+                                hàng đến địa chỉ của khách hàng.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -361,7 +373,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <h3 style={{fontWeight: 'bold'}}>{`Các sản phẩm của CHFootball`.toUpperCase()}</h3>
             <p style={{fontSize: 13, textAlign: 'center'}}>CHFootball có khả năng đa dạng sản xuất theo yêu cầu riêng
                 của khách hàng</p>
-            <div className={"container-product-type-row"} style={{gap:20}}>
+            <div className={"container-product-type-row"} style={{gap: 20}}>
                 <div className={"container-product-type-item"}>
                     <div>
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
