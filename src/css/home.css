@@ -80,9 +80,7 @@
 .container-procedure {
     display: flex;
     flex-direction: column;
-    /*background: #2f5acf;*/
-    /*background: #f1f1f1;*/
-    background: #2F2973;
+    background: #153870;
     margin: 10px 8px;
     padding: 20px;
     border-radius: 28px;
@@ -136,10 +134,72 @@
 .container-procedure__desktop {
     display: flex;
     flex-direction: row;
+    background: #153870;
+    margin: 10px 8px;
+    padding: 60px 20px;
+    border-radius: 28px;
+    gap: 15px;
 }
 
 .procedure-header__desktop {
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.procedure-content__desktop {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.procedure-item__desktop {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.procedure-item-wrap-img__desktop {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.procedure-icon-img__desktop {
+    width: 80px;
+    height: 80px;
+}
+
+.procedure-item-icon-right {
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
+    transform: rotate(270deg);
+}
+
+.procedure-item-title__desktop {
+    color: white;
+    margin-top: 10px;
+}
+
+.procedure-item-text__desktop {
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.procedure-item-wrap-text__desktop {
+    display: flex;
+    flex: 1;
     flex-direction: column;
 }
 

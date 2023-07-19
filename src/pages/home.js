@@ -36,18 +36,19 @@ function Home() {
         {/*Mobile* ---start */}
         <div style={{marginTop: 20}}
              className={"d-flex flex-column d-md-none"}>
-            <h1 style={{color:'black', fontWeight:'bold'}}>Vì sao lựa chọn</h1>
-            <h1 style={{color:'black', fontWeight:'bold'}}>CHFoootball ?</h1>
+            <h1 style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn</h1>
+            <h1 style={{color: 'black', fontWeight: 'bold'}}>CHFoootball ?</h1>
         </div>
         {/*Mobile ---end*/}
         {/*Desktop ---start*/}
         <div style={{marginTop: 20}}
              className={"d-none d-md-flex flex-row align-items-center justify-content-center"}>
-            <h1 className={"text-center"} style={{color:'black', fontWeight:'bold'}}>Vì sao lựa chọn CHFoootball ?</h1>
+            <h1 className={"text-center"} style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn CHFoootball
+                ?</h1>
         </div>
         {/*Desktop ---end*/}
 
-        {/*Mobile ---start*/}
+        {/*Mobile service ---start*/}
         <div className={'d-md-none container-service'}>
             <div className={"service-row"}>
                 <div className={"service-item"}>
@@ -99,8 +100,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
         </div>
-        {/*Mobile ---end*/}
-        {/*Desktop --start*/}
+        {/*Mobile service ---end*/}
+        {/*Desktop service ---start*/}
         <div className={"d-none d-md-flex container-service__desktop"}>
             <div className={"service-item"}>
                 <div style={{marginBottom: 12}}>
@@ -148,9 +149,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
         </div>
-        {/*Desktop ---end*/}
+        {/*Desktop service ----end*/}
 
-        {/*Mobile ---start*/}
+        {/*Mobile procedure ---start*/}
         <div className={"d-flex d-md-none container-procedure"}>
             <div className={"procedure-header"}>
                 <h3 className={"procedure-header-text"}>CHFootball</h3>
@@ -217,36 +218,86 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
         </div>
-        {/*Mobile ---end*/}
-        {/*Desktop --start*/}
+        {/*Mobile procedure ---end*/}
+        {/*Desktop procedure ---start*/}
         <div className={"d-none d-md-flex container-procedure__desktop"}>
             <div className={"procedure-header__desktop"}>
-                <h3 className={"procedure-header-text"}>CHFootball</h3>
-                <h3 className={"procedure-header-text"}>hoạt động như thế nào ?</h3>
+                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>CHFootball</h3>
+                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>hoạt động</h3>
+                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>như thế nào ?</h3>
+                <TButtonOrder/>
+            </div>
+            <div className="procedure-content__desktop">
+                <div className={"procedure-item__desktop"}>
+                    <div className={"procedure-item-wrap-img__desktop"}>
+                        <img src={tiepnhanfix} className={"procedure-icon-img__desktop"} alt={"tiếp nhận"}/>
+                    </div>
+                    <div className="procedure-item-wrap-text__desktop">
+                        <b className={"procedure-item-title__desktop"}>Tiếp nhận yêu cầu</b>
+                        <p className={"procedure-item-text__desktop"}>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo :
+                            037
+                            484 1234</p>
+                    </div>
+                </div>
+                <div className={"procedure-item-wrap-img__desktop"}>
+                    <img
+                        src={icArrowDown}
+                        className={"procedure-item-icon-right"}
+                        alt={"mũi tên"}
+                    />
+                </div>
+                <div className={"procedure-item__desktop"}>
+                    <div className={"procedure-item-wrap-img__desktop"}>
+                        <img src={tuvanthietkeW} className={"procedure-icon-img__desktop"} alt={"thiết kế"}/>
+                    </div>
+                    <div className="procedure-item-wrap-text__desktop">
+                        <b className={"procedure-item-title__desktop"}>Tư vấn thiết kế</b>
+                        <p className={"procedure-item-text__desktop"}>CHFootball tư vấn mẫu, màu sắc ... và lên Market để
+                            khách
+                            hàng duyệt và chỉnh sửa.</p>
+                    </div>
+                </div>
+                <div className={"procedure-item-wrap-img__desktop"}>
+                    <img
+                        src={icArrowDown}
+                        className={"procedure-item-icon-right"}
+                        alt={"mũi tên"}
+                    />
+                </div>
+                <div className={"procedure-item__desktop"}>
+                    <div className={"procedure-item-wrap-img__desktop"}>
+                        <img src={baogiaW} className={"procedure-icon-img__desktop"} alt={"báo giá"}/>
+                    </div>
+                    <div className="procedure-item-wrap-text__desktop">
+                        <b className={"procedure-item-title__desktop"}>Báo giá</b>
+                        <p className={"procedure-item-text__desktop"}>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn các
+                            loại
+                            vải và báo giá cho khách hàng</p>
+                    </div>
+                </div>
+                <div className={"procedure-item-wrap-img__desktop"}>
+                    <img
+                        src={icArrowDown}
+                        className={"procedure-item-icon-right"}
+                        alt={"mũi tên"}
+                    />
+                </div>
+                <div className={"procedure-item__desktop"}>
+                    <div className={"procedure-item-wrap-img__desktop"}>
+                        <img src={giaohangfix} className={"procedure-icon-img__desktop"} alt={"giao hàng"}/>
+                    </div>
+                    <div className="procedure-item-wrap-text__desktop">
+                        <b className={"procedure-item-title__desktop"}>Giao Hàng</b>
+                        <p className={"procedure-item-text__desktop"}> Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao hàng
+                            đến
+                            địa chỉ của khách hàng.
+                        </p>
+                    </div>
 
-            </div>
-            <div>
-                <img src={tiepnhanfix} className={"procedure-icon-img"} alt={"tiếp nhận"}/>
-                <b>Tiếp nhận yêu cầu</b>
-                <p>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo : 037 484 1234</p>
-            </div>
-            <div>
-                <img src={tuvanthietkeW} className={"procedure-icon-img"} alt={"thiết kế"}/>
-                <b>Tư vấn thiết kế</b>
-                <p>CHFootball tư vấn mẫu, màu sắc ... và lên Market để khách hàng duyệt và chỉnh sửa.</p>
-            </div>
-            <div>
-                <img src={baogiaW} className={"procedure-icon-img"} alt={"báo giá"}/>
-                <b>Báo giá</b>
-                <p>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn các loại vải và báo giá cho khách hàng</p>
-            </div>
-            <div>
-                <img src={giaohangfix} style={{width: 60, height: 60}} alt={"giao hàng"}/>
-                <b>Giao Hàng</b>
-                <p>Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao hàng đến địa chỉ của khách hàng.</p>
+                </div>
             </div>
         </div>
-        {/*Desktop --end*/}
+        {/*Desktop procedure ---end*/}
 
         <div className={"container-product-type"}>
             <h3>Các sản phẩm của</h3>
