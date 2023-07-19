@@ -234,7 +234,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
                         <b className={"procedure-item-title__desktop"}>Tiếp nhận yêu cầu</b>
-                        <p className={"procedure-item-text__desktop"}>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo :
+                        <p className={"procedure-item-text__desktop"}>Khách hàng gửi yêu cầu trực tiếp qua Hotline/Zalo
+                            :
                             037
                             484 1234</p>
                     </div>
@@ -252,7 +253,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
                         <b className={"procedure-item-title__desktop"}>Tư vấn thiết kế</b>
-                        <p className={"procedure-item-text__desktop"}>CHFootball tư vấn mẫu, màu sắc ... và lên Market để
+                        <p className={"procedure-item-text__desktop"}>CHFootball tư vấn mẫu, màu sắc ... và lên Market
+                            để
                             khách
                             hàng duyệt và chỉnh sửa.</p>
                     </div>
@@ -270,7 +272,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
                         <b className={"procedure-item-title__desktop"}>Báo giá</b>
-                        <p className={"procedure-item-text__desktop"}>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn các
+                        <p className={"procedure-item-text__desktop"}>Sau khi khách hàng chốt mẫu, CHFootball sẽ tư vấn
+                            các
                             loại
                             vải và báo giá cho khách hàng</p>
                     </div>
@@ -288,7 +291,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div className="procedure-item-wrap-text__desktop">
                         <b className={"procedure-item-title__desktop"}>Giao Hàng</b>
-                        <p className={"procedure-item-text__desktop"}> Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao hàng
+                        <p className={"procedure-item-text__desktop"}> Sau khi hoàn thiện sản phẩm, CHFootball sẽ giao
+                            hàng
                             đến
                             địa chỉ của khách hàng.
                         </p>
@@ -299,9 +303,11 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         </div>
         {/*Desktop procedure ---end*/}
 
+        {/*Mobile product type --- d-flex d-md-none start*/}
         <div className={"container-product-type"}>
-            <h3>Các sản phẩm của</h3>
-            <h3>CHFootball</h3>
+            <h3 style={{fontWeight: 'bold'}}>{`Các sản phẩm của CHFootball`.toUpperCase()}</h3>
+            <p style={{fontSize: 13, textAlign: 'center'}}>CHFootball có khả năng đa dạng sản xuất theo yêu cầu riêng
+                của khách hàng</p>
             <div className={"container-product-type-row"}>
                 <div className={"container-product-type-item"}>
                     <div>
@@ -310,7 +316,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Mẫu thiết kế</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 7</p>
-                        <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
@@ -320,9 +325,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                              alt={"mẫu không logo"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}>Mẫu không Logo có sẵn</p>
+                        <p className={"container-product-type-text"}>Mẫu không logo có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
-                        <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
@@ -336,7 +340,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Mẫu câu lạc bộ có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
-                        <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
@@ -347,12 +350,68 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <div className={"container-product-type-wraptext"}>
                         <p className={"container-product-type-text"}>Phụ kiện</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 1</p>
-                        <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
             </div>
         </div>
+        {/*Mobile product type --- end*/}
+        {/*Desktop product type --- start*/}
+        {/*<div className={"container-product-type"}>*/}
+        {/*    <h3>Các sản phẩm của</h3>*/}
+        {/*    <h3>CHFootball</h3>*/}
+        {/*    <div className={"container-product-type-row"}>*/}
+        {/*        <div className={"container-product-type-item"}>*/}
+        {/*            <div>*/}
+        {/*                <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>*/}
+        {/*            </div>*/}
+        {/*            <div className={"container-product-type-wraptext"}>*/}
+        {/*                <p className={"container-product-type-text"}>Mẫu thiết kế</p>*/}
+        {/*                <p className={"container-product-type-text2"}>Số lượng tối thiểu: 7</p>*/}
+        {/*                <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>*/}
+        {/*            </div>*/}
+        {/*            <div style={{width: '100%', height: 20}}/>*/}
+        {/*        </div>*/}
+        {/*        <div className={"container-product-type-item"}>*/}
+        {/*            <div>*/}
+        {/*                <img src={maukhonglogocosan} className={"container-product-type-img"}*/}
+        {/*                     alt={"mẫu không logo"}/>*/}
+        {/*            </div>*/}
+        {/*            <div className={"container-product-type-wraptext"}>*/}
+        {/*                <p className={"container-product-type-text"}>Mẫu không Logo có sẵn</p>*/}
+        {/*                <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>*/}
+        {/*                <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>*/}
+        {/*            </div>*/}
+        {/*            <div style={{width: '100%', height: 20}}/>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*    <div className={"container-product-type-row"}>*/}
+        {/*        <div className={"container-product-type-item"}>*/}
+        {/*            <div>*/}
+        {/*                <img src={maucaulacbocosan} className={"container-product-type-img"}*/}
+        {/*                     alt={"mẫu câu lạc bộ"}/>*/}
+        {/*            </div>*/}
+        {/*            <div className={"container-product-type-wraptext"}>*/}
+        {/*                <p className={"container-product-type-text"}>Mẫu câu lạc bộ có sẵn</p>*/}
+        {/*                <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>*/}
+        {/*                <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>*/}
+        {/*            </div>*/}
+        {/*            <div style={{width: '100%', height: 20}}/>*/}
+        {/*        </div>*/}
+        {/*        <div className={"container-product-type-item"}>*/}
+        {/*            <div>*/}
+        {/*                <img src={phukien} className={"container-product-type-img"} alt={"phụ kiện"}/>*/}
+        {/*            </div>*/}
+        {/*            <div className={"container-product-type-wraptext"}>*/}
+        {/*                <p className={"container-product-type-text"}>Phụ kiện</p>*/}
+        {/*                <p className={"container-product-type-text2"}>Số lượng tối thiểu: 1</p>*/}
+        {/*                <p className={"container-product-type-text3"}>Free in ấn theo yêu cầu</p>*/}
+        {/*            </div>*/}
+        {/*            <div style={{width: '100%', height: 20}}/>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*</div>*/}
+        {/*Desktop product type --- end*/}
 
         {/*<div className="container-products">*/}
         {/*    {data.map((e, i) => {*/}
