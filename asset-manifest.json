@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/CHfootball/static/css/main.9c1201cb.css",
+    "main.js": "/CHfootball/static/js/main.8ccdae7c.js",
+    "static/js/787.320d312e.chunk.js": "/CHfootball/static/js/787.320d312e.chunk.js",
+    "static/media/maucaulacbocosan.png": "/CHfootball/static/media/maucaulacbocosan.c6dfa653de8457c96c8a.png",
+    "static/media/mauthietke.png": "/CHfootball/static/media/mauthietke.6c87914a95cbd403672a.png",
+    "static/media/maukhonglogocosan.png": "/CHfootball/static/media/maukhonglogocosan.938680d6bd3606c19c74.png",
+    "static/media/phukien.png": "/CHfootball/static/media/phukien.5f921ae5564cc1c16f48.png",
+    "static/media/giao-hang-fix.png": "/CHfootball/static/media/giao-hang-fix.d68f0de26152e837dafa.png",
+    "static/media/nhieu-chat-lieu-vai.png": "/CHfootball/static/media/nhieu-chat-lieu-vai.15b8a1bc3e7ab78c83e7.png",
+    "static/media/cham-soc-khach-hang.png": "/CHfootball/static/media/cham-soc-khach-hang.a906410868f9b8a080a5.png",
+    "static/media/bao-gia-white.png": "/CHfootball/static/media/bao-gia-white.ccbb31f0e87dde736dae.png",
+    "static/media/mau-ma-da-dang.png": "/CHfootball/static/media/mau-ma-da-dang.b9906f944d9ac3a23316.png",
+    "static/media/tiep-nhan-fix.png": "/CHfootball/static/media/tiep-nhan-fix.f36e659f2648bf3ef354.png",
+    "static/media/tu-van-thiet-ke-white.png": "/CHfootball/static/media/tu-van-thiet-ke-white.f8e17e132404e2260ec5.png",
+    "static/media/tu-van-tan-tam.png": "/CHfootball/static/media/tu-van-tan-tam.3077369907621c5d3688.png",
+    "static/media/logoCHFootballBL.png": "/CHfootball/static/media/logoCHFootballBL.9f24cd0918099e1a75d8.png",
+    "static/media/down-arrow-white.png": "/CHfootball/static/media/down-arrow-white.27862a5bf02f4f6e17ab.png",
+    "index.html": "/CHfootball/index.html",
+    "main.9c1201cb.css.map": "/CHfootball/static/css/main.9c1201cb.css.map",
+    "main.8ccdae7c.js.map": "/CHfootball/static/js/main.8ccdae7c.js.map",
+    "787.320d312e.chunk.js.map": "/CHfootball/static/js/787.320d312e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c1201cb.css",
+    "static/js/main.8ccdae7c.js"
+  ]
+}
