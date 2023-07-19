@@ -5,13 +5,14 @@ import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
 import {
     createBrowserRouter,
     RouterProvider,
+    createHashRouter,
     Route,
     Link,
 } from "react-router-dom";
 import Home from "./pages/home";
 import Detail from "./pages/detail";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: (
@@ -43,7 +44,6 @@ function App() {
                     </div>
                 </div>
                 <div style={{display: 'flex', width: '100%', height: 5, marginTop: 58}}/>
-                <h1>aaa</h1>
                 <RouterProvider router={router} />
             </div>
         </div>
