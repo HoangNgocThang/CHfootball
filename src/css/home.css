@@ -39,6 +39,8 @@
 .container-service__desktop {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 8px;
     gap: 10px;
 }
@@ -56,6 +58,7 @@
     background: #f1f1f1;
     padding: 10px;
     border-radius: 20px;
+    max-width: 250px;
 }
 
 .service-img {
@@ -71,7 +74,9 @@
 
 .service-sub-title {
     font-size: 12px;
-    color: #6b818c;;
+    color: #6b818c;
+    margin: 0;
+    padding: 0;
 }
 
 /* Service --- end */
@@ -135,10 +140,12 @@
     display: flex;
     flex-direction: row;
     background: #153870;
-    margin: 10px 8px;
+    /*margin: 10px 8px;*/
+    margin:10px auto;
     padding: 60px 20px;
     border-radius: 28px;
     gap: 15px;
+    max-width: 1200px;
 }
 
 .procedure-header__desktop {
