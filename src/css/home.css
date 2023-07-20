@@ -326,11 +326,13 @@
 
 .container-products {
     display: flex;
-    align-items: center;
     background-color: white;
-    overflow-x: scroll;
-    white-space: nowrap;
     margin-top: 20px;
+    align-self: center;
+    justify-content: center;
+    /*align-items: center;*/
+    /*overflow-x: scroll;*/
+    /*white-space: nowrap;*/
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -348,25 +350,33 @@
     display: flex;
     flex-direction: column;
     flex: none;
-    width: calc(25vw - 4px);
     gap: 10px;
     margin-right: 10px;
     /*border-radius: 10px;*/
     /*overflow: hidden;*/
 }
 
-.itemcard-img {
-    width: calc(25vw - 4px);
-    height: auto;
-    object-fit: cover;
-}
-
-.itemcard-subtitle {
-    font-size: 12px;
-}
-
-.itemcard-buttons {
+.container-customer {
     display: flex;
     flex-direction: column;
-    width: auto;
+    margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-customer-wrap-imgs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.container-customer-img {
+    width: 82px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
 }
