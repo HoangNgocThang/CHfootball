@@ -15,6 +15,13 @@ import mauthietke from '../images/mauthietke.png';
 import phukien from '../images/phukien.png';
 import TCarousel from "../components/TCarousel";
 import TButtonOrder from "../components/TButtonOrder";
+import bosch from '../images/bosch.png';
+import bothongtin from '../images/bothongtin.png';
+import congdoan from '../images/congdoan.png';
+import coopbank from '../images/coopbank.png';
+import pv from '../images/pv.png';
+import shb from '../images/shb.jpg';
+import vnpdt from '../images/vnpdt.jpg';
 
 function Home() {
     const windowWidth = useRef(window.innerWidth);
@@ -321,46 +328,46 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <p style={{fontSize: 13, textAlign: 'center'}}>CHFootball có khả năng đa dạng sản xuất theo yêu cầu riêng
                 của khách hàng</p>
             <div className={"container-product-type-row"}>
-                <div className={"container-product-type-item"}>
+                <div className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}  style={{fontSize:14}}>Mẫu thiết kế</p>
+                        <p className={"container-product-type-text"} style={{fontSize: 14}}>Mẫu thiết kế</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 7</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
-                <div className={"container-product-type-item"}>
+                <div className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={maukhonglogocosan} className={"container-product-type-img"}
                              alt={"mẫu không logo"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"} style={{fontSize:14}}>Mẫu không logo có sẵn</p>
+                        <p className={"container-product-type-text"} style={{fontSize: 14}}>Mẫu không logo có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
             </div>
             <div className={"container-product-type-row"}>
-                <div className={"container-product-type-item"}>
+                <div className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={maucaulacbocosan} className={"container-product-type-img"}
                              alt={"mẫu câu lạc bộ"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"} style={{fontSize:14}}>Mẫu câu lạc bộ có sẵn</p>
+                        <p className={"container-product-type-text"} style={{fontSize: 14}}>Mẫu câu lạc bộ có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
-                <div className={"container-product-type-item"}>
+                <div className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={phukien} className={"container-product-type-img"} alt={"phụ kiện"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}  style={{fontSize:14}}>Phụ kiện</p>
+                        <p className={"container-product-type-text"} style={{fontSize: 14}}>Phụ kiện</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 1</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
@@ -440,8 +447,10 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         <div className={"d-flex container-product-type"}>
             <h3 style={{fontWeight: 'bold'}}>{`Khách hàng của CHFootball`}</h3>
 
-            <div className={"d"}>
-
+            <div style={{
+                display: 'flex', width: '100%', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'
+            }}>
+                <div style={{width: 150, height: 1, backgroundColor: 'black'}}></div>
             </div>
         </div>
         {/*Mobile customer ---end*/}
