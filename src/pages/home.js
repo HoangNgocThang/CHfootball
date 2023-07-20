@@ -458,40 +458,38 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
         </div>
         {/*Desktop product type --- end*/}
-
         {/*Mobile customer ---start*/}
-        <div className={"container-customer"}>
+        <div className={"d-md-none d-flex container-customer"}>
             <h3 style={{fontWeight: 'bold'}}>{`Khách hàng của CHFootball`}</h3>
             <div>
                 <div style={{width: 100, height: 1, backgroundColor: 'black'}}></div>
             </div>
             <div className={"container-customer-wrap-imgs"}>
-                <div style={{width: 35, height: 35}}>
-                    <img src={shb} style={{width: 35, height: 35, backgroundColor: 'white'}} alt={"shb"}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={shb} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"shb"}/>
                 </div>
-                <div style={{width: 35, height: 35}}>
-                    <img src={bothongtin} style={{width: 35, height: 35, backgroundColor: 'white'}} alt={"bothongtin"}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={bothongtin} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bothongtin"}/>
                 </div>
-                <div style={{width: 35, height: 35}}>
-                    <img src={bosch} style={{width: 35, height: 35, backgroundColor: 'white'}}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={bosch} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
                 </div>
-                <div style={{width: 35, height: 35}}>
-                    <img src={congdoan} style={{width: 35, height: 35, backgroundColor: 'white'}}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={congdoan} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
                 </div>
-                <div style={{width: 30, height: 30}}>
-                    <img src={buuchinhvienthong} style={{width: 35, height: 35, backgroundColor: 'white'}}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
                 </div>
-                <div style={{width: 35, height: 35}}>
-                    <img src={vnpdt} style={{width: 35, height: 35, backgroundColor: 'white'}}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={vnpdt} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
                 </div>
-                <div style={{width: 35, height: 35}}>
-                    <img src={coopbank} style={{width: 35, height: 35, backgroundColor: 'white'}}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={coopbank} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
                 </div>
-                <div style={{width: 30, height: 30}}>
-                    <img src={pv} style={{width: 35, height: 35, backgroundColor: 'white'}}/>
+                <div style={{width: 40, height: 40}}>
+                    <img src={pv} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
                 </div>
             </div>
-
             <div className="container-products">
                 <div className='iteamcard' >
                     <img src={c6} className={"container-customer-img"}/>
@@ -519,8 +517,66 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
         </div>
         {/*Mobile customer ---end*/}
-
-
+        {/*Desktop customer ---start*/}
+        <div className={"d-none d-md-flex container-customer"}>
+            <h3 style={{fontWeight: 'bold'}}>{`Khách hàng của CHFootball`}</h3>
+            <div>
+                <div style={{width: 100, height: 1, backgroundColor: 'black'}}></div>
+            </div>
+            <div className={"container-customer-wrap-imgs"}>
+                <div style={{width: 90, height: 90}}>
+                    <img src={shb} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"shb"}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={bothongtin} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"bothongtin"}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={bosch} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={congdoan} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 120, backgroundColor: 'white'}}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={vnpdt} style={{width: "auto", height: 100, backgroundColor: 'white'}}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={coopbank} style={{width: "auto", height: 100, backgroundColor: 'white'}}/>
+                </div>
+                <div style={{width: 90, height: 90}}>
+                    <img src={pv} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
+                </div>
+            </div>
+            <div className="container-products">
+                <div className='iteamcard' >
+                    <img src={c6} className={"container-customer-img2"}/>
+                    <img src={c1} className={"container-customer-img2"}/>
+                </div>
+                <div className='iteamcard'>
+                    <img src={c2} className={"container-customer-img2"}/>
+                    <img src={c3} className={"container-customer-img2"}/>
+                    <img src={c4} className={"container-customer-img2"}/>
+                </div>
+                <div className='iteamcard'>
+                    <img src={c5} className={"container-customer-img2"}/>
+                    <img src={c14} className={"container-customer-img2"}/>
+                    <img src={c7} className={"container-customer-img2"}/>
+                </div>
+                <div className='iteamcard'>
+                    <img src={c8} className={"container-customer-img2"}/>
+                    <img src={c9} className={"container-customer-img2"}/>
+                    <img src={c10} className={"container-customer-img2"}/>
+                </div>
+                <div className='iteamcard'>
+                    <img src={c11} className={"container-customer-img2"}/>
+                    <img src={c12} className={"container-customer-img2"}/>
+                    <img src={c13} className={"container-customer-img2"}/>
+                </div>
+            </div>
+        </div>
+        {/*Desktop customer ---end*/}
 
     </div>);
 }

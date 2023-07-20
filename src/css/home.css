@@ -289,6 +289,10 @@
     gap: 8px;
     margin-left: 25px;
     margin-right: 25px;
+    /*max-width: 1200px;*/
+    /*!*justify-content: center;*!*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
 }
 
 /* ProductType --- end */
@@ -368,7 +372,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
     gap: 10px;
@@ -376,6 +380,20 @@
 
 .container-customer-img {
     width: 82px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.container-customer-img2 {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.container-customer-img__desktop {
+    width: 120px;
     height: auto;
     border-radius: 10px;
     display: block;
