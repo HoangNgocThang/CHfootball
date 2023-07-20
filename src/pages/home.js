@@ -315,7 +315,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         </div>
         {/*Desktop procedure ---end*/}
 
-        {/*Mobile product type --- d-flex d-md-none start*/}
+        {/*Mobile product type --- start*/}
         <div className={"d-flex d-md-none container-product-type"}>
             <h3 style={{fontWeight: 'bold'}}>{`Các sản phẩm của CHFootball`.toUpperCase()}</h3>
             <p style={{fontSize: 13, textAlign: 'center'}}>CHFootball có khả năng đa dạng sản xuất theo yêu cầu riêng
@@ -326,7 +326,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}>Mẫu thiết kế</p>
+                        <p className={"container-product-type-text"}  style={{fontSize:14}}>Mẫu thiết kế</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 7</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
@@ -337,7 +337,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                              alt={"mẫu không logo"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}>Mẫu không logo có sẵn</p>
+                        <p className={"container-product-type-text"} style={{fontSize:14}}>Mẫu không logo có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
@@ -350,7 +350,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                              alt={"mẫu câu lạc bộ"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}>Mẫu câu lạc bộ có sẵn</p>
+                        <p className={"container-product-type-text"} style={{fontSize:14}}>Mẫu câu lạc bộ có sẵn</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 2</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
@@ -360,7 +360,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         <img src={phukien} className={"container-product-type-img"} alt={"phụ kiện"}/>
                     </div>
                     <div className={"container-product-type-wraptext"}>
-                        <p className={"container-product-type-text"}>Phụ kiện</p>
+                        <p className={"container-product-type-text"}  style={{fontSize:14}}>Phụ kiện</p>
                         <p className={"container-product-type-text2"}>Số lượng tối thiểu: 1</p>
                     </div>
                     <div style={{width: '100%', height: 20}}/>
