@@ -24,12 +24,10 @@ const TCarousel = () => {
                 <div className="carousel-caption d-block d-md-none" style={{top: '25%', bottom: 0}}>
                     <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
                     <p style={{
-                        color: 'white', padding: 0, margin: 0, textAlign: 'center', marginTop: 20, fontSize: 12
-                    }}>CHFootball đã có kinh
-                        nghiệm trong thiết kết và sản xuất đồng phục
-                        bóng đá</p>
+                        color: 'white', padding: 0, margin: 0, textAlign: 'center', marginTop: 20, fontSize: 14
+                    }}>CHFootball đã có kinh nghiệm trong thiết kết và sản xuất đồng phục bóng đá.</p>
                     <p style={{
-                        color: 'white', padding: 0, margin: 0, textAlign: 'center', fontSize: 12
+                        color: 'white', padding: 0, margin: 0, textAlign: 'center', fontSize: 14
                     }}>Nhận được nhiều sự tin
                         tưởng của khách hàng lớn như: Trường Đại Học
                         Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
@@ -42,9 +40,7 @@ const TCarousel = () => {
                     <h1 style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>CHFOOTBALL</h1>
                     <p style={{
                         color: 'white', padding: 0, margin: 0, textAlign: 'center', marginTop: 20
-                    }}>CHFootball đã có kinh
-                        nghiệm trong thiết kết và sản xuất đồng phục
-                        bóng đá</p>
+                    }}>CHFootball đã có kinh nghiệm trong thiết kết và sản xuất đồng phục bóng đá.</p>
                     <p style={{color: 'white', padding: 0, margin: 0, textAlign: 'center'}}>Nhận được nhiều sự tin
                         tưởng của khách hàng lớn như: Trường Đại Học
                         Công Đoàn, Ngân hàng SHB, Ngân hàng CoopBank, Ngân hàng PVCombank, Bộ Thông tin và Truyền
