@@ -141,7 +141,7 @@
     flex-direction: row;
     background: #153870;
     /*margin: 10px 8px;*/
-    margin:10px auto;
+    margin: 10px auto;
     padding: 60px 20px;
     border-radius: 28px;
     gap: 15px;
@@ -400,6 +400,7 @@
     display: block;
 }
 
+/* container tech --- start*/
 .container-tech {
     display: flex;
     flex-direction: column;
@@ -435,4 +436,7 @@
     font-weight: bold;
     margin: 0;
     padding: 0;
+    color: rgb(5, 34, 74);
 }
+
+/* container tech --- end*/

@@ -43,3 +43,30 @@
   height: 70%;
 }
 /* Header --- end */
+
+
+/* footer --- start*/
+.container-footer {
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: rgb(5, 31, 77);
+  padding: 10px;
+}
+
+.item-footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.text-footer {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+/* footer --- end*/

@@ -1,6 +1,8 @@
 import React from "react";
 import '../../src/css/home.css';
 import TButtonOrder from "./TButtonOrder";
+import bn1 from '../images/bn1.jpg';
+import bn2 from '../images/bn2.jpg';
 
 const TCarousel = () => {
     return (<div id="carouselExampleCaptions" className="carousel slide">
@@ -15,10 +17,12 @@ const TCarousel = () => {
         <div className="carousel-inner">
             <div className="carousel-item active">
                 <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
-                    <img src="https://picsum.photos/id/678/1200/400" alt="carousel-img"/>
+                    {/*<img src="https://picsum.photos/id/678/1200/400" alt="carousel-img"/>*/}
+                    <img src={bn1} alt="carousel-img" style={{height: 400, width: 1200}}/>
                 </div>
                 <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
-                    <img src="https://picsum.photos/id/678/1200/600" alt="carousel-img"/>
+                    {/*<img src="https://picsum.photos/id/678/1200/600" alt="carousel-img"/>*/}
+                    <img src={bn1} alt="carousel-img" style={{height: 600, width: 1200}}/>
                 </div>
                 {/*Mobile --- start*/}
                 <div className="carousel-caption d-block d-md-none" style={{top: '25%', bottom: 0}}>
@@ -51,10 +55,12 @@ const TCarousel = () => {
             </div>
             <div className="carousel-item">
                 <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
-                    <img src="https://picsum.photos/id/123/1200/400" alt="carousel-img"/>
+                    {/*<img src="https://picsum.photos/id/123/1200/400" alt="carousel-img"/>*/}
+                    <img src={bn2} alt="carousel-img" style={{height: 400, width: 1200}}/>
                 </div>
                 <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
-                    <img src="https://picsum.photos/id/123/1200/600" alt="carousel-img"/>
+                    {/*<img src="https://picsum.photos/id/123/1200/600" alt="carousel-img"/>*/}
+                    <img src={bn2} alt="carousel-img" style={{height: 600, width: 1200}}/>
                 </div>
                 {/*Mobile --- start*/}
                 <div className="carousel-caption d-block d-md-none" style={{top: '25%', bottom: 0}}>
@@ -91,10 +97,12 @@ const TCarousel = () => {
             </div>
             <div className="carousel-item">
                 <div className="d-none d-md-block w-100" style={{height: 'auto'}}>
-                    <img src="https://picsum.photos/id/456/1200/400" alt="carousel-img"/>
+                    {/*<img src="https://picsum.photos/id/456/1200/400" alt="carousel-img"/>*/}
+                    <img src={bn1} alt="carousel-img" style={{height: 400, width: 1200}}/>
                 </div>
                 <div className="d-block d-md-none w-100" style={{height: 'auto'}}>
-                    <img src="https://picsum.photos/id/456/1200/600" alt="carousel-img"/>
+                    {/*<img src="https://picsum.photos/id/456/1200/600" alt="carousel-img"/>*/}
+                    <img src={bn1} alt="carousel-img" style={{height: 600, width: 1200}}/>
                 </div>
                 {/*Mobile --- start*/}
                 <div className="carousel-caption d-block d-md-none" style={{top: '25%', bottom: 0}}>
