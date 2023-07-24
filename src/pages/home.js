@@ -581,7 +581,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Desktop customer ---end*/}
 
         {/*Mobile --- start*/}
-        <div className={'container-tech'}>
+        <div className={'d-md-none d-flex container-tech'}>
             <div className={'container-tech-header'}>
                 <h4 style={{fontWeight: 'bold'}}>{`Công nghệ mới trong sản xuất của `}</h4>
                 <h4 style={{fontWeight: 'bold'}}>CHFOOTBALL</h4>
@@ -609,6 +609,36 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
         </div>
         {/*Mobile --- end*/}
+
+        {/*Desktop --- start*/}
+        <div className={'d-none d-md-flex container-tech'}>
+            <div className={'container-tech-header'}>
+                <h4 style={{fontWeight: 'bold'}}>{`Công nghệ mới trong sản xuất của`}</h4>
+                <h4 style={{fontWeight: 'bold'}}>CHFOOTBALL</h4>
+            </div>
+            <div className={'container-tech-content'}>
+                <div className={'tech-item'}>
+                    <img src={c9} style={{width: 300, height: 'auto'}}/>
+                    <div style={{height: 36}}>
+                        <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
+                    </div>
+                </div>
+                <div className={'tech-item'}>
+                    <img src={c9} style={{width: 300, height: 'auto'}}/>
+                    <div style={{height: 36}}>
+                        <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
+                    </div>
+                </div>
+                <div className={'tech-item'}>
+                    <img src={c9} style={{width: 300, height: 'auto'}}/>
+                    <div style={{height: 36}}>
+                        <p className={'tech-item-text'}>CÔNG NGHỆ</p>
+                        <p className={'tech-item-text'}>IN/THÊU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/*Desktop --- end*/}
     </div>);
 }
 
