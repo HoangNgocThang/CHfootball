@@ -469,7 +469,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <img src={shb} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"shb"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={bothongtin} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bothongtin"}/>
+                    <img src={bothongtin} style={{width: "auto", height: 40, backgroundColor: 'white'}}
+                         alt={"bothongtin"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
                     <img src={bosch} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
@@ -491,7 +492,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
             <div className="container-products">
-                <div className='iteamcard' >
+                <div className='iteamcard'>
                     <img src={c6} className={"container-customer-img"}/>
                     <img src={c1} className={"container-customer-img"}/>
                     <img src={c2} className={"container-customer-img"}/>
@@ -528,7 +529,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <img src={shb} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"shb"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={bothongtin} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"bothongtin"}/>
+                    <img src={bothongtin} style={{width: "auto", height: 90, backgroundColor: 'white'}}
+                         alt={"bothongtin"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
                     <img src={bosch} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
@@ -550,7 +552,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
             <div className="container-products">
-                <div className='iteamcard' >
+                <div className='iteamcard'>
                     <img src={c6} className={"container-customer-img2"}/>
                     <img src={c1} className={"container-customer-img2"}/>
                 </div>
@@ -578,6 +580,35 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         </div>
         {/*Desktop customer ---end*/}
 
+        {/*Mobile --- start*/}
+        <div className={'container-tech'}>
+            <div className={'container-tech-header'}>
+                <h4 style={{fontWeight: 'bold'}}>{`Công nghệ mới trong sản xuất của `}</h4>
+                <h4 style={{fontWeight: 'bold'}}>CHFOOTBALL</h4>
+            </div>
+            <div className={'container-tech-content'}>
+                <div className={'tech-item'}>
+                    <img src={c9} style={{width: 100, height: 'auto'}}/>
+                    <div style={{height: 36}}>
+                        <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
+                    </div>
+                </div>
+                <div className={'tech-item'}>
+                    <img src={c9} style={{width: 100, height: 'auto'}}/>
+                    <div style={{height: 36}}>
+                        <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
+                    </div>
+                </div>
+                <div className={'tech-item'}>
+                    <img src={c9} style={{width: 100, height: 'auto'}}/>
+                    <div style={{height: 36}}>
+                        <p className={'tech-item-text'}>CÔNG NGHỆ</p>
+                        <p className={'tech-item-text'}>IN/THÊU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/*Mobile --- end*/}
     </div>);
 }
 
