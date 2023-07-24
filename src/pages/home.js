@@ -654,20 +654,20 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={'container-tech-content'}>
                 <div className={'tech-item'}>
-                    <img src={tech1} style={{width: 300, height: 'auto'}}/>
-                    <div style={{height: 36}}>
+                    <img src={tech1} style={{maxHeight: 157, width: 'auto'}}/>
+                    <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech2} style={{width: 300, height: 'auto'}}/>
-                    <div style={{height: 36}}>
+                    <img src={tech2} style={{maxHeight: 157, width: 'auto'}}/>
+                    <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech3} style={{width: 300, height: 'auto'}}/>
-                    <div style={{height: 36}}>
+                    <img src={tech3} style={{maxHeight: 157, width: 'auto'}}/>
+                    <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ</p>
                         <p className={'tech-item-text'}>IN/THÊU</p>
                     </div>
