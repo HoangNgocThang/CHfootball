@@ -580,7 +580,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         </div>
         {/*Desktop customer ---end*/}
 
-        {/*Mobile --- start*/}
+        {/*Mobile tech --- start*/}
         <div className={'d-md-none d-flex container-tech'}>
             <div className={'container-tech-header'}>
                 <h4 style={{fontWeight: 'bold'}}>{`Công nghệ mới trong sản xuất của `}</h4>
@@ -608,9 +608,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
         </div>
-        {/*Mobile --- end*/}
+        {/*Mobile tech --- end*/}
 
-        {/*Desktop --- start*/}
+        {/*Desktop tech --- start*/}
         <div className={'d-none d-md-flex container-tech'}>
             <div className={'container-tech-header'}>
                 <h4 style={{fontWeight: 'bold'}}>{`Công nghệ mới trong sản xuất của`}</h4>
@@ -638,7 +638,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 </div>
             </div>
         </div>
-        {/*Desktop --- end*/}
+        {/*Desktop tech --- end*/}
     </div>);
 }
 
