@@ -47,8 +47,6 @@
 
 /* footer --- start*/
 .container-footer {
-  /*position: absolute;*/
-  /*bottom: 0;*/
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -68,5 +66,14 @@
   font-size: 14px;
   margin: 0;
   padding: 0;
+}
+
+.container-footer__desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  background-color: rgb(5, 31, 77);
+  padding: 10px;
 }
 /* footer --- end*/
