@@ -85,6 +85,15 @@ function Home() {
 
     return (<div>
         <TCarousel/>
+
+        {/*<button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">*/}
+        {/*    Launch demo modal*/}
+        {/*</button>*/}
+
+        {/*<button className="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first*/}
+        {/*    modal*/}
+        {/*</button>*/}
+
         {/*Mobile* ---start */}
         <div style={{marginTop: 20}}
              className={"d-flex flex-column d-md-none"}>
@@ -654,19 +663,41 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={'container-tech-content'}>
                 <div className={'tech-item'}>
-                    <img src={tech1} style={{maxHeight: 157, width: 'auto'}}/>
+                    <img src={tech1} style={{
+                        width: 272.912,
+                        height: 157.207
+                    }}
+                         onClick={() => {
+                             let modal = document.getElementById("myModalVai");
+                             modal.style.display = "flex";
+                         }}/>
                     <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech2} style={{maxHeight: 157, width: 'auto'}}/>
+                    <img src={tech2} style={{
+                        width: 272.912,
+                        height: 157.207
+                    }}
+                         onClick={() => {
+                             let modal = document.getElementById("myModalMay");
+                             modal.style.display = "flex";
+                         }}/>
                     <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech3} style={{maxHeight: 157, width: 'auto'}}/>
+                    <img src={tech3} style={{
+                        width: 272.912,
+                        height: 157.207
+                    }}
+                         onClick={() => {
+                             let modal = document.getElementById("myModalInTheu");
+                             modal.style.display = "flex";
+                         }}
+                    />
                     <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ</p>
                         <p className={'tech-item-text'}>IN/THÊU</p>
@@ -675,6 +706,85 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
         </div>
         {/*Desktop tech --- end*/}
+
+        {/*Model Công nghệ vải --- start */}
+        {/*<div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"*/}
+        {/*     tabIndex="-1">*/}
+        {/*    <div className="modal-dialog modal-dialog-centered">*/}
+        {/*        <div className="modal-content">*/}
+        {/*            <div className="modal-header">*/}
+        {/*                <h1 className="modal-title fs-5" id="exampleModalToggleLabel">Công nghệ vải</h1>*/}
+        {/*                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>*/}
+        {/*            </div>*/}
+        {/*            <div className="modal-body">*/}
+        {/*                <div style={{*/}
+        {/*                    display: 'flex', flexDirection: 'row'*/}
+        {/*                }}>*/}
+        {/*                    <div style={{*/}
+        {/*                        textAlign: 'left',*/}
+        {/*                        display: 'flex',*/}
+        {/*                        flexDirection: 'column',*/}
+        {/*                        justifyContent: "flex-start",*/}
+        {/*                    }}>*/}
+        {/*                        <p>Dây chuyền sản xuất của CHF có nhiều loại vải phù hợp đặc thù khí hậu ở Việt Nam với*/}
+        {/*                            chất*/}
+        {/*                            liệu co dãn, thấm hút mồ hôi. Các loại vải phổ biến sử dụng nhiều như:</p>*/}
+        {/*                        <div style={{display: 'flex', flexDirection: 'row'}}>*/}
+        {/*                            <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>*/}
+        {/*                                <p>- Vải thun lạnh</p>*/}
+        {/*                                <p>- Vải mè thái</p>*/}
+        {/*                                <p>- Vải adidas vuông</p>*/}
+        {/*                                <p>- Vải adidas mịn</p>*/}
+        {/*                                <p>- Vải kim cương 4 chiều</p>*/}
+        {/*                            </div>*/}
+
+        {/*                        </div>*/}
+        {/*                    </div>*/}
+        {/*                    <img src={detailtech1} style={{width: 200, height: 200}}/>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*            <div className="modal-footer">*/}
+        {/*                /!*<button className="btn btn-primary" data-bs-target="#exampleModalToggle2"*!/*/}
+        {/*                /!*        data-bs-toggle="modal">Open second modal*!/*/}
+        {/*                /!*</button>*!/*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*</div>*/}
+        <div id="myModalVai" className="modal--thanghn">
+            <div className="modal-content--thanghn">
+                <span className="close" onClick={() => {
+                    var modal = document.getElementById("myModalVai");
+                    modal.style.display = "none";
+                }}>&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+        {/*Model Công nghệ vải --- end */}
+
+        {/*Model Công nghệ may --- start*/}
+        <div id="myModalMay" className="modal--thanghn">
+            <div className="modal-content--thanghn">
+                <span className="close" onClick={() => {
+                    var modal = document.getElementById("myModalMay");
+                    modal.style.display = "none";
+                }}>&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+        {/*Model Công nghệ may --- end*/}
+
+        {/*Model Công nghệ in thêu --- start*/}
+        <div id="myModalInTheu" className="modal--thanghn">
+            <div className="modal-content--thanghn">
+                <span className="close" onClick={() => {
+                    var modal = document.getElementById("myModalInTheu");
+                    modal.style.display = "none";
+                }}>&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+        {/*Model Công nghệ in thêu  --- end*/}
     </div>);
 }
 
