@@ -52,7 +52,7 @@ const ModalInTheuMobile = () => {
     //     </div>
     // )
 
-    return (<div id="myModalInTheuM" className="modal--thanghn">
+    return (<div id="myModalInTheuM" className="d-md-none modal--thanghn">
         <div className="modal-content--thanghn2">
                 <span style={{marginLeft: 15, cursor: 'pointer'}}
                       className="close2" onClick={() => {

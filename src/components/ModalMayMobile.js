@@ -6,7 +6,7 @@ import detailtech1 from "../images/detailtech1.jpg";
 
 const ModalMayMobile = () => {
 
-    return (<div id="myModalMayM" className="modal--thanghn">
+    return (<div id="myModalMayM" className="d-md-none modal--thanghn">
         <div className="modal-content--thanghn2">
               <span style={{marginLeft: 15, cursor: 'pointer'}}
                     className="close2" onClick={() => {
