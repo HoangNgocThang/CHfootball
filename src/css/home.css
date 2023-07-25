@@ -468,6 +468,16 @@
     min-width: 795px;
 }
 
+.modal-content--thanghn2 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    min-width: 300px;
+}
+
+
 /* The Close Button */
 .close {
     color: #aaaaaa;
@@ -483,4 +493,11 @@
     cursor: pointer;
 }
 
+
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+}
 /* Modal thanghn --- end */

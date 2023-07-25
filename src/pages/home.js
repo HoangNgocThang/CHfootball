@@ -71,6 +71,9 @@ import pk5 from '../images/pk5.jpg';
 import pk6 from '../images/pk6.jpg';
 import pk7 from '../images/pk7.jpg';
 import pk8 from '../images/pk8.jpg';
+import ModalVaiMobile from "../components/ModalVaiMobile";
+import ModalInTheuMobile from "../components/ModalInTheuMobile";
+import ModalMayMobile from "../components/ModalMayMobile";
 
 
 function Home() {
@@ -625,19 +628,33 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={'container-tech-content'}>
                 <div className={'tech-item'}>
-                    <img src={tech1} style={{width: 110, height: 68}}/>
+                    <img src={tech1} style={{width: 110, height: 68}}
+                         onClick={() => {
+                             let modal = document.getElementById("myModalVaiM");
+                             modal.style.display = "flex";
+                         }}
+                    />
                     <div style={{height: 36, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech2} style={{width: 110, height: 68}}/>
+                    <img src={tech2} style={{width: 110, height: 68}}
+                         onClick={() => {
+                             let modal = document.getElementById("myModalMayM");
+                             modal.style.display = "flex";
+                         }}
+                    />
                     <div style={{height: 36, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech3} style={{width: 110, height: 68}}/>
+                    <img src={tech3} style={{width: 110, height: 68}}
+                         onClick={() => {
+                             let modal = document.getElementById("myModalInTheuM");
+                             modal.style.display = "flex";
+                         }}/>
                     <div style={{height: 36, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ</p>
                         <p className={'tech-item-text'}>IN/THÊU</p>
@@ -691,14 +708,17 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
 
         {/*Model Công nghệ vải --- start */}
         <ModalVaiDesktop/>
+        <ModalVaiMobile/>
         {/*Model Công nghệ vải --- end */}
 
         {/*Model Công nghệ may --- start*/}
         <ModalMayDesktop/>
+        <ModalMayMobile/>
         {/*Model Công nghệ may --- end*/}
 
         {/*Model Công nghệ in thêu --- start*/}
         <ModalInTheuDesktop/>
+        <ModalInTheuMobile/>
         {/*Model Công nghệ in thêu  --- end*/}
     </div>);
 }
