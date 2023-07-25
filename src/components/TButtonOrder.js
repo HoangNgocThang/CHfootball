@@ -8,4 +8,4 @@ const TButtonOrder = () => {
     )
 }
 
-export default  TButtonOrder;
+export default React.memo(TButtonOrder);

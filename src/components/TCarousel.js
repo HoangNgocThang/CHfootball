@@ -151,4 +151,4 @@ const TCarousel = () => {
     </div>)
 }
 
-export default TCarousel
+export default React.memo(TCarousel);

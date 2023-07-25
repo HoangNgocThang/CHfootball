@@ -1,5 +1,10 @@
 import '../css/home.css';
 import React, {useState, useRef} from 'react';
+import TCarousel from "../components/TCarousel";
+import TButtonOrder from "../components/TButtonOrder";
+import ModalInTheuDesktop from "../components/ModalInTheuDesktop";
+import ModalMayDesktop from "../components/ModalMayDesktop";
+import ModalVaiDesktop from "../components/ModalVaiDesktop";
 import chamsockhachhang from '../images/cham-soc-khach-hang.png';
 import maumadadang from '../images/mau-ma-da-dang.png';
 import nhieuchatlieuvai from '../images/nhieu-chat-lieu-vai.png';
@@ -13,8 +18,6 @@ import maucaulacbocosan from '../images/maucaulacbocosan.png';
 import maukhonglogocosan from '../images/maukhonglogocosan.png';
 import mauthietke from '../images/mauthietke.png';
 import phukien from '../images/phukien.png';
-import TCarousel from "../components/TCarousel";
-import TButtonOrder from "../components/TButtonOrder";
 import shb from '../images/shb.jpg';
 import bothongtin from '../images/bothongtin.png';
 import congdoan from '../images/congdoan.png';
@@ -23,7 +26,6 @@ import vnpdt from '../images/vnpdt.jpg';
 import coopbank from '../images/coopbank.png';
 import pv from '../images/pv.png';
 import buuchinhvienthong from '../images/buuchinhvienthong.jpg';
-
 import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
 import c3 from '../images/c3.png';
@@ -38,15 +40,9 @@ import c11 from '../images/c11.jpg';
 import c12 from '../images/c12.jpg';
 import c13 from '../images/c13.jpg';
 import c14 from '../images/c14.jpg';
-
 import tech1 from '../images/tech1.jpg';
 import tech2 from '../images/tech2.jpg';
 import tech3 from '../images/tech3.jpg';
-import detailtech1 from '../images/detailtech1.jpg';
-import detailtech21 from '../images/detailtech21.jpg';
-import detailtech22 from '../images/detailtech22.jpeg';
-import detailtech31 from '../images/detailtech31.png';
-import detailtech32 from '../images/detailtech32.jpg';
 
 import clb1 from '../images/clb1.jpg';
 import clb2 from '../images/clb2.jpg';
@@ -75,6 +71,7 @@ import pk5 from '../images/pk5.jpg';
 import pk6 from '../images/pk6.jpg';
 import pk7 from '../images/pk7.jpg';
 import pk8 from '../images/pk8.jpg';
+
 
 function Home() {
     const windowWidth = useRef(window.innerWidth);
@@ -657,9 +654,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={'container-tech-content'}>
                 <div className={'tech-item'}>
-                    <img src={tech1} style={{
-                        width: 272.912, height: 157.207
-                    }}
+                    <img src={tech1} style={{width: 272.912, height: 157.207}}
                          onClick={() => {
                              let modal = document.getElementById("myModalVai");
                              modal.style.display = "flex";
@@ -669,9 +664,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech2} style={{
-                        width: 272.912, height: 157.207
-                    }}
+                    <img src={tech2} style={{width: 272.912, height: 157.207}}
                          onClick={() => {
                              let modal = document.getElementById("myModalMay");
                              modal.style.display = "flex";
@@ -681,9 +674,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                 </div>
                 <div className={'tech-item'}>
-                    <img src={tech3} style={{
-                        width: 272.912, height: 157.207
-                    }}
+                    <img src={tech3} style={{width: 272.912, height: 157.207}}
                          onClick={() => {
                              let modal = document.getElementById("myModalInTheu");
                              modal.style.display = "flex";
@@ -699,138 +690,15 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Desktop tech --- end*/}
 
         {/*Model Công nghệ vải --- start */}
-        <div id="myModalVai" className="modal--thanghn">
-            <div className="modal-content--thanghn">
-                <span style={{paddingRight: 5, paddingLeft: 5}}
-                      className="close" onClick={() => {
-                    var modal = document.getElementById("myModalVai");
-                    modal.style.display = "none";
-                }}>&times;</span>
-                <div style={{display: 'flex', flex: 1, gap: 10}}>
-                    <div style={{
-                        display: 'flex',
-                        flex: 1,
-                        textAlign: 'left',
-                        flexDirection: 'column',
-                        justifyContent: "flex-start", // position: 'relative'
-                    }}>
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            backgroundColor: "rgb(5, 31, 77)", // position: 'absolute',
-                            // top: 10, left: 10,
-                            // padding: 20,
-                        }}>
-                            <p style={{fontSize: 30, color: 'white', margin: 0, padding: 0}}>CÔNG NGHỆ VẢI</p>
-                        </div>
-                        <p style={{marginTop: 30}}>Dây chuyền sản xuất của CHF có nhiều loại vải phù hợp đặc thù khí hậu
-                            ở Việt Nam với
-                            chất liệu co dãn, thấm hút mồ hôi. Các loại vải phổ biến sử dụng nhiều như:</p>
-                        <div style={{display: 'flex', flexDirection: 'row'}}>
-                            <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
-                                <p>- Vải thun lạnh</p>
-                                <p>- Vải mè thái</p>
-                                <p>- Vải adidas vuông</p>
-                                <p>- Vải adidas mịn</p>
-                                <p>- Vải kim cương 4 chiều</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{
-                        display: 'flex', flex: 1,
-                    }}>
-                        <img src={detailtech1} style={{width: 400, height: 400}}/>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ModalVaiDesktop/>
         {/*Model Công nghệ vải --- end */}
 
         {/*Model Công nghệ may --- start*/}
-        <div id="myModalMay" className="modal--thanghn">
-            <div className="modal-content--thanghn">
-                <span style={{paddingRight: 5, paddingLeft: 5}}
-                      className="close" onClick={() => {
-                    var modal = document.getElementById("myModalMay");
-                    modal.style.display = "none";
-                }}>&times;</span>
-                <div style={{display: 'flex', flex: 1, gap: 10}}>
-                    <div style={{
-                        textAlign: 'left',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: "flex-start",
-                        flex: 1
-                        // position: 'relative'
-                    }}>
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            backgroundColor: "rgb(5, 31, 77)", // position: 'absolute',
-                            // top: 10, left: 10,
-                            // padding: 20,
-                        }}>
-                            <p style={{fontSize: 30, color: 'white', margin: 0, padding: 0}}>CÔNG NGHỆ MAY</p>
-                        </div>
-                        <p style={{marginTop: 30}}>Với đội ngũ hơn 50 thợ may kinh nghiệm cùng với nhiều máy móc hiện
-                            đại, CHF tự tin mang đến khách hàng những sản phẩm có chất lượng tốt nhất từ số lượng nhỏ
-                            đến số lượng lớn.</p>
-                    </div>
-                    <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
-                        <img src={detailtech21} style={{width: 219, height: 153, alignSelf: "start"}}/>
-                        <img src={detailtech22} style={{width: 219, height: 153, alignSelf: 'end'}}/>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ModalMayDesktop/>
         {/*Model Công nghệ may --- end*/}
 
         {/*Model Công nghệ in thêu --- start*/}
-        <div id="myModalInTheu" className="modal--thanghn">
-            <div className="modal-content--thanghn">
-                <span style={{paddingRight: 5, paddingLeft: 5}}
-                      className="close" onClick={() => {
-                    var modal = document.getElementById("myModalInTheu");
-                    modal.style.display = "none";
-                }}>&times;</span>
-                <div style={{display: 'flex', flex: 1, gap: 10}}>
-                    <div style={{
-                        display: 'flex',
-                        flex: 1,
-                        textAlign: 'left',
-                        flexDirection: 'column',
-                        justifyContent: "flex-start", // position: 'relative'
-                    }}>
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            backgroundColor: "rgb(5, 31, 77)", // position: 'absolute',
-                            // top: 10, left: 10,
-                            // padding: 20,
-                        }}>
-                            <p style={{fontSize: 30, color: 'white', margin: 0, padding: 0}}>CÔNG NGHỆ IN-THÊU</p>
-                        </div>
-                        <p style={{marginTop: 30}}>Ngoài in ấn logo; tên; số, CHF còn cung cấp thêm các sản phẩm thêu,
-                            đáp ứng đầy đủ nhu cầu của khách hàng.
-                            Các công nghệ in chủ yếu được CHF sử dụng:</p>
-                        <div style={{display: 'flex', flexDirection: 'row'}}>
-                            <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
-                                <p>- In decal</p>
-                                <p>- In pet</p>
-                                <p>- In mực chuyển nhiệt</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
-                        <img src={detailtech31} style={{width: 219, height: 219,  alignSelf: 'end'}}/>
-                        <img src={detailtech32} style={{width: 219, height: 219,alignSelf: "start"}}/>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ModalInTheuDesktop/>
         {/*Model Công nghệ in thêu  --- end*/}
     </div>);
 }
