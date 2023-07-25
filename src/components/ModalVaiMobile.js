@@ -42,7 +42,7 @@ const ModalVaiMobile = () => {
                 <div style={{
                     display: 'flex', flex: 1,
                 }}>
-                    <img src={detailtech1} style={{width: 150, height: 150}}/>
+                    <img src={detailtech1} style={{width: 150, height: 150}} alt={'công nghệ vải'}/>
                 </div>
             </div>
         </div>

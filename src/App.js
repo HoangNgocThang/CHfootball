@@ -36,7 +36,7 @@ function App() {
             <RouterProvider router={router}/>
             {/*Mobile footer --- start*/}
             <div className={'d-md-none d-flex container-footer'}>
-                <img src={logoFootballFooter} style={{width: 119, height: 41, marginBottom: 20}}/>
+                <img src={logoFootballFooter} style={{width: 119, height: 41, marginBottom: 20}} alt={"Logo CHFootball"}/>
                 <div className={'item-footer'}>
                     <img src={phone} style={{width: 22, height: 22, marginRight: 10}} alt={"phone"}/>
                     <p className={'text-footer'}>Hotline: 037 484 1234</p>
@@ -54,11 +54,10 @@ function App() {
                 </div>
             </div>
             {/*Mobile footer --- end */}
-
             {/*Desktop footer --- start*/}
             <div className={'d-none d-md-flex container-footer__desktop'}>
                 <div style={{display: 'flex', flexDirection: 'column', marginTop: 20}}>
-                    <img src={logoFootballFooter} style={{width: 119, height: 41, marginBottom: 20}}/>
+                    <img src={logoFootballFooter} style={{width: 119, height: 41, marginBottom: 20}} alt={"Logo CHFootball"}/>
                     <div style={{display: 'flex', flexDirection: 'column'}}>
                         <div className={'item-footer'}>
                             <img src={phone} style={{width: 22, height: 22, marginRight: 10}}/>

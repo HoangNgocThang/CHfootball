@@ -45,8 +45,8 @@ const ModalInTheuMobile = () => {
                     display: 'flex', flex: 1,
                 }}>
                     <div style={{display: 'flex', flex: 1, flexDirection: 'row', gap: 10}}>
-                        <img src={detailtech31} style={{width: 119, height: 119, alignSelf: 'end'}}/>
-                        <img src={detailtech32} style={{width: 119, height: 119, alignSelf: "start"}}/>
+                        <img src={detailtech31} style={{width: 119, height: 119, alignSelf: 'end'}} alt={'công nghệ in thêu'}/>
+                        <img src={detailtech32} style={{width: 119, height: 119, alignSelf: "start"}} alt={'công nghệ in thêu'}/>
                     </div>
                 </div>
             </div>

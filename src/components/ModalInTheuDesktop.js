@@ -42,8 +42,8 @@ const ModalInTheuDesktop = () => {
                         </div>
                     </div>
                     <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
-                        <img src={detailtech31} style={{width: 219, height: 219, alignSelf: 'end'}}/>
-                        <img src={detailtech32} style={{width: 219, height: 219, alignSelf: "start"}}/>
+                        <img src={detailtech31} style={{width: 219, height: 219, alignSelf: 'end'}} alt={'công nghệ in thêu'}/>
+                        <img src={detailtech32} style={{width: 219, height: 219, alignSelf: "start"}} alt={'công nghệ in thêu'}/>
                     </div>
                 </div>
             </div>

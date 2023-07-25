@@ -91,15 +91,15 @@ function Home() {
         {/*Mobile* ---start */}
         <div style={{marginTop: 20}}
              className={"d-flex flex-column d-md-none"}>
-            <h1 style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn</h1>
-            <h1 style={{color: 'black', fontWeight: 'bold'}}>CHFoootball ?</h1>
+            <h2 style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn<br/>CHFoootball ?</h2>
+            {/*<h2 style={{color: 'black', fontWeight: 'bold'}}></h2>*/}
         </div>
         {/*Mobile ---end*/}
         {/*Desktop ---start*/}
         <div style={{marginTop: 20}}
              className={"d-none d-md-flex flex-row align-items-center justify-content-center"}>
-            <h1 className={"text-center"} style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn CHFoootball
-                ?</h1>
+            <h2 className={"text-center"} style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn CHFoootball
+                ?</h2>
         </div>
         {/*Desktop ---end*/}
 
@@ -217,12 +217,12 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Mobile procedure ---start*/}
         <div className={"d-flex d-md-none container-procedure"}>
             <div className={"procedure-header"}>
-                <h3 className={"procedure-header-text"}>CHFootball</h3>
-                <h3 className={"procedure-header-text"}>hoạt động như thế nào ?</h3>
+                <h3 className={"procedure-header-text"}>CHFootball<br/>hoạt động như thế nào ?</h3>
+                {/*<h3 className={"procedure-header-text"}></h3>*/}
                 <div>
                     <TButtonOrder/>
                 </div>
-            </div>
+            </div>x
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
                     <img src={tiepnhanfix} className={"procedure-icon-img"} alt={"tiếp nhận"}/>
@@ -285,9 +285,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Desktop procedure ---start*/}
         <div className={"d-none d-md-flex container-procedure__desktop"}>
             <div className={"procedure-header__desktop"}>
-                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>CHFootball</h3>
-                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>hoạt động</h3>
-                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>như thế nào ?</h3>
+                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>CHFootball<br/>hoạt động<br/>như thế nào ?</h3>
+                {/*<h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}></h3>*/}
+                {/*<h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}></h3>*/}
                 <TButtonOrder/>
             </div>
             <div className="procedure-content__desktop">
@@ -513,47 +513,47 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={"bothongtin"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={bosch} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
+                    <img src={bosch} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bosch"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={congdoan} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
+                    <img src={congdoan} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"công đoàn"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={buuchinhvienthong} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bưu chính viễn thông"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={vnpdt} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
+                    <img src={vnpdt} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"vnpt"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={coopbank} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
+                    <img src={coopbank} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"coopbank"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={pv} style={{width: "auto", height: 40, backgroundColor: 'white'}}/>
+                    <img src={pv} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"pvcombank"}/>
                 </div>
             </div>
             <div className="container-products">
                 <div className='iteamcard'>
-                    <img src={c6} className={"container-customer-img"}/>
-                    <img src={c1} className={"container-customer-img"}/>
-                    <img src={c2} className={"container-customer-img"}/>
+                    <img src={c6} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c1} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c2} className={"container-customer-img"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c3} className={"container-customer-img"}/>
-                    <img src={c4} className={"container-customer-img"}/>
-                    <img src={c5} className={"container-customer-img"}/>
-                    <img src={c14} className={"container-customer-img"}/>
+                    <img src={c3} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c4} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c5} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c14} className={"container-customer-img"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c7} className={"container-customer-img"}/>
-                    <img src={c8} className={"container-customer-img"}/>
-                    <img src={c7} className={"container-customer-img"}/>
-                    <img src={c13} className={"container-customer-img"}/>
+                    <img src={c7} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c8} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c7} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c13} className={"container-customer-img"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c9} className={"container-customer-img"}/>
-                    <img src={c10} className={"container-customer-img"}/>
-                    <img src={c11} className={"container-customer-img"}/>
-                    <img src={c12} className={"container-customer-img"}/>
+                    <img src={c9} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c10} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c11} className={"container-customer-img"} alt={'customer'}/>
+                    <img src={c12} className={"container-customer-img"} alt={'customer'}/>
                 </div>
             </div>
         </div>
@@ -562,7 +562,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         <div className={"d-none d-md-flex container-customer"}>
             <h3 style={{fontWeight: 'bold'}}>{`Khách hàng của CHFootball`}</h3>
             <div>
-                <div style={{width: 100, height: 1, backgroundColor: 'black'}}></div>
+                <div style={{width: 100, height: 1, backgroundColor: 'black'}}/>
             </div>
             <div className={"container-customer-wrap-imgs"}>
                 <div style={{width: 90, height: 90}}>
@@ -573,48 +573,48 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={"bothongtin"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={bosch} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
+                    <img src={bosch} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"bosch"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={congdoan} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
+                    <img src={congdoan} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"công đoàn"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={buuchinhvienthong} style={{width: "auto", height: 120, backgroundColor: 'white'}}/>
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 120, backgroundColor: 'white'}} alt={"bưu chính viễn thông"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={vnpdt} style={{width: "auto", height: 100, backgroundColor: 'white'}}/>
+                    <img src={vnpdt} style={{width: "auto", height: 100, backgroundColor: 'white'}} alt={"vnpt"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={coopbank} style={{width: "auto", height: 100, backgroundColor: 'white'}}/>
+                    <img src={coopbank} style={{width: "auto", height: 100, backgroundColor: 'white'}} alt={"coopbank"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={pv} style={{width: "auto", height: 90, backgroundColor: 'white'}}/>
+                    <img src={pv} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"pvcombank"}/>
                 </div>
             </div>
             <div className="container-products">
                 <div className='iteamcard'>
-                    <img src={c6} className={"container-customer-img2"}/>
-                    <img src={c1} className={"container-customer-img2"}/>
+                    <img src={c6} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c1} className={"container-customer-img2"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c2} className={"container-customer-img2"}/>
-                    <img src={c3} className={"container-customer-img2"}/>
-                    <img src={c4} className={"container-customer-img2"}/>
+                    <img src={c2} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c3} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c4} className={"container-customer-img2"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c5} className={"container-customer-img2"}/>
-                    <img src={c14} className={"container-customer-img2"}/>
-                    <img src={c7} className={"container-customer-img2"}/>
+                    <img src={c5} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c14} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c7} className={"container-customer-img2"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c8} className={"container-customer-img2"}/>
-                    <img src={c9} className={"container-customer-img2"}/>
-                    <img src={c10} className={"container-customer-img2"}/>
+                    <img src={c8} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c9} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c10} className={"container-customer-img2"} alt={'customer'}/>
                 </div>
                 <div className='iteamcard'>
-                    <img src={c11} className={"container-customer-img2"}/>
-                    <img src={c12} className={"container-customer-img2"}/>
-                    <img src={c13} className={"container-customer-img2"}/>
+                    <img src={c11} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c12} className={"container-customer-img2"} alt={'customer'}/>
+                    <img src={c13} className={"container-customer-img2"} alt={'customer'}/>
                 </div>
             </div>
         </div>
@@ -633,6 +633,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                              let modal = document.getElementById("myModalVaiM");
                              modal.style.display = "flex";
                          }}
+                         alt={'công nghệ vải'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
@@ -644,6 +645,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                              let modal = document.getElementById("myModalMayM");
                              modal.style.display = "flex";
                          }}
+                         alt={'công nghệ may'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
@@ -654,7 +656,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          onClick={() => {
                              let modal = document.getElementById("myModalInTheuM");
                              modal.style.display = "flex";
-                         }}/>
+                         }}
+                         alt={'công nghệ in thêu'}
+                    />
                     <div style={{height: 36, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ</p>
                         <p className={'tech-item-text'}>IN/THÊU</p>
@@ -675,7 +679,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          onClick={() => {
                              let modal = document.getElementById("myModalVai");
                              modal.style.display = "flex";
-                         }}/>
+                         }}
+                         alt={'công nghệ vải'}
+                    />
                     <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
                     </div>
@@ -685,7 +691,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          onClick={() => {
                              let modal = document.getElementById("myModalMay");
                              modal.style.display = "flex";
-                         }}/>
+                         }}
+                         alt={'công nghệ may'}
+                    />
                     <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
                     </div>
@@ -696,6 +704,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                              let modal = document.getElementById("myModalInTheu");
                              modal.style.display = "flex";
                          }}
+                         alt={'công nghệ in thêu'}
                     />
                     <div style={{height: 42, marginTop: 4}}>
                         <p className={'tech-item-text'}>CÔNG NGHỆ</p>

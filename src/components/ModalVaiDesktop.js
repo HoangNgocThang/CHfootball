@@ -45,7 +45,7 @@ const ModalVaiDesktop = () => {
                     <div style={{
                         display: 'flex', flex: 1,
                     }}>
-                        <img src={detailtech1} style={{width: 400, height: 400}}/>
+                        <img src={detailtech1} style={{width: 400, height: 400}} alt={'công nghệ vải'}/>
                     </div>
                 </div>
             </div>

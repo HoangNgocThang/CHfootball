@@ -36,8 +36,8 @@ const ModalMayDesktop = ()=> {
                             đến số lượng lớn.</p>
                     </div>
                     <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
-                        <img src={detailtech21} style={{width: 219, height: 153, alignSelf: "start"}}/>
-                        <img src={detailtech22} style={{width: 219, height: 153, alignSelf: 'end'}}/>
+                        <img src={detailtech21} style={{width: 219, height: 153, alignSelf: "start"}} alt={'công nghệ may'}/>
+                        <img src={detailtech22} style={{width: 219, height: 153, alignSelf: 'end'}} alt={'công nghệ may'}/>
                     </div>
                 </div>
             </div>
