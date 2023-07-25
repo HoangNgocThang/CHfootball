@@ -84,15 +84,9 @@ function Home() {
     console.log('height: ', windowHeight.current);
 
     return (<div>
+        {/*Banner --- start*/}
         <TCarousel/>
-
-        {/*<button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">*/}
-        {/*    Launch demo modal*/}
-        {/*</button>*/}
-
-        {/*<button className="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first*/}
-        {/*    modal*/}
-        {/*</button>*/}
+        {/*Banner --- end*/}
 
         {/*Mobile* ---start */}
         <div style={{marginTop: 20}}
@@ -705,48 +699,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Desktop tech --- end*/}
 
         {/*Model Công nghệ vải --- start */}
-        {/*<div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"*/}
-        {/*     tabIndex="-1">*/}
-        {/*    <div className="modal-dialog modal-dialog-centered">*/}
-        {/*        <div className="modal-content">*/}
-        {/*            <div className="modal-header">*/}
-        {/*                <h1 className="modal-title fs-5" id="exampleModalToggleLabel">Công nghệ vải</h1>*/}
-        {/*                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>*/}
-        {/*            </div>*/}
-        {/*            <div className="modal-body">*/}
-        {/*                <div style={{*/}
-        {/*                    display: 'flex', flexDirection: 'row'*/}
-        {/*                }}>*/}
-        {/*                    <div style={{*/}
-        {/*                        textAlign: 'left',*/}
-        {/*                        display: 'flex',*/}
-        {/*                        flexDirection: 'column',*/}
-        {/*                        justifyContent: "flex-start",*/}
-        {/*                    }}>*/}
-        {/*                        <p>Dây chuyền sản xuất của CHF có nhiều loại vải phù hợp đặc thù khí hậu ở Việt Nam với*/}
-        {/*                            chất*/}
-        {/*                            liệu co dãn, thấm hút mồ hôi. Các loại vải phổ biến sử dụng nhiều như:</p>*/}
-        {/*                        <div style={{display: 'flex', flexDirection: 'row'}}>*/}
-        {/*                            <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>*/}
-        {/*                                <p>- Vải thun lạnh</p>*/}
-        {/*                                <p>- Vải mè thái</p>*/}
-        {/*                                <p>- Vải adidas vuông</p>*/}
-        {/*                                <p>- Vải adidas mịn</p>*/}
-        {/*                                <p>- Vải kim cương 4 chiều</p>*/}
-        {/*                            </div>*/}
-        {/*                        </div>*/}
-        {/*                    </div>*/}
-        {/*                    <img src={detailtech1} style={{width: 200, height: 200}}/>*/}
-        {/*                </div>*/}
-        {/*            </div>*/}
-        {/*            <div className="modal-footer">*/}
-        {/*                /!*<button className="btn btn-primary" data-bs-target="#exampleModalToggle2"*!/*/}
-        {/*                /!*        data-bs-toggle="modal">Open second modal*!/*/}
-        {/*                /!*</button>*!/*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
-        {/*    </div>*/}
-        {/*</div>*/}
         <div id="myModalVai" className="modal--thanghn">
             <div className="modal-content--thanghn">
                 <span style={{paddingRight: 5, paddingLeft: 5}}
@@ -756,8 +708,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 }}>&times;</span>
                 <div style={{display: 'flex', flex: 1, gap: 10}}>
                     <div style={{
-                        textAlign: 'left',
                         display: 'flex',
+                        flex: 1,
+                        textAlign: 'left',
                         flexDirection: 'column',
                         justifyContent: "flex-start", // position: 'relative'
                     }}>
@@ -784,7 +737,11 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                             </div>
                         </div>
                     </div>
-                    <img src={detailtech1} style={{width: 400, height: 400}}/>
+                    <div style={{
+                        display: 'flex', flex: 1,
+                    }}>
+                        <img src={detailtech1} style={{width: 400, height: 400}}/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -803,7 +760,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         textAlign: 'left',
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent: "flex-start", // position: 'relative'
+                        justifyContent: "flex-start",
+                        flex: 1
+                        // position: 'relative'
                     }}>
                         <div style={{
                             display: 'flex',
@@ -815,20 +774,14 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         }}>
                             <p style={{fontSize: 30, color: 'white', margin: 0, padding: 0}}>CÔNG NGHỆ MAY</p>
                         </div>
-                        <p style={{marginTop: 30}}>Dây chuyền sản xuất của CHF có nhiều loại vải phù hợp đặc thù khí hậu
-                            ở Việt Nam với
-                            chất liệu co dãn, thấm hút mồ hôi. Các loại vải phổ biến sử dụng nhiều như:</p>
-                        <div style={{display: 'flex', flexDirection: 'row'}}>
-                            <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
-                                <p>- Vải thun lạnh</p>
-                                <p>- Vải mè thái</p>
-                                <p>- Vải adidas vuông</p>
-                                <p>- Vải adidas mịn</p>
-                                <p>- Vải kim cương 4 chiều</p>
-                            </div>
-                        </div>
+                        <p style={{marginTop: 30}}>Với đội ngũ hơn 50 thợ may kinh nghiệm cùng với nhiều máy móc hiện
+                            đại, CHF tự tin mang đến khách hàng những sản phẩm có chất lượng tốt nhất từ số lượng nhỏ
+                            đến số lượng lớn.</p>
                     </div>
-                    <img src={detailtech1} style={{width: 400, height: 400}}/>
+                    <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
+                        <img src={detailtech21} style={{width: 219, height: 153, alignSelf: "start"}}/>
+                        <img src={detailtech22} style={{width: 219, height: 153, alignSelf: 'end'}}/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -844,8 +797,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 }}>&times;</span>
                 <div style={{display: 'flex', flex: 1, gap: 10}}>
                     <div style={{
-                        textAlign: 'left',
                         display: 'flex',
+                        flex: 1,
+                        textAlign: 'left',
                         flexDirection: 'column',
                         justifyContent: "flex-start", // position: 'relative'
                     }}>
@@ -859,20 +813,21 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                         }}>
                             <p style={{fontSize: 30, color: 'white', margin: 0, padding: 0}}>CÔNG NGHỆ IN-THÊU</p>
                         </div>
-                        <p style={{marginTop: 30}}>Dây chuyền sản xuất của CHF có nhiều loại vải phù hợp đặc thù khí hậu
-                            ở Việt Nam với
-                            chất liệu co dãn, thấm hút mồ hôi. Các loại vải phổ biến sử dụng nhiều như:</p>
+                        <p style={{marginTop: 30}}>Ngoài in ấn logo; tên; số, CHF còn cung cấp thêm các sản phẩm thêu,
+                            đáp ứng đầy đủ nhu cầu của khách hàng.
+                            Các công nghệ in chủ yếu được CHF sử dụng:</p>
                         <div style={{display: 'flex', flexDirection: 'row'}}>
                             <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
-                                <p>- Vải thun lạnh</p>
-                                <p>- Vải mè thái</p>
-                                <p>- Vải adidas vuông</p>
-                                <p>- Vải adidas mịn</p>
-                                <p>- Vải kim cương 4 chiều</p>
+                                <p>- In decal</p>
+                                <p>- In pet</p>
+                                <p>- In mực chuyển nhiệt</p>
                             </div>
                         </div>
                     </div>
-                    <img src={detailtech1} style={{width: 400, height: 400}}/>
+                    <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
+                        <img src={detailtech31} style={{width: 219, height: 219,  alignSelf: 'end'}}/>
+                        <img src={detailtech32} style={{width: 219, height: 219,alignSelf: "start"}}/>
+                    </div>
                 </div>
             </div>
         </div>
