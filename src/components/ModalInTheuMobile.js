@@ -44,7 +44,7 @@ const ModalInTheuMobile = () => {
                 <div style={{
                     display: 'flex', flex: 1,
                 }}>
-                    <div style={{display: 'flex', flex: 1, flexDirection: 'column', gap: 10}}>
+                    <div style={{display: 'flex', flex: 1, flexDirection: 'row', gap: 10}}>
                         <img src={detailtech31} style={{width: 119, height: 119, alignSelf: 'end'}}/>
                         <img src={detailtech32} style={{width: 119, height: 119, alignSelf: "start"}}/>
                     </div>
