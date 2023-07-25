@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CHfootball/static/css/main.7498ef7d.css",
+    "main.css": "/CHfootball/static/css/main.48caa12e.css",
     "main.js": "/CHfootball/static/js/main.6f4eca70.js",
     "static/js/787.320d312e.chunk.js": "/CHfootball/static/js/787.320d312e.chunk.js",
     "static/media/maucaulacbocosan.png": "/CHfootball/static/media/maucaulacbocosan.c6dfa653de8457c96c8a.png",
@@ -76,12 +76,12 @@
     "static/media/coopbank.png": "/CHfootball/static/media/coopbank.16560d18bb7fe33cae1f.png",
     "static/media/pk6.jpg": "/CHfootball/static/media/pk6.cc94f4632b8de5e74bf1.jpg",
     "index.html": "/CHfootball/index.html",
-    "main.7498ef7d.css.map": "/CHfootball/static/css/main.7498ef7d.css.map",
+    "main.48caa12e.css.map": "/CHfootball/static/css/main.48caa12e.css.map",
     "main.6f4eca70.js.map": "/CHfootball/static/js/main.6f4eca70.js.map",
     "787.320d312e.chunk.js.map": "/CHfootball/static/js/787.320d312e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7498ef7d.css",
+    "static/css/main.48caa12e.css",
     "static/js/main.6f4eca70.js"
   ]
 }
