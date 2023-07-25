@@ -38,11 +38,11 @@ function App() {
             <div className={'d-md-none d-flex container-footer'}>
                 <img src={logoFootballFooter} style={{width: 119, height: 41, marginBottom: 20}}/>
                 <div className={'item-footer'}>
-                    <img src={phone} style={{width: 22, height: 22, marginRight: 10}}/>
+                    <img src={phone} style={{width: 22, height: 22, marginRight: 10}} alt={"phone"}/>
                     <p className={'text-footer'}>Hotline: 037 484 1234</p>
                 </div>
                 <div className={'item-footer'} style={{marginBottom: 20}}>
-                    <img src={mail} style={{width: 22, height: 22, marginRight: 10}}/>
+                    <img src={mail} style={{width: 22, height: 22, marginRight: 10}} alt={"mail"}/>
                     <p className={'text-footer'}>Email: chfootballstore@gmail.com</p>
                 </div>
                 <div className="fb-page" data-href="https://www.facebook.com/chfootballvn" data-tabs="timeline"
