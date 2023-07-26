@@ -649,7 +649,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={'công nghệ vải'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
-                        <p className={'tech-item-text'}>CÔNG NGHỆ VẢI</p>
+                        <p className={'tech-item-text'} style={{fontSize:12}}>CÔNG NGHỆ VẢI</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
@@ -661,7 +661,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={'công nghệ may'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
-                        <p className={'tech-item-text'}>CÔNG NGHỆ MAY</p>
+                        <p className={'tech-item-text'} style={{fontSize:12}}>CÔNG NGHỆ MAY</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
@@ -673,8 +673,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={'công nghệ in thêu'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
-                        <p className={'tech-item-text'}>CÔNG NGHỆ</p>
-                        <p className={'tech-item-text'}>IN/THÊU</p>
+                        <p className={'tech-item-text'} style={{fontSize:12}}>CÔNG NGHỆ</p>
+                        <p className={'tech-item-text'} style={{fontSize:12}}>IN/THÊU</p>
                     </div>
                 </div>
             </div>
