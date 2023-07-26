@@ -16,14 +16,14 @@ import TButtonAdvise from "./TButtonAdvise";
 const ModalNoLogoDesktop = () => {
 
     return (<div id="myModalNoLogo" className="modal--thanghn">
-        <div className="modal-content--thanghn3">
+        <div className="modal-content--thanghn4">
             <div style={{display: 'flex', flex: 1, gap: 10, flexDirection: 'column', position: 'relative'}}>
                 <div style={{padding: 20, display: 'flex', flexDirection: 'row', flex: 1, backgroundColor: '#061F4D'}}>
                     <img src={maukhonglogocosan} style={{
                         height: 160, width: 'auto', backgroundColor: 'white', borderRadius: 10, overflow: 'hidden'
                     }}/>
                     <div style={{
-                        display: 'flex', flexDirection: 'column', flex: 3, alignItems: 'start', marginLeft: 10
+                        marginLeft: 20, display: 'flex', flexDirection: 'column', flex: 3, alignItems: 'start',
                     }}>
                         <h3 style={{color: 'white', fontWeight: 'bold'}}>Mẫu không logo có sẵn</h3>
                         <p style={{color: 'white', textAlign: 'left'}}>CHFootball cung cấp các sản phẩm các thương hiệu
@@ -37,7 +37,7 @@ const ModalNoLogoDesktop = () => {
                     }}>&times;</span>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <div style={{display: 'flex', flexDirection: 'row', gap: 20, justifyContent: 'center'}}>
+                    <div style={{display: 'flex', flexDirection: 'row', gap: 10, justifyContent: 'center'}}>
                         <img src={nologo1} style={{width: 190.521, height: 253.773}}/>
                         <img src={nologo2} style={{width: 190.521, height: 253.773}}/>
                         <img src={nologo3} style={{width: 190.521, height: 253.773}}/>

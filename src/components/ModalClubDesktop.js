@@ -19,10 +19,11 @@ const ModalClubDesktop = () => {
                         height: 160, width: 'auto', backgroundColor: 'white', borderRadius: 10, overflow: 'hidden'
                     }}/>
                     <div style={{
-                        display: 'flex', flexDirection: 'column', flex: 3, alignItems: 'start', marginLeft: 10
+                        marginLeft: 20, display: 'flex', flexDirection: 'column', flex: 3, alignItems: 'start'
                     }}>
                         <h3 style={{color: 'white', fontWeight: 'bold'}}>Mẫu câu lạc bộ có sẵn</h3>
-                        <p style={{color: 'white', textAlign: 'left', fontSize:12}}>CHFootball có các mẫu áo của các câu lạc bộ bóng
+                        <p style={{color: 'white', textAlign: 'left', fontSize: 12}}>CHFootball có các mẫu áo của các
+                            câu lạc bộ bóng
                             đá ở các giải đấu trên thế giới như Ngoại hạng Anh, La Liga, Seri A, League 1,
                             Bundesliga,... cũng như các đội tuyển quốc gia. Ngoài ra, CHF cũng cung cấp các mẫu áo thi
                             đấu của các câu lạc bộ thi đấu ở V-League.</p>
@@ -34,7 +35,7 @@ const ModalClubDesktop = () => {
                         modal.style.display = "none";
                     }}>&times;</span>
                 </div>
-                <div className="container-products" style={{margin:10}}>
+                <div className="container-products" style={{margin: 10}}>
                     <div className='iteamcard'>
                         <img src={clb1} className={"container-customer-img3"} alt={'customer'}/>
                     </div>
