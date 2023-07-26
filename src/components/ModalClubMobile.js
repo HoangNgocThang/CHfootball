@@ -21,7 +21,7 @@ const ModalClubMobile = () => {
                     <div style={{
                         marginLeft: 20, display: 'flex', flexDirection: 'column', flex: 3, alignItems: 'start'
                     }}>
-                        <h3 style={{color: 'white', fontWeight: 'bold'}}>Mẫu câu lạc bộ có sẵn</h3>
+                        <h4 style={{color: 'white', fontWeight: 'bold', textAlign:'left'}}>Mẫu câu lạc bộ có sẵn</h4>
                         <p style={{color: 'white', textAlign: 'left', fontSize: 10}}>CHFootball có các mẫu áo của các
                             câu lạc bộ bóng
                             đá ở các giải đấu trên thế giới như Ngoại hạng Anh, La Liga, Seri A, League 1,

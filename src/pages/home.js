@@ -51,6 +51,7 @@ import ModalClubDesktop from "../components/ModalClubDesktop";
 import ModalAccessoryDesktop from "../components/ModalAccessoryDesktop";
 import ModalAccessoryMobile from "../components/ModalAccessoryMobile";
 import ModalClubMobile from "../components/ModalClubMobile";
+import ModalNoLogoMobile from "../components/ModalNoLogoMobile";
 
 
 function Home() {
@@ -351,7 +352,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -363,7 +363,11 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <p style={{fontSize: 13, textAlign: 'center'}}>CHFootball có khả năng đa dạng sản xuất theo yêu cầu riêng
                 của khách hàng</p>
             <div className={"container-product-type-row"}>
-                <div className={"container-product-type-item"} style={{maxWidth: 180}}>
+                <div
+                    onClick={() => {
+                        //TODO
+                    }}
+                    className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
                     </div>
@@ -373,7 +377,12 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
-                <div className={"container-product-type-item"} style={{maxWidth: 180}}>
+                <div
+                    onClick={() => {
+                        let modal = document.getElementById("myModalNoLogoM");
+                        modal.style.display = "flex";
+                    }}
+                    className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={maukhonglogocosan} className={"container-product-type-img"}
                              alt={"mẫu không logo"}/>
@@ -387,7 +396,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={"container-product-type-row"}>
                 <div
-                    onClick={()=> {
+                    onClick={() => {
                         let modal = document.getElementById("myModalClubM");
                         modal.style.display = "flex";
                     }}
@@ -403,7 +412,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <div style={{width: '100%', height: 20}}/>
                 </div>
                 <div
-                    onClick={()=> {
+                    onClick={() => {
                         let modal = document.getElementById("myModalAccessoryM");
                         modal.style.display = "flex";
                     }}
@@ -741,6 +750,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
 
         {/*Modal No Logo --- start */}
         <ModalNoLogoDesktop/>
+        <ModalNoLogoMobile/>
         {/*Modal No Logo --- end */}
 
         {/*Modal Club --- start */}

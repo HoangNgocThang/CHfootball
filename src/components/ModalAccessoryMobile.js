@@ -22,7 +22,7 @@ const ModalAccessoryMobile = () => {
                     <div style={{
                         marginLeft: 20, display: 'flex', flexDirection: 'column', flex: 3, alignItems: 'start'
                     }}>
-                        <h3 style={{color: 'white', fontWeight: 'bold'}}>Phụ kiện</h3>
+                        <h4 style={{color: 'white', fontWeight: 'bold', textAlign:'left'}}>Phụ kiện</h4>
                         <p style={{color: 'white', textAlign: 'left', fontSize: 10}}>Phụ kiện là thứ không thể thiếu mỗi
                             khi ra sân thi đấu. Ở CHF, chúng tôi có sẵn các mẫu balo, tất vớ, băng cuốn, bóng thi
                             đấu,... Ngoài ra, CHF cũng hỗ trợ việc in ấn/ thêu logo, tên, số lên các sản phẩm phụ kiện
