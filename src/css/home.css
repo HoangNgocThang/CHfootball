@@ -393,6 +393,13 @@
     display: block;
 }
 
+.container-customer-img3 {
+    width: 192.5px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
 .container-customer-img__desktop {
     width: 120px;
     height: auto;
@@ -483,6 +490,16 @@
     border: 1px solid #888;
     width: 50%;
     min-width: 795px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.modal-content--thanghn4 {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 50%;
+    min-width: 850px;
     height: 500px;
     overflow: scroll;
 }
