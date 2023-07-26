@@ -483,14 +483,12 @@
     min-width: 345px;
 }
 
-.modal-content--thanghn3 {
+.modal-content--thanghn21 {
     background-color: #fefefe;
     margin: auto;
     border: 1px solid #888;
-    width: 50%;
-    min-width: 795px;
-    height: 500px;
-    overflow: scroll;
+    width: 45%;
+    min-width: 400px;
 }
 
 .modal-content--thanghn4 {
