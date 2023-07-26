@@ -74,6 +74,7 @@ import pk8 from '../images/pk8.jpg';
 import ModalVaiMobile from "../components/ModalVaiMobile";
 import ModalInTheuMobile from "../components/ModalInTheuMobile";
 import ModalMayMobile from "../components/ModalMayMobile";
+import ModalNoLogoDesktop from "../components/ModalNoLogoDesktop";
 
 
 function Home() {
@@ -222,7 +223,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 <div>
                     <TButtonOrder/>
                 </div>
-            </div>x
+            </div>
+            x
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
                     <img src={tiepnhanfix} className={"procedure-icon-img"} alt={"tiếp nhận"}/>
@@ -285,7 +287,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Desktop procedure ---start*/}
         <div className={"d-none d-md-flex container-procedure__desktop"}>
             <div className={"procedure-header__desktop"}>
-                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>CHFootball<br/>hoạt động<br/>như thế nào ?</h3>
+                <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>CHFootball<br/>hoạt
+                    động<br/>như thế nào ?</h3>
                 {/*<h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}></h3>*/}
                 {/*<h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}></h3>*/}
                 <TButtonOrder/>
@@ -451,7 +454,12 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
-                <div className={"container-product-type-item"}>
+                <div
+                    onClick={()=> {
+                        let modal = document.getElementById("myModalNoLogo");
+                        modal.style.display = "flex";
+                    }}
+                    className={"container-product-type-item"}>
                     <div>
                         <img src={maukhonglogocosan} className={"container-product-type-img"}
                              alt={"mẫu không logo"}/>
@@ -516,10 +524,12 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <img src={bosch} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bosch"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={congdoan} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"công đoàn"}/>
+                    <img src={congdoan} style={{width: "auto", height: 40, backgroundColor: 'white'}}
+                         alt={"công đoàn"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={buuchinhvienthong} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bưu chính viễn thông"}/>
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 40, backgroundColor: 'white'}}
+                         alt={"bưu chính viễn thông"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
                     <img src={vnpdt} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"vnpt"}/>
@@ -576,16 +586,19 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <img src={bosch} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"bosch"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={congdoan} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"công đoàn"}/>
+                    <img src={congdoan} style={{width: "auto", height: 90, backgroundColor: 'white'}}
+                         alt={"công đoàn"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={buuchinhvienthong} style={{width: "auto", height: 120, backgroundColor: 'white'}} alt={"bưu chính viễn thông"}/>
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 120, backgroundColor: 'white'}}
+                         alt={"bưu chính viễn thông"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
                     <img src={vnpdt} style={{width: "auto", height: 100, backgroundColor: 'white'}} alt={"vnpt"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={coopbank} style={{width: "auto", height: 100, backgroundColor: 'white'}} alt={"coopbank"}/>
+                    <img src={coopbank} style={{width: "auto", height: 100, backgroundColor: 'white'}}
+                         alt={"coopbank"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
                     <img src={pv} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"pvcombank"}/>
@@ -715,20 +728,25 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         </div>
         {/*Desktop tech --- end*/}
 
-        {/*Model Công nghệ vải --- start */}
+        {/*Modal Công nghệ vải --- start */}
         <ModalVaiDesktop/>
         <ModalVaiMobile/>
-        {/*Model Công nghệ vải --- end */}
+        {/*Modal Công nghệ vải --- end */}
 
-        {/*Model Công nghệ may --- start*/}
+        {/*Modal Công nghệ may --- start*/}
         <ModalMayDesktop/>
         <ModalMayMobile/>
-        {/*Model Công nghệ may --- end*/}
+        {/*Modal Công nghệ may --- end*/}
 
-        {/*Model Công nghệ in thêu --- start*/}
+        {/*Modal Công nghệ in thêu --- start*/}
         <ModalInTheuDesktop/>
         <ModalInTheuMobile/>
-        {/*Model Công nghệ in thêu  --- end*/}
+        {/*Modal Công nghệ in thêu  --- end*/}
+
+
+        {/*Modal No Logo --- start */}
+        <ModalNoLogoDesktop/>
+        {/*Modal No Logo --- end */}
     </div>);
 }
 

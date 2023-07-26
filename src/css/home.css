@@ -248,7 +248,6 @@
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-
 }
 
 .container-product-type-img:hover {
@@ -476,6 +475,16 @@
     border: 1px solid #888;
     width: 45%;
     min-width: 345px;
+}
+
+.modal-content--thanghn3 {
+    background-color: #fefefe;
+    margin: auto;
+    /*padding: 20px;*/
+    border: 1px solid #888;
+    width: 60%;
+    min-width: 795px;
+    /*max-height: 500px;*/
 }
 
 

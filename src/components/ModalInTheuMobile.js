@@ -2,8 +2,6 @@ import React from "react";
 import '../css/home.css';
 import detailtech31 from "../images/detailtech31.png";
 import detailtech32 from "../images/detailtech32.jpg";
-import detailtech21 from "../images/detailtech21.jpg";
-import detailtech22 from "../images/detailtech22.jpeg";
 
 const ModalInTheuMobile = () => {
 

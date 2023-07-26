@@ -2,7 +2,6 @@ import React from 'react';
 import '../css/home.css';
 import detailtech21 from "../images/detailtech21.jpg";
 import detailtech22 from "../images/detailtech22.jpeg";
-import detailtech1 from "../images/detailtech1.jpg";
 
 const ModalMayMobile = () => {
 
