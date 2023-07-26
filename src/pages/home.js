@@ -50,6 +50,7 @@ import ModalNoLogoDesktop from "../components/ModalNoLogoDesktop";
 import ModalClubDesktop from "../components/ModalClubDesktop";
 import ModalAccessoryDesktop from "../components/ModalAccessoryDesktop";
 import ModalAccessoryMobile from "../components/ModalAccessoryMobile";
+import ModalClubMobile from "../components/ModalClubMobile";
 
 
 function Home() {
@@ -387,7 +388,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"container-product-type-row"}>
                 <div
                     onClick={()=> {
-
+                        let modal = document.getElementById("myModalClubM");
+                        modal.style.display = "flex";
                     }}
                     className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
@@ -743,6 +745,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
 
         {/*Modal Club --- start */}
         <ModalClubDesktop/>
+        <ModalClubMobile/>
         {/*Modal Club --- end */}
 
         {/*Modal Accessory --- start*/}
