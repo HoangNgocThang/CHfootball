@@ -455,7 +455,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <div style={{width: '100%', height: 20}}/>
                 </div>
                 <div
-                    onClick={()=> {
+                    onClick={() => {
                         let modal = document.getElementById("myModalNoLogo");
                         modal.style.display = "flex";
                     }}
@@ -743,10 +743,15 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         <ModalInTheuMobile/>
         {/*Modal Công nghệ in thêu  --- end*/}
 
-
         {/*Modal No Logo --- start */}
         <ModalNoLogoDesktop/>
         {/*Modal No Logo --- end */}
+
+        {/*Modal Club --- start */}
+        {/*Modal Club --- end */}
+
+        {/*Modal Accessory --- start*/}
+        {/*Modal Accessory --- end*/}
     </div>);
 }
 
