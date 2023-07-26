@@ -480,13 +480,12 @@
 .modal-content--thanghn3 {
     background-color: #fefefe;
     margin: auto;
-    /*padding: 20px;*/
     border: 1px solid #888;
-    width: 60%;
+    width: 50%;
     min-width: 795px;
-    /*max-height: 500px;*/
+    height: 500px;
+    overflow: scroll;
 }
-
 
 /* The Close Button */
 .close {
