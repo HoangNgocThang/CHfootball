@@ -43,34 +43,6 @@ import c14 from '../images/c14.jpg';
 import tech1 from '../images/tech1.jpg';
 import tech2 from '../images/tech2.jpg';
 import tech3 from '../images/tech3.jpg';
-
-import clb1 from '../images/clb1.jpg';
-import clb2 from '../images/clb2.jpg';
-import clb3 from '../images/clb3.jpg';
-import clb4 from '../images/clb4.jpg';
-import clb5 from '../images/clb5.jpg';
-import clb6 from '../images/clb6.jpg';
-import clb7 from '../images/clb7.jpg';
-
-import nologo1 from '../images/nologo1.png';
-import nologo2 from '../images/nologo2.png';
-import nologo3 from '../images/nologo3.jpg';
-import nologo4 from '../images/nologo4.jpg';
-import nologo5 from '../images/nologo5.jpg';
-import nologo6 from '../images/nologo6.jpg';
-import nologo7 from '../images/nologo7.jpg';
-import nologo8 from '../images/nologo8.jpg';
-import nologo9 from '../images/nologo9.jpg';
-import nologo10 from '../images/nologo10.jpg';
-
-import pk1 from '../images/pk1.jpg';
-import pk2 from '../images/pk2.jpg';
-import pk3 from '../images/pk3.jpg';
-import pk4 from '../images/pk4.jpg';
-import pk5 from '../images/pk5.jpg';
-import pk6 from '../images/pk6.jpg';
-import pk7 from '../images/pk7.jpg';
-import pk8 from '../images/pk8.jpg';
 import ModalVaiMobile from "../components/ModalVaiMobile";
 import ModalInTheuMobile from "../components/ModalInTheuMobile";
 import ModalMayMobile from "../components/ModalMayMobile";
