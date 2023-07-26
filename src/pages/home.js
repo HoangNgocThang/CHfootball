@@ -75,6 +75,8 @@ import ModalVaiMobile from "../components/ModalVaiMobile";
 import ModalInTheuMobile from "../components/ModalInTheuMobile";
 import ModalMayMobile from "../components/ModalMayMobile";
 import ModalNoLogoDesktop from "../components/ModalNoLogoDesktop";
+import ModalClubDesktop from "../components/ModalClubDesktop";
+import ModalAccessoryDesktop from "../components/ModalAccessoryDesktop";
 
 
 function Home() {
@@ -474,7 +476,12 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
-                <div className={"container-product-type-item"}>
+                <div
+                    onClick={() => {
+                        let modal = document.getElementById("myModalClub");
+                        modal.style.display = "flex";
+                    }}
+                    className={"container-product-type-item"}>
                     <div>
                         <img src={maucaulacbocosan} className={"container-product-type-img"}
                              alt={"mẫu câu lạc bộ"}/>
@@ -489,7 +496,12 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     </div>
                     <div style={{width: '100%', height: 20}}/>
                 </div>
-                <div className={"container-product-type-item"}>
+                <div
+                    onClick={() => {
+                        let modal = document.getElementById("myModalAccessory");
+                        modal.style.display = "flex";
+                    }}
+                    className={"container-product-type-item"}>
                     <div>
                         <img src={phukien} className={"container-product-type-img"} alt={"phụ kiện"}/>
                     </div>
@@ -649,7 +661,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={'công nghệ vải'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
-                        <p className={'tech-item-text'} style={{fontSize:12}}>CÔNG NGHỆ VẢI</p>
+                        <p className={'tech-item-text'} style={{fontSize: 12}}>CÔNG NGHỆ VẢI</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
@@ -661,7 +673,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={'công nghệ may'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
-                        <p className={'tech-item-text'} style={{fontSize:12}}>CÔNG NGHỆ MAY</p>
+                        <p className={'tech-item-text'} style={{fontSize: 12}}>CÔNG NGHỆ MAY</p>
                     </div>
                 </div>
                 <div className={'tech-item'}>
@@ -673,8 +685,8 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={'công nghệ in thêu'}
                     />
                     <div style={{height: 36, marginTop: 4}}>
-                        <p className={'tech-item-text'} style={{fontSize:12}}>CÔNG NGHỆ</p>
-                        <p className={'tech-item-text'} style={{fontSize:12}}>IN/THÊU</p>
+                        <p className={'tech-item-text'} style={{fontSize: 12}}>CÔNG NGHỆ</p>
+                        <p className={'tech-item-text'} style={{fontSize: 12}}>IN/THÊU</p>
                     </div>
                 </div>
             </div>
@@ -748,9 +760,11 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         {/*Modal No Logo --- end */}
 
         {/*Modal Club --- start */}
+        <ModalClubDesktop/>
         {/*Modal Club --- end */}
 
         {/*Modal Accessory --- start*/}
+        <ModalAccessoryDesktop/>
         {/*Modal Accessory --- end*/}
     </div>);
 }
