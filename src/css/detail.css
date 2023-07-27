@@ -1,0 +1,29 @@
+.wrapItemDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f2f6fc;
+    margin: 10px;
+}
+
+.imgItemDetail {
+    width: 180px;
+    height: 172px;
+    padding: 10px;
+}
+
+.textItemDetail {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 0;
+}
