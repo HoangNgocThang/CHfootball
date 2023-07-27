@@ -50,12 +50,12 @@ function App() {
                     <p className={'text-footer'}>Email: chfootballstore@gmail.com</p>
                 </div>
                 <div className={'item-footer'}>
-                    <p className={'text-footer'} style={{fontSize: 13}}>CS1: 41/62 Nguyễn Chi Thanh, Láng Thượng, Đống
+                    <p className={'text-footer'} style={{fontSize: 12.5}}>CS1: 41/62 Nguyễn Chí Thanh, Láng Thượng, Đống
                         Đa, Hà Nội</p>
                 </div>
                 <div className={'item-footer'} style={{marginBottom: 20}}>
-                    <p className={'text-footer'} style={{fontSize: 13}}>CS2: 123 Đường Thăng Long, Nghi Liên, Vinh, Nghệ
-                        An</p>
+                    <p className={'text-footer'} style={{fontSize: 12.5}}>CS2: 123 Đường Thăng Long, Nghi Liên, Vinh,
+                        Nghệ An</p>
                 </div>
                 <div className="fb-page" data-href="https://www.facebook.com/chfootballvn" data-tabs="timeline"
                      data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
