@@ -1,10 +1,9 @@
 import './App.css';
 import React from 'react';
-// import menu from '../src/images/menu.png';
-import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
-import {createBrowserRouter, RouterProvider, createHashRouter} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, createHashRouter, useNavigate} from "react-router-dom";
 import Home from "./pages/home";
 import Detail from "./pages/detail";
+import THeader from "./components/THeader";
 import logoFootballFooter from '../src/images/logoFootballFooter.png';
 import mail from '../src/images/mail.png';
 import phone from '../src/images/phone.png';
@@ -16,21 +15,11 @@ const router = createHashRouter([{
 },]);
 
 function App() {
+
     return (<>
         <div className="container">
             <div className="App">
-                <div className={"header-app"}>
-                    <div className={"header-app-content-lr"}>
-                        {/*<img src={menu} className={"header-app-icon"} alt={"menu"}/>*/}
-                    </div>
-                    <div className="header-app-logo">
-                        <img src={logoCHFootballBL}
-                             alt="Logo CHFootball"
-                             className={"sub-header-app-logo"}/>
-                    </div>
-                    <div className={"header-app-content-lr"}>
-                    </div>
-                </div>
+                <THeader/>
                 <div style={{display: 'flex', width: '100%', height: 5, marginTop: 58}}/>
                 <RouterProvider router={router}/>
                 {/*Desktop footer --- end*/}
