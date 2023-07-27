@@ -525,31 +525,31 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             </div>
             <div className={"container-customer-wrap-imgs"}>
                 <div style={{width: 40, height: 40}}>
-                    <img src={shb} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"shb"}/>
+                    <img src={shb} style={{width: 40, height: 40, backgroundColor: 'white'}} alt={"shb"}/>
                 </div>
-                <div style={{width: 40, height: 40}}>
-                    <img src={bothongtin} style={{width: "auto", height: 40, backgroundColor: 'white'}}
+                <div style={{width: 35, height: 35}}>
+                    <img src={bothongtin} style={{width: 35, height: 35, backgroundColor: 'white'}}
                          alt={"bothongtin"}/>
                 </div>
-                <div style={{width: 40, height: 40}}>
-                    <img src={bosch} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"bosch"}/>
+                <div style={{width: 35, height: 35}}>
+                    <img src={bosch} style={{width: 35, height: 35, backgroundColor: 'white'}} alt={"bosch"}/>
                 </div>
-                <div style={{width: 40, height: 40}}>
-                    <img src={congdoan} style={{width: "auto", height: 40, backgroundColor: 'white'}}
+                <div style={{width: 35, height: 35}}>
+                    <img src={congdoan} style={{width:35, height: 35, backgroundColor: 'white'}}
                          alt={"công đoàn"}/>
                 </div>
-                <div style={{width: 40, height: 40}}>
-                    <img src={buuchinhvienthong} style={{width: "auto", height: 40, backgroundColor: 'white'}}
+                <div style={{width: 35, height: 35}}>
+                    <img src={buuchinhvienthong} style={{width:35, height: 35, backgroundColor: 'white'}}
                          alt={"bưu chính viễn thông"}/>
                 </div>
-                <div style={{width: 40, height: 40}}>
-                    <img src={vnpdt} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"vnpt"}/>
+                <div style={{width: 35, height: 35}}>
+                    <img src={vnpdt} style={{width: 35, height: 40, backgroundColor: 'white'}} alt={"vnpt"}/>
+                </div>
+                <div style={{width: 35, height: 35}}>
+                    <img src={coopbank} style={{width:35, height: 35, backgroundColor: 'white'}} alt={"coopbank"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
-                    <img src={coopbank} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"coopbank"}/>
-                </div>
-                <div style={{width: 40, height: 40}}>
-                    <img src={pv} style={{width: "auto", height: 40, backgroundColor: 'white'}} alt={"pvcombank"}/>
+                    <img src={pv} style={{width: 40, height: 40, backgroundColor: 'white'}} alt={"pvcombank"}/>
                 </div>
             </div>
             <div className="container-products">
