@@ -11,7 +11,7 @@ import logoFootballFooter from '../src/images/logoFootballFooter.png';
 import mail from '../src/images/mail.png';
 import phone from '../src/images/phone.png';
 
-const router = createHashRouter([{
+const router = createBrowserRouter([{
     path: "/", element: (<Home/>),
 }, {
     path: "/detail", element: (<Detail/>)

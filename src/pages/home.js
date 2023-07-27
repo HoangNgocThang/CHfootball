@@ -1,10 +1,20 @@
 import '../css/home.css';
 import React, {useState, useRef} from 'react';
+import {useNavigate} from "react-router-dom";
 import TCarousel from "../components/TCarousel";
 import TButtonOrder from "../components/TButtonOrder";
 import ModalInTheuDesktop from "../components/ModalInTheuDesktop";
 import ModalMayDesktop from "../components/ModalMayDesktop";
 import ModalVaiDesktop from "../components/ModalVaiDesktop";
+import ModalVaiMobile from "../components/ModalVaiMobile";
+import ModalInTheuMobile from "../components/ModalInTheuMobile";
+import ModalMayMobile from "../components/ModalMayMobile";
+import ModalNoLogoDesktop from "../components/ModalNoLogoDesktop";
+import ModalClubDesktop from "../components/ModalClubDesktop";
+import ModalAccessoryDesktop from "../components/ModalAccessoryDesktop";
+import ModalAccessoryMobile from "../components/ModalAccessoryMobile";
+import ModalClubMobile from "../components/ModalClubMobile";
+import ModalNoLogoMobile from "../components/ModalNoLogoMobile";
 import chamsockhachhang from '../images/cham-soc-khach-hang.png';
 import maumadadang from '../images/mau-ma-da-dang.png';
 import nhieuchatlieuvai from '../images/nhieu-chat-lieu-vai.png';
@@ -43,20 +53,11 @@ import c14 from '../images/c14.jpg';
 import tech1 from '../images/tech1.jpg';
 import tech2 from '../images/tech2.jpg';
 import tech3 from '../images/tech3.jpg';
-import ModalVaiMobile from "../components/ModalVaiMobile";
-import ModalInTheuMobile from "../components/ModalInTheuMobile";
-import ModalMayMobile from "../components/ModalMayMobile";
-import ModalNoLogoDesktop from "../components/ModalNoLogoDesktop";
-import ModalClubDesktop from "../components/ModalClubDesktop";
-import ModalAccessoryDesktop from "../components/ModalAccessoryDesktop";
-import ModalAccessoryMobile from "../components/ModalAccessoryMobile";
-import ModalClubMobile from "../components/ModalClubMobile";
-import ModalNoLogoMobile from "../components/ModalNoLogoMobile";
-
 
 function Home() {
     const windowWidth = useRef(window.innerWidth);
     const windowHeight = useRef(window.innerHeight);
+    const navigate = useNavigate();
 
     console.log('width: ', windowWidth.current);
     console.log('height: ', windowHeight.current);
@@ -365,8 +366,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"container-product-type-row"}>
                 <div
                     onClick={() => {
-                        //TODO
+                        navigate("/detail");
                     }}
+                    // to={"/detail"}
                     className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
@@ -435,7 +437,11 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <p style={{fontSize: 13, textAlign: 'center'}}>CHFootball có khả năng đa dạng sản xuất theo yêu cầu riêng
                 của khách hàng</p>
             <div className={"container-product-type-row"} style={{gap: 20}}>
-                <div className={"container-product-type-item"}>
+                <div
+                    onClick={() => {
+                        navigate("/detail");
+                    }}
+                    className={"container-product-type-item"}>
                     <div>
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
                     </div>
