@@ -2,6 +2,7 @@ import React from "react";
 import '../css/detail.css';
 
 function Detail() {
+
     return (<div className={"container wrapItemDetail"}>
         <div className="d-flex row">
             <div className="d-flex col-6 col-md-3 justify-content-center">
@@ -10,7 +11,6 @@ function Detail() {
                     <img
                         className={"imgItemDetail"}
                         src={"https://lh3.google.com/u/0/d/1HZUkefVBYgG_9lGTcTQUWst93gK7OoR8=w160-h152-p-k-rw-v1-nu-iv1"}
-                        // src={"https://lh3.googleusercontent.com/fife/AKsag4NixQSCybkHAPv93x_FV57_Js5NGRzwowkvXx3mHOGbgjS6rh5ictwqL1cOjxoBg1Y19nLvdCqewgPSFdJoxsIU4zLV1KCDzWv0QlJChfb4fywvBRceICeIqsaIrLjOmRd4hB9ji97_6VVOqBxaUFkR8VTo3TG4wISCWkp4TPcpvs2l08NsVO8FdZNfZKl0sCzNm3TYeqVZiMmWXE5AHBYIeUagr9uo2Sd1I9jpsROfXmh9xM4MvgQRzxoS-MQVbo_BV9O32X7y10oCLCl-OKUGR61H5RKLX2-QOertbw2T9s3QUBEZU1K9ZTkHRTNKTpEkfPh7bs_IwRMCM_qoGURz-zRW7WEeppynjFWfK3ByoaaMTbUGlKclgEFl6DAcs6szjB0CIlaB0nol8qzlvkiPs6iyEmonS6dC9pvUm0BpoLy2uPsgal80at5XIx6hG1SpuREMsownBSOpwUBR6b-kuVLfivh459QFar3zCi1oJCC08ovzY8Yw8i8xjBnmdHVRcKbvmKJqbZtkCUYHo7hX2PKgAw6SoNqONqoY4O0oY6tVeNVgkmiNnEuLSlrIzs55X5ZG42ZeTgP_l1Ya3bCA9dqI0S9oUmt0-iOPWVL9vIBzPk83e-lhPqhk8rxGwtfyPl05ji3rpH4_4Zb-c5pZg_AOQD51d1rdAQKysknuEYzwrzgkrLSB-ZxwPr_Vgnyw8TD6slB92GuYjCyMkF8ZNvqQatPK354P6i5pFQV46Wjz79RE41LWKkUwukaJ2E2bQZoVrRzavIKc0t2POtXDr2LX7YDODpUY0O5seM3bTo3LN-WYB08koK4tuAWcj2rXl16rPwaeq_iMttyfEYisEo1t7hokHCuMKFBkn11DmK92cmImG7jiq8N6vB1gpKLQ5-yejdNSAb3jLqgjpAGxDWo1HcJmHo3swH26mQ-KDUtEuU4fJCh0pbw4sk1sAiXKFE8Eam6c5H2M1o6oYbvGFmiYmO4arrDA6k8Nw9lJiQkNNfU_yLo2I-MwJczsKSy5pbA-sNyicLfOKDxONCxD1RNW9SurTezSdkjjgQwbjLtJNPLHVGnDzXXia6nbtPQkuax-iepDqyu6wNgW8MxyvIom-9H02f9w_myEcnQz5kQ94gp9bV64tU728HRWpaH1KlTZmwAhSWu2JGeS_l63LFgMgVVUvAx84Al-7R76ytwnB-rTbLTDCF1OG_jWAQPXDLqpx6PIIV_wFG2zBKPdEzXVu7sYUlvghuhaFwkPTxNhXwKTjcDBDuTdJuo1E8wt2TLUNDPMoDaoBIcrPhcenWMzG8ljX3GcBho8_Gd_rboWTv6Dj5B8dh1xSurqInXsasEWUCk0h_Pgp_J7knp8ORZ__geqhhVBSN6qEsGEsior10CtEjeYra7JywTl4LzfdFVmsv6kbG6Z94R275HzgcIyrPHXV6kMjkHcYUhwnBMYcDuWMd1Z3Urhyyb62S8rYdvGq4VfLuCwcCjJBDyBGGyhrekjexHCgdFL6lAGJFksGKM3zKX4wk82VyRBURGGXe8a-QnpSzi436SGViAwev3G-_uQfTRllhD_O_autzSLqjkpBPNGR53IyJe9hAaudewWBa6ar5Y5pIq3e9C1yTR2IQ7IKUgEEZIXm7Ehs-D6Rv7if_NroQggmbbITOknKbNFBlC64lY8A6brmQ=w160-h152-p-k-rw-nu-v1"}/>
                     />
                 </div>
             </div>
@@ -20,7 +20,6 @@ function Detail() {
                     <img
                         className={"imgItemDetail"}
                         src={"https://lh3.google.com/u/0/d/1OEcRvqnvpv4lydm6F8rPb6ig0cWsfKf0=w160-h152-p-k-rw-v1-nu-iv1"}
-                        // src={"https://lh3.googleusercontent.com/fife/AKsag4NixQSCybkHAPv93x_FV57_Js5NGRzwowkvXx3mHOGbgjS6rh5ictwqL1cOjxoBg1Y19nLvdCqewgPSFdJoxsIU4zLV1KCDzWv0QlJChfb4fywvBRceICeIqsaIrLjOmRd4hB9ji97_6VVOqBxaUFkR8VTo3TG4wISCWkp4TPcpvs2l08NsVO8FdZNfZKl0sCzNm3TYeqVZiMmWXE5AHBYIeUagr9uo2Sd1I9jpsROfXmh9xM4MvgQRzxoS-MQVbo_BV9O32X7y10oCLCl-OKUGR61H5RKLX2-QOertbw2T9s3QUBEZU1K9ZTkHRTNKTpEkfPh7bs_IwRMCM_qoGURz-zRW7WEeppynjFWfK3ByoaaMTbUGlKclgEFl6DAcs6szjB0CIlaB0nol8qzlvkiPs6iyEmonS6dC9pvUm0BpoLy2uPsgal80at5XIx6hG1SpuREMsownBSOpwUBR6b-kuVLfivh459QFar3zCi1oJCC08ovzY8Yw8i8xjBnmdHVRcKbvmKJqbZtkCUYHo7hX2PKgAw6SoNqONqoY4O0oY6tVeNVgkmiNnEuLSlrIzs55X5ZG42ZeTgP_l1Ya3bCA9dqI0S9oUmt0-iOPWVL9vIBzPk83e-lhPqhk8rxGwtfyPl05ji3rpH4_4Zb-c5pZg_AOQD51d1rdAQKysknuEYzwrzgkrLSB-ZxwPr_Vgnyw8TD6slB92GuYjCyMkF8ZNvqQatPK354P6i5pFQV46Wjz79RE41LWKkUwukaJ2E2bQZoVrRzavIKc0t2POtXDr2LX7YDODpUY0O5seM3bTo3LN-WYB08koK4tuAWcj2rXl16rPwaeq_iMttyfEYisEo1t7hokHCuMKFBkn11DmK92cmImG7jiq8N6vB1gpKLQ5-yejdNSAb3jLqgjpAGxDWo1HcJmHo3swH26mQ-KDUtEuU4fJCh0pbw4sk1sAiXKFE8Eam6c5H2M1o6oYbvGFmiYmO4arrDA6k8Nw9lJiQkNNfU_yLo2I-MwJczsKSy5pbA-sNyicLfOKDxONCxD1RNW9SurTezSdkjjgQwbjLtJNPLHVGnDzXXia6nbtPQkuax-iepDqyu6wNgW8MxyvIom-9H02f9w_myEcnQz5kQ94gp9bV64tU728HRWpaH1KlTZmwAhSWu2JGeS_l63LFgMgVVUvAx84Al-7R76ytwnB-rTbLTDCF1OG_jWAQPXDLqpx6PIIV_wFG2zBKPdEzXVu7sYUlvghuhaFwkPTxNhXwKTjcDBDuTdJuo1E8wt2TLUNDPMoDaoBIcrPhcenWMzG8ljX3GcBho8_Gd_rboWTv6Dj5B8dh1xSurqInXsasEWUCk0h_Pgp_J7knp8ORZ__geqhhVBSN6qEsGEsior10CtEjeYra7JywTl4LzfdFVmsv6kbG6Z94R275HzgcIyrPHXV6kMjkHcYUhwnBMYcDuWMd1Z3Urhyyb62S8rYdvGq4VfLuCwcCjJBDyBGGyhrekjexHCgdFL6lAGJFksGKM3zKX4wk82VyRBURGGXe8a-QnpSzi436SGViAwev3G-_uQfTRllhD_O_autzSLqjkpBPNGR53IyJe9hAaudewWBa6ar5Y5pIq3e9C1yTR2IQ7IKUgEEZIXm7Ehs-D6Rv7if_NroQggmbbITOknKbNFBlC64lY8A6brmQ=w160-h152-p-k-rw-nu-v1"}/>
                     />
                 </div>
             </div>
@@ -30,7 +29,6 @@ function Detail() {
                     <img
                         className={"imgItemDetail"}
                         src={"https://lh3.google.com/u/0/d/1J1YO-j0nvBsvOHVz-KuV88iLeESidabD=w160-h152-p-k-rw-v1-nu-iv1"}
-                        // src={"https://lh3.googleusercontent.com/fife/AKsag4NixQSCybkHAPv93x_FV57_Js5NGRzwowkvXx3mHOGbgjS6rh5ictwqL1cOjxoBg1Y19nLvdCqewgPSFdJoxsIU4zLV1KCDzWv0QlJChfb4fywvBRceICeIqsaIrLjOmRd4hB9ji97_6VVOqBxaUFkR8VTo3TG4wISCWkp4TPcpvs2l08NsVO8FdZNfZKl0sCzNm3TYeqVZiMmWXE5AHBYIeUagr9uo2Sd1I9jpsROfXmh9xM4MvgQRzxoS-MQVbo_BV9O32X7y10oCLCl-OKUGR61H5RKLX2-QOertbw2T9s3QUBEZU1K9ZTkHRTNKTpEkfPh7bs_IwRMCM_qoGURz-zRW7WEeppynjFWfK3ByoaaMTbUGlKclgEFl6DAcs6szjB0CIlaB0nol8qzlvkiPs6iyEmonS6dC9pvUm0BpoLy2uPsgal80at5XIx6hG1SpuREMsownBSOpwUBR6b-kuVLfivh459QFar3zCi1oJCC08ovzY8Yw8i8xjBnmdHVRcKbvmKJqbZtkCUYHo7hX2PKgAw6SoNqONqoY4O0oY6tVeNVgkmiNnEuLSlrIzs55X5ZG42ZeTgP_l1Ya3bCA9dqI0S9oUmt0-iOPWVL9vIBzPk83e-lhPqhk8rxGwtfyPl05ji3rpH4_4Zb-c5pZg_AOQD51d1rdAQKysknuEYzwrzgkrLSB-ZxwPr_Vgnyw8TD6slB92GuYjCyMkF8ZNvqQatPK354P6i5pFQV46Wjz79RE41LWKkUwukaJ2E2bQZoVrRzavIKc0t2POtXDr2LX7YDODpUY0O5seM3bTo3LN-WYB08koK4tuAWcj2rXl16rPwaeq_iMttyfEYisEo1t7hokHCuMKFBkn11DmK92cmImG7jiq8N6vB1gpKLQ5-yejdNSAb3jLqgjpAGxDWo1HcJmHo3swH26mQ-KDUtEuU4fJCh0pbw4sk1sAiXKFE8Eam6c5H2M1o6oYbvGFmiYmO4arrDA6k8Nw9lJiQkNNfU_yLo2I-MwJczsKSy5pbA-sNyicLfOKDxONCxD1RNW9SurTezSdkjjgQwbjLtJNPLHVGnDzXXia6nbtPQkuax-iepDqyu6wNgW8MxyvIom-9H02f9w_myEcnQz5kQ94gp9bV64tU728HRWpaH1KlTZmwAhSWu2JGeS_l63LFgMgVVUvAx84Al-7R76ytwnB-rTbLTDCF1OG_jWAQPXDLqpx6PIIV_wFG2zBKPdEzXVu7sYUlvghuhaFwkPTxNhXwKTjcDBDuTdJuo1E8wt2TLUNDPMoDaoBIcrPhcenWMzG8ljX3GcBho8_Gd_rboWTv6Dj5B8dh1xSurqInXsasEWUCk0h_Pgp_J7knp8ORZ__geqhhVBSN6qEsGEsior10CtEjeYra7JywTl4LzfdFVmsv6kbG6Z94R275HzgcIyrPHXV6kMjkHcYUhwnBMYcDuWMd1Z3Urhyyb62S8rYdvGq4VfLuCwcCjJBDyBGGyhrekjexHCgdFL6lAGJFksGKM3zKX4wk82VyRBURGGXe8a-QnpSzi436SGViAwev3G-_uQfTRllhD_O_autzSLqjkpBPNGR53IyJe9hAaudewWBa6ar5Y5pIq3e9C1yTR2IQ7IKUgEEZIXm7Ehs-D6Rv7if_NroQggmbbITOknKbNFBlC64lY8A6brmQ=w160-h152-p-k-rw-nu-v1"}/>
                     />
                 </div>
             </div>
@@ -40,7 +38,6 @@ function Detail() {
                     <img
                         className={"imgItemDetail"}
                         src={"https://lh3.google.com/u/0/d/1nBC-_LfbRUsjM6I4CuDrca__bwP77PLC=w160-h152-p-k-rw-v1-nu-iv1"}
-                        // src={"https://lh3.googleusercontent.com/fife/AKsag4NixQSCybkHAPv93x_FV57_Js5NGRzwowkvXx3mHOGbgjS6rh5ictwqL1cOjxoBg1Y19nLvdCqewgPSFdJoxsIU4zLV1KCDzWv0QlJChfb4fywvBRceICeIqsaIrLjOmRd4hB9ji97_6VVOqBxaUFkR8VTo3TG4wISCWkp4TPcpvs2l08NsVO8FdZNfZKl0sCzNm3TYeqVZiMmWXE5AHBYIeUagr9uo2Sd1I9jpsROfXmh9xM4MvgQRzxoS-MQVbo_BV9O32X7y10oCLCl-OKUGR61H5RKLX2-QOertbw2T9s3QUBEZU1K9ZTkHRTNKTpEkfPh7bs_IwRMCM_qoGURz-zRW7WEeppynjFWfK3ByoaaMTbUGlKclgEFl6DAcs6szjB0CIlaB0nol8qzlvkiPs6iyEmonS6dC9pvUm0BpoLy2uPsgal80at5XIx6hG1SpuREMsownBSOpwUBR6b-kuVLfivh459QFar3zCi1oJCC08ovzY8Yw8i8xjBnmdHVRcKbvmKJqbZtkCUYHo7hX2PKgAw6SoNqONqoY4O0oY6tVeNVgkmiNnEuLSlrIzs55X5ZG42ZeTgP_l1Ya3bCA9dqI0S9oUmt0-iOPWVL9vIBzPk83e-lhPqhk8rxGwtfyPl05ji3rpH4_4Zb-c5pZg_AOQD51d1rdAQKysknuEYzwrzgkrLSB-ZxwPr_Vgnyw8TD6slB92GuYjCyMkF8ZNvqQatPK354P6i5pFQV46Wjz79RE41LWKkUwukaJ2E2bQZoVrRzavIKc0t2POtXDr2LX7YDODpUY0O5seM3bTo3LN-WYB08koK4tuAWcj2rXl16rPwaeq_iMttyfEYisEo1t7hokHCuMKFBkn11DmK92cmImG7jiq8N6vB1gpKLQ5-yejdNSAb3jLqgjpAGxDWo1HcJmHo3swH26mQ-KDUtEuU4fJCh0pbw4sk1sAiXKFE8Eam6c5H2M1o6oYbvGFmiYmO4arrDA6k8Nw9lJiQkNNfU_yLo2I-MwJczsKSy5pbA-sNyicLfOKDxONCxD1RNW9SurTezSdkjjgQwbjLtJNPLHVGnDzXXia6nbtPQkuax-iepDqyu6wNgW8MxyvIom-9H02f9w_myEcnQz5kQ94gp9bV64tU728HRWpaH1KlTZmwAhSWu2JGeS_l63LFgMgVVUvAx84Al-7R76ytwnB-rTbLTDCF1OG_jWAQPXDLqpx6PIIV_wFG2zBKPdEzXVu7sYUlvghuhaFwkPTxNhXwKTjcDBDuTdJuo1E8wt2TLUNDPMoDaoBIcrPhcenWMzG8ljX3GcBho8_Gd_rboWTv6Dj5B8dh1xSurqInXsasEWUCk0h_Pgp_J7knp8ORZ__geqhhVBSN6qEsGEsior10CtEjeYra7JywTl4LzfdFVmsv6kbG6Z94R275HzgcIyrPHXV6kMjkHcYUhwnBMYcDuWMd1Z3Urhyyb62S8rYdvGq4VfLuCwcCjJBDyBGGyhrekjexHCgdFL6lAGJFksGKM3zKX4wk82VyRBURGGXe8a-QnpSzi436SGViAwev3G-_uQfTRllhD_O_autzSLqjkpBPNGR53IyJe9hAaudewWBa6ar5Y5pIq3e9C1yTR2IQ7IKUgEEZIXm7Ehs-D6Rv7if_NroQggmbbITOknKbNFBlC64lY8A6brmQ=w160-h152-p-k-rw-nu-v1"}/>
                     />
                 </div>
             </div>
@@ -527,7 +524,7 @@ function Detail() {
                 <div className={"itemDetail"}>
                     <p className={"textItemDetail"}>CHF.57.001</p>
                     <img
-                        src={"https://lh3.google.com/u/0/d/13QvCQ-L72pv7JGgyC349nc2WKj3JXapH=w160-h152-p-k-rw-v1-nu-iv1"}
+                        src={"https://lh3.google.com/u/0/d/1C1YUH1YxdWlMCyEM1qhzluXvDukwH6Iy=w160-h152-p-k-rw-v1-nu-iv1"}
                         className={"imgItemDetail"}
                     />
                 </div>
@@ -536,7 +533,7 @@ function Detail() {
                 <div className={"itemDetail"}>
                     <p className={"textItemDetail"}>CHF.57.001</p>
                     <img
-                        src={"https://lh3.google.com/u/0/d/1D5oatutjroI9NXd56H5Id008Foy67rKl=w160-h152-p-k-rw-v1-nu-iv1"}
+                        src={"https://lh3.google.com/u/0/d/1HglBVTUEl5z1LJIKOpqAgK_gI5rhhN2g=w160-h152-p-k-rw-v1-nu-iv1"}
                         className={"imgItemDetail"}
                     />
                 </div>
@@ -545,13 +542,207 @@ function Detail() {
                 <div className={"itemDetail"}>
                     <p className={"textItemDetail"}>CHF.57.001</p>
                     <img
-                        src={"https://lh3.google.com/u/0/d/11cSTVlVSztUNFIBDuch6b8iklmUycuUp=w160-h152-p-k-rw-v1-nu-iv1"}
+                        src={"https://lh3.google.com/u/0/d/11qrK5u52K6WdrohTr5LR6MQ8jBRkwDsG=w160-h152-p-k-rw-v1-nu-iv1"}
                         className={"imgItemDetail"}
                     />
                 </div>
             </div>
         </div>
 
+        <div className="d-flex row">
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1GpViA4OvCJuwFNJfDhuS-xDNA1nTjgqw=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1c7MdS4rX6TF_jcKj_4VfJWGug79k_9nv=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1yS6A9wpIeM5sVxBEgDEnSoRCYDxjLRJj=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/19q6ig5xouMKQdGYPg9B3f_WSMwWqM7Qu=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div className="d-flex row">
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1GQGdR5Q4Qmu_FlqQwSrMAlDl1XZrEujC=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1LXVHPrqpPPV5YuMFrlQrgjifE132gPKt=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1zLF_sCoSYhgUaCadc5ttXAy0Zm7r_4HP=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1oMmv4CW8yeAaGJiuglzbjPqB2B40VlLz=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div className="d-flex row">
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1JTjXRaCYe-bW8-YeiR6JZRHzPSJBoU6O=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1TI0f3QJh4-dKf913jHrqF4mhXyLj-QsY=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1zLF_sCoSYhgUaCadc5ttXAy0Zm7r_4HP=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1al12GIYZIMWxpFXCdrpeJzsex8qw74qG=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div className="d-flex row">
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1x3dYj5FgY1rasHirGp7jF3CaXUUdwg87=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1UxdOz9WalIhDrJpFD6t8p_axB73Gafwf=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1yYCc89hgNTAfxEquwQ1netoGhIWeu8-u=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1l1l4x1q4-ApBMZyqYJxue3-pk9a4dXHL=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div className="d-flex row">
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/14C87za7Z500ei6Peo1EYBy1m8j770wLG=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1iobOUPjp_bjzIP9Fy90TP_O53uWDdqka=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1vLCsXba8X4xNu2CGU4P5fVQK_BJQUMgA=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+            <div className="d-flex col-6 col-md-3 justify-content-center">
+                <div className={"itemDetail"}>
+                    <p className={"textItemDetail"}>CHF.57.001</p>
+                    <img
+                        src={"https://lh3.google.com/u/0/d/1-uWqwCsXRxAevQ3qn1Q2lPPkLR0C08Pr=w160-h152-p-k-rw-v1-nu-iv1"}
+                        className={"imgItemDetail"}
+                    />
+                </div>
+            </div>
+        </div>
 
     </div>)
 }
