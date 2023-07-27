@@ -2,16 +2,14 @@ import './App.css';
 import React from 'react';
 // import menu from '../src/images/menu.png';
 import logoCHFootballBL from '../src/images/logoCHFootballBL.png';
-import {
-    createBrowserRouter, RouterProvider, createHashRouter, Route, Link,
-} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, createHashRouter} from "react-router-dom";
 import Home from "./pages/home";
 import Detail from "./pages/detail";
 import logoFootballFooter from '../src/images/logoFootballFooter.png';
 import mail from '../src/images/mail.png';
 import phone from '../src/images/phone.png';
 
-const router = createBrowserRouter([{
+const router = createHashRouter([{
     path: "/", element: (<Home/>),
 }, {
     path: "/detail", element: (<Detail/>)
@@ -47,11 +45,11 @@ function App() {
                     <img src={phone} style={{width: 22, height: 22, marginRight: 10}} alt={"phone"}/>
                     <p className={'text-footer'}>Hotline: 037 484 1234</p>
                 </div>
-                <div className={'item-footer'} >
+                <div className={'item-footer'}>
                     <img src={mail} style={{width: 22, height: 22, marginRight: 10}} alt={"mail"}/>
                     <p className={'text-footer'}>Email: chfootballstore@gmail.com</p>
                 </div>
-                <div className={'item-footer'} >
+                <div className={'item-footer'}>
                     <p className={'text-footer'}>CS1: 41/62 Nguyễn Chi Thanh, Láng Thượng, Đống Đa, Hà Nội</p>
                 </div>
                 <div className={'item-footer'} style={{marginBottom: 20}}>
