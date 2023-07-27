@@ -600,14 +600,14 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                          alt={"công đoàn"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={buuchinhvienthong} style={{width: "auto", height: 120, backgroundColor: 'white'}}
+                    <img src={buuchinhvienthong} style={{width: "auto", height: 90, backgroundColor: 'white'}}
                          alt={"bưu chính viễn thông"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={vnpdt} style={{width: "auto", height: 100, backgroundColor: 'white'}} alt={"vnpt"}/>
+                    <img src={vnpdt} style={{width: "auto", height: 90, backgroundColor: 'white'}} alt={"vnpt"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
-                    <img src={coopbank} style={{width: "auto", height: 100, backgroundColor: 'white'}}
+                    <img src={coopbank} style={{width: "auto", height: 90, backgroundColor: 'white'}}
                          alt={"coopbank"}/>
                 </div>
                 <div style={{width: 90, height: 90}}>
