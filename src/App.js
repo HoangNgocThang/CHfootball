@@ -7,6 +7,8 @@ import THeader from "./components/THeader";
 import logoFootballFooter from '../src/images/logoFootballFooter.png';
 import mail from '../src/images/mail.png';
 import phone from '../src/images/phone.png';
+import location from '../src/images/location.png';
+import pin from '../src/images/pin.png';
 
 const router = createBrowserRouter([{
     path: "/", element: (<Home/>),
@@ -39,11 +41,13 @@ function App() {
                     <p className={'text-footer'}>Email: chfootballstore@gmail.com</p>
                 </div>
                 <div className={'item-footer'}>
-                    <p className={'text-footer'} style={{fontSize: 12.5}}>CS1: 41/62 Nguyễn Chí Thanh, Láng Thượng, Đống
+                    <img src={location} style={{width: 22, height: 22, marginRight: 10}}/>
+                    <p className={'text-footer'} style={{fontSize: 12.5}}>41/62 Nguyễn Chí Thanh, Láng Thượng, Đống
                         Đa, Hà Nội</p>
                 </div>
                 <div className={'item-footer'} style={{marginBottom: 20}}>
-                    <p className={'text-footer'} style={{fontSize: 12.5}}>CS2: 123 Đường Thăng Long, Nghi Liên, Vinh,
+                    <img src={pin} style={{width: 22, height: 22, marginRight: 10}}/>
+                    <p className={'text-footer'} style={{fontSize: 12.5}}>123 Đường Thăng Long, Nghi Liên, Vinh,
                         Nghệ An</p>
                 </div>
                 <div className="fb-page" data-href="https://www.facebook.com/chfootballvn" data-tabs="timeline"
@@ -70,10 +74,12 @@ function App() {
                             <p className={'text-footer'}>Email: chfootballstore@gmail.com</p>
                         </div>
                         <div className={'item-footer'}>
-                            <p className={'text-footer'}>CS1: 41/62 Nguyễn Chi Thanh, Láng Thượng, Đống Đa, Hà Nội</p>
+                            <img src={location} style={{width: 22, height: 22, marginRight: 10}}/>
+                            <p className={'text-footer'}>41/62 Nguyễn Chi Thanh, Láng Thượng, Đống Đa, Hà Nội</p>
                         </div>
                         <div className={'item-footer'} style={{marginBottom: 20}}>
-                            <p className={'text-footer'}>CS2: 123 Đường Thăng Long, Nghi Liên, Vinh, Nghệ An</p>
+                            <img src={pin} style={{width: 22, height: 22, marginRight: 10}}/>
+                            <p className={'text-footer'}>123 Đường Thăng Long, Nghi Liên, Vinh, Nghệ An</p>
                         </div>
                     </div>
                 </div>
