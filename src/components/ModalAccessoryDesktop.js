@@ -21,7 +21,7 @@ import pk8 from '../images/pk8.jpg';
 const ModalAccessoryDesktop = () => {
 
     return (<div id="myModalAccessory" className="modal--thanghn">
-        <div className="modal-content--thanghn4">
+        <div className="modal-content--thanghn4" style={{height:650}}>
             <div style={{display: 'flex', flex: 1, gap: 10, flexDirection: 'column', position: 'relative'}}>
                 <div style={{padding: 20, display: 'flex', flexDirection: 'row', flex: 1, backgroundColor: '#061F4D'}}>
                     <img src={phukien} style={{

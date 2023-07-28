@@ -16,7 +16,7 @@ import TButtonAdvise from "./TButtonAdvise";
 const ModalNoLogoDesktop = () => {
 
     return (<div id="myModalNoLogo" className="modal--thanghn">
-        <div className="modal-content--thanghn4">
+        <div className="modal-content--thanghn4" style={{height:650}}>
             <div style={{display: 'flex', flex: 1, gap: 10, flexDirection: 'column', position: 'relative'}}>
                 <div style={{padding: 20, display: 'flex', flexDirection: 'row', flex: 1, backgroundColor: '#061F4D'}}>
                     <img src={maukhonglogocosan} style={{
@@ -50,7 +50,7 @@ const ModalNoLogoDesktop = () => {
                     <img src={nologo7} style={{width: 190.521, height: 253.773}}/>
                     <img src={nologo8} style={{width: 190.521, height: 253.773}}/>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'row', gap: 20, justifyContent: 'center'}}>
+                <div style={{display: 'flex', flexDirection: 'row', gap: 20, justifyContent: 'center', marginBottom:10}}>
                     <img src={nologo9} style={{width: 190.521, height: 253.773}}/>
                     <img src={nologo10} style={{width: 190.521, height: 253.773}}/>
                     <div style={{width: 190.521, height: 253.773}}/>

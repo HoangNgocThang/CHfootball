@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import '../css/detail.css';
 import z1_1 from '../images/z1_1.webp';
 import z1_2 from '../images/z1_2.JPG';
@@ -174,17 +174,42 @@ function Detail() {
         ]
     )
 
+    const windowWidth = useRef(window.innerWidth);
+    const windowHeight = useRef(window.innerHeight);
+
+    const [value,setValue]= useState(4);
+    console.log('width: ', windowWidth.current);
+    console.log('height: ', windowHeight.current);
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
+    function checkMediaQuery() {
+        // If the inner width of the window is greater then 768px
+        if (window.innerWidth >= 768 && window.innerWidth<=990) {
+            // Then log this message to the console
+            console.log('Media Query Matched!')
+            setValue(3)
+        }else  {
+            setValue(4)
+        }
+    }
+
+    useEffect(()=> {
+        window.addEventListener('resize', checkMediaQuery);
+        return ()=> {
+            window.removeEventListener('resize', checkMediaQuery);
+        }
+    },)
+
     const renderGrid = () => {
         if (data) {
-            const resArr = sliceIntoChunks(data, 4);
-            console.log('PPP', resArr)
+            const resArr = sliceIntoChunks(data,  value);
+            // console.log('PPP', resArr)
             return <div>{resArr.map((e, i) => {
                 return <div className="d-flex row" key={i}>{e.map((ele, index) => {
-                    return (<div className="d-flex col-6 col-md-3 justify-content-center" key={`${ele.id}`}>
+                    return (<div className="d-flex col-6 col-lg-3 col-md-4 justify-content-around" key={`${ele.id}`}>
                         <div className={"itemDetail"}>
                             <p className={"textItemDetail"}>{ele.name}</p>
                             <img
