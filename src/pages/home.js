@@ -361,9 +361,9 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                 của khách hàng</p>
             <div className={"container-product-type-row"}>
                 <div
-                    // onClick={() => {
-                    //     navigate("/detail");
-                    // }}
+                    onClick={() => {
+                        navigate("/detail");
+                    }}
                     className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
                         <img src={mauthietke} className={"container-product-type-img"} alt={"mẫu thiết kế"}/>
@@ -434,7 +434,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"container-product-type-row"} style={{gap: 20}}>
                 <div
                     onClick={() => {
-                        // navigate("/detail");
+                        navigate("/detail");
                     }}
                     className={"container-product-type-item"}>
                     <div>
@@ -530,18 +530,18 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <img src={bosch} style={{width: 35, height: 35, backgroundColor: 'white'}} alt={"bosch"}/>
                 </div>
                 <div style={{width: 35, height: 35}}>
-                    <img src={congdoan} style={{width:35, height: 35, backgroundColor: 'white'}}
+                    <img src={congdoan} style={{width: 35, height: 35, backgroundColor: 'white'}}
                          alt={"công đoàn"}/>
                 </div>
                 <div style={{width: 35, height: 35}}>
-                    <img src={buuchinhvienthong} style={{width:35, height: 35, backgroundColor: 'white'}}
+                    <img src={buuchinhvienthong} style={{width: 35, height: 35, backgroundColor: 'white'}}
                          alt={"bưu chính viễn thông"}/>
                 </div>
                 <div style={{width: 35, height: 35}}>
                     <img src={vnpdt} style={{width: 35, height: 40, backgroundColor: 'white'}} alt={"vnpt"}/>
                 </div>
                 <div style={{width: 35, height: 35}}>
-                    <img src={coopbank} style={{width:35, height: 35, backgroundColor: 'white'}} alt={"coopbank"}/>
+                    <img src={coopbank} style={{width: 35, height: 35, backgroundColor: 'white'}} alt={"coopbank"}/>
                 </div>
                 <div style={{width: 40, height: 40}}>
                     <img src={pv} style={{width: 40, height: 40, backgroundColor: 'white'}} alt={"pvcombank"}/>
