@@ -71,7 +71,6 @@ function Home() {
         <div style={{marginTop: 20}}
              className={"d-flex flex-column d-md-none"}>
             <h2 style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn<br/>CHFoootball ?</h2>
-            {/*<h2 style={{color: 'black', fontWeight: 'bold'}}></h2>*/}
         </div>
         {/*Mobile ---end*/}
         {/*Desktop ---start*/}
@@ -197,7 +196,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
         <div className={"d-flex d-md-none container-procedure"}>
             <div className={"procedure-header"}>
                 <h3 className={"procedure-header-text"}>CHFootball<br/>hoạt động như thế nào ?</h3>
-                {/*<h3 className={"procedure-header-text"}></h3>*/}
                 <div>
                     <TButtonOrder/>
                 </div>
@@ -267,8 +265,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"procedure-header__desktop"}>
                 <h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}>CHFootball<br/>hoạt
                     động<br/>như thế nào ?</h3>
-                {/*<h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}></h3>*/}
-                {/*<h3 className={"procedure-header-text text-center"} style={{color: '#153870'}}></h3>*/}
                 <TButtonOrder/>
             </div>
             <div className="procedure-content__desktop">
