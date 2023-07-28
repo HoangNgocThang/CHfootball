@@ -20,6 +20,16 @@ import z9_1 from '../images/z9_1.webp';
 import z9_2 from '../images/z9_2.JPG';
 import z10_1 from '../images/z10_1.webp';
 import z10_2 from '../images/z10_2.JPG';
+import z11_1 from '../images/z11_1.webp';
+import z11_2 from '../images/z11_2.JPG';
+import z12_1 from '../images/z12_1.webp';
+import z12_2 from '../images/z12_2.JPG';
+import z13_1 from '../images/z13_1.webp';
+import z13_2 from '../images/z13_2.JPG';
+import z14_1 from '../images/z14_1.webp';
+import z14_2 from '../images/z14_2.JPG';
+import z15_1 from '../images/z15_1.webp';
+import z15_2 from '../images/z15_2.JPG';
 
 import sliceIntoChunks from "../untils";
 
@@ -45,6 +55,16 @@ function Detail() {
         id: 9, img1: z9_1, img2: z9_2, name: 'CHF.57.009'
     }, {
         id: 10, img1: z10_1, img2: z10_2, name: 'CHF.57.0010'
+    }, {
+        id: 11, img1: z11_1, img2: z11_2, name: 'CHF.57.0011'
+    }, {
+        id: 12, img1: z12_1, img2: z12_2, name: 'CHF.57.0012'
+    }, {
+        id: 13, img1: z13_1, img2: z13_2, name: 'CHF.57.0013'
+    }, {
+        id: 14, img1: z14_1, img2: z14_2, name: 'CHF.57.0014'
+    }, {
+        id: 15, img1: z15_1, img2: z15_2, name: 'CHF.57.0015'
     },])
 
     const renderGrid = () => {
