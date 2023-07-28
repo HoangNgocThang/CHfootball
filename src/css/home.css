@@ -141,9 +141,8 @@
     display: flex;
     flex-direction: row;
     background: #153870;
-    /*margin: 10px 8px;*/
     margin: 10px auto;
-    padding: 60px 20px;
+    padding: 100px 20px;
     border-radius: 28px;
     gap: 15px;
     max-width: 1200px;
@@ -472,6 +471,18 @@
     border: 1px solid #888;
     width: 60%;
     min-width: 795px;
+}
+
+.modal-content--thanghn-hieu {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /*width: 60%;*/
+    /*min-width: 795px;*/
+
+    width: 708px;
+    height: 450px;
 }
 
 .modal-content--thanghn2 {

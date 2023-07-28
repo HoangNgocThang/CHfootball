@@ -200,7 +200,6 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
                     <TButtonOrder/>
                 </div>
             </div>
-            x
             <div className={"procedure-item"}>
                 <div className={"procedure-icon"}>
                     <img src={tiepnhanfix} className={"procedure-icon-img"} alt={"tiếp nhận"}/>

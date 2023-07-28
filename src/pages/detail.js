@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import '../css/detail.css';
 import z1_1 from '../images/z1_1.webp';
 import z1_2 from '../images/z1_2.JPG';
@@ -30,42 +30,153 @@ import z14_1 from '../images/z14_1.webp';
 import z14_2 from '../images/z14_2.JPG';
 import z15_1 from '../images/z15_1.webp';
 import z15_2 from '../images/z15_2.JPG';
+import z16_1 from '../images/z16_1.webp';
+import z16_2 from '../images/z16_2.JPG';
+import z17_1 from '../images/z17_1.webp';
+import z17_2 from '../images/z17_2.JPG';
+import z18_1 from '../images/z18_1.webp';
+import z18_2 from '../images/z18_2.jpg';
+import z19_1 from '../images/z19_1.webp';
+import z19_2 from '../images/z19_2.JPG';
+import z20_1 from '../images/z20_1.webp';
+import z20_2 from '../images/z20_2.JPG';
+
+import z26_1 from '../images/z26_1.webp';
+import z26_2 from '../images/z26_2.png';
+import z27_1 from '../images/z27_1.webp';
+import z27_2 from '../images/z27_2.png';
+import z28_1 from '../images/z28_1.webp';
+import z28_2 from '../images/z28_2.png';
+import z29_1 from '../images/z29_1.webp';
+import z29_2 from '../images/z29_2.png';
+import z30_1 from '../images/z30_1.webp';
+import z30_2 from '../images/z30_2.png';
+import z31_1 from '../images/z31_1.webp';
+import z31_2 from '../images/z31_2.png';
+import z32_1 from '../images/z32_1.webp';
+import z32_2 from '../images/z32_2.png';
+import z33_1 from '../images/z33_1.webp';
+import z33_2 from '../images/z33_2.png';
+import z34_1 from '../images/z34_1.webp';
+import z34_2 from '../images/z34_2.png';
+import z35_1 from '../images/z35_1.webp';
+import z35_2 from '../images/z35_2.png';
+import z36_1 from '../images/z36_1.webp';
+import z36_2 from '../images/z36_.png';
+import z37_1 from '../images/z37_1.webp';
+import z37_2 from '../images/z37_2.png';
+import z38_1 from '../images/z38_1.webp';
+import z38_2 from '../images/z38_2.png';
+import z39_1 from '../images/z39_1.webp';
+import z39_2 from '../images/z39_2.png';
+import z40_1 from '../images/z40_1.webp';
+import z40_2 from '../images/z40-2.png';
+import z41_1 from '../images/Z41_1.webp';
+import z41_2 from '../images/Z41_2.png';
 
 import sliceIntoChunks from "../untils";
 
 function Detail() {
 
     const [data, setData] = useState([{
-        id: 1, img1: z1_1, img2: z1_2, name: 'CHF.57.001'
-    }, {
-        id: 2, img1: z2_1, img2: z2_2, name: 'CHF.57.002'
-    }, {
-        id: 3, img1: z3_1, img2: z3_2, name: 'CHF.57.003'
-    }, {
-        id: 4, img1: z4_1, img2: z4_2, name: 'CHF.57.004'
-    }, {
-        id: 5, img1: z5_1, img2: z5_2, name: 'CHF.57.005'
-    }, {
-        id: 6, img1: z6_1, img2: z6_2, name: 'CHF.57.006'
-    }, {
-        id: 7, img1: z7_1, img2: z7_2, name: 'CHF.57.007'
-    }, {
-        id: 8, img1: z8_1, img2: z8_2, name: 'CHF.57.008'
-    }, {
-        id: 9, img1: z9_1, img2: z9_2, name: 'CHF.57.009'
-    }, {
-        id: 10, img1: z10_1, img2: z10_2, name: 'CHF.57.0010'
-    }, {
-        id: 11, img1: z11_1, img2: z11_2, name: 'CHF.57.0011'
-    }, {
-        id: 12, img1: z12_1, img2: z12_2, name: 'CHF.57.0012'
-    }, {
-        id: 13, img1: z13_1, img2: z13_2, name: 'CHF.57.0013'
-    }, {
-        id: 14, img1: z14_1, img2: z14_2, name: 'CHF.57.0014'
-    }, {
-        id: 15, img1: z15_1, img2: z15_2, name: 'CHF.57.0015'
-    },])
+            id: 1, img1: z1_1, img2: z1_2, name: 'CHF.57.001'
+        }, {
+            id: 2, img1: z2_1, img2: z2_2, name: 'CHF.57.002'
+        }, {
+            id: 3, img1: z3_1, img2: z3_2, name: 'CHF.57.003'
+        }, {
+            id: 4, img1: z4_1, img2: z4_2, name: 'CHF.57.004'
+        }, {
+            id: 5, img1: z5_1, img2: z5_2, name: 'CHF.57.005'
+        }, {
+            id: 6, img1: z6_1, img2: z6_2, name: 'CHF.57.006'
+        }, {
+            id: 7, img1: z7_1, img2: z7_2, name: 'CHF.57.007'
+        }, {
+            id: 8, img1: z8_1, img2: z8_2, name: 'CHF.57.008'
+        }, {
+            id: 9, img1: z9_1, img2: z9_2, name: 'CHF.57.009'
+        }, {
+            id: 10, img1: z10_1, img2: z10_2, name: 'CHF.57.0010'
+        }, {
+            id: 11, img1: z11_1, img2: z11_2, name: 'CHF.57.0011'
+        }, {
+            id: 12, img1: z12_1, img2: z12_2, name: 'CHF.57.0012'
+        }, {
+            id: 13, img1: z13_1, img2: z13_2, name: 'CHF.57.0013'
+        }, {
+            id: 14, img1: z14_1, img2: z14_2, name: 'CHF.57.0014'
+        }, {
+            id: 15, img1: z15_1, img2: z15_2, name: 'CHF.57.0015'
+        }, {
+            id: 16, img1: z16_1, img2: z16_2, name: 'CHF.57.0016'
+        },
+            {
+                id: 17, img1: z17_1, img2: z17_2, name: 'CHF.57.0017'
+            },
+            {
+                id: 18, img1: z18_1, img2: z18_2, name: 'CHF.57.0018'
+            },
+            {
+                id: 19, img1: z19_1, img2: z19_2, name: 'CHF.57.0019'
+            },
+            {
+                id: 20, img1: z20_1, img2: z20_2, name: 'CHF.57.0015'
+            },
+        {
+            id: 26, img1: z26_1, img2: z26_2, name: 'CHF.57.0026'
+        },
+        {
+            id: 27, img1: z27_1, img2: z27_2, name: 'CHF.57.0027'
+        },
+        {
+            id: 28, img1: z28_1, img2: z28_2, name: 'CHF.57.0028'
+        },
+        {
+            id: 29, img1: z29_1, img2: z29_2, name: 'CHF.57.0029'
+        },
+        {
+            id: 30, img1: z30_1, img2: z30_2, name: 'CHF.57.0030'
+        },
+        {
+            id: 31, img1: z31_1, img2: z31_2, name: 'CHF.57.0031'
+        },
+        {
+            id: 32, img1: z32_1, img2: z32_2, name: 'CHF.57.0032'
+        },
+        {
+            id: 33, img1: z33_1, img2: z33_2, name: 'CHF.57.0033'
+        },
+        {
+            id: 34, img1: z34_1, img2: z34_2, name: 'CHF.57.0034'
+        },
+        {
+            id: 35, img1: z35_1, img2: z35_2, name: 'CHF.57.0035'
+        },
+        {
+            id: 36, img1: z36_1, img2: z36_2, name: 'CHF.57.0036'
+        },
+        {
+            id: 37, img1: z37_1, img2: z37_2, name: 'CHF.57.0037'
+        },
+        {
+            id: 38, img1: z38_1, img2: z38_2, name: 'CHF.57.0038'
+        },
+        {
+            id: 39, img1: z39_1, img2: z39_2, name: 'CHF.57.0039'
+        },
+        {
+            id: 40, img1: z40_1, img2: z40_2, name: 'CHF.57.0040'
+        },
+        {
+            id: 31, img1: z41_1, img2: z41_2, name: 'CHF.57.0041'
+        },
+        ]
+    )
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const renderGrid = () => {
         if (data) {
