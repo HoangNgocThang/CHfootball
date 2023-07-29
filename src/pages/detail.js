@@ -179,6 +179,7 @@ function Detail() {
     const windowHeight = useRef(window.innerHeight);
 
     const [value,setValue]= useState(4);
+    const [select, setSelect] = useState(data[0]);
     console.log('width: ', windowWidth.current);
     console.log('height: ', windowHeight.current);
 
