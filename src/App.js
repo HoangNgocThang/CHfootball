@@ -16,7 +16,7 @@ import momo from '../src/images/MoMo_Logo.png';
 const router = createBrowserRouter([{
     path: "/", element: (<Home/>),
 }, {
-    path: "/detail", element: (<Detail/>)
+    path: "/mauthietke", element: (<Detail/>)
 },]);
 
 function App() {

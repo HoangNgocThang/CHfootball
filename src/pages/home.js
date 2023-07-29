@@ -361,7 +361,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"container-product-type-row"}>
                 <div
                     onClick={() => {
-                        navigate("/detail");
+                        navigate("/mauthietke");
                     }}
                     className={"container-product-type-item"} style={{maxWidth: 180}}>
                     <div>
@@ -433,7 +433,7 @@ Các phần quà đặc biệt cho khách hàng quay lại/ khách hàng thân t
             <div className={"container-product-type-row"} style={{gap: 20}}>
                 <div
                     onClick={() => {
-                        navigate("/detail");
+                        navigate("/mauthietke");
                     }}
                     className={"container-product-type-item"}>
                     <div>
