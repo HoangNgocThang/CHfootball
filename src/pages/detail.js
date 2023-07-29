@@ -75,6 +75,7 @@ import z41_1 from '../images/Z41_1.webp';
 import z41_2 from '../images/Z41_2.png';
 
 import sliceIntoChunks from "../untils";
+import ModalDetailDesktop from "../components/ModalDetailDesktop";
 
 function Detail() {
 
@@ -202,7 +203,14 @@ function Detail() {
 
     return (<div className={"container wrapItemDetail"}>
         {renderGrid()}
+        <ModalDetailDesktop data={select}/>
     </div>)
 }
 
 export default Detail;
+
+// setSelect(ele)
+// let modal = document.getElementById("myModalDetailDesktop");
+// modal.style.display = "flex";
+// let imgMyModalDetailDesktop = document.getElementById('imgMyModalDetailDesktop');
+// imgMyModalDetailDesktop.src = ele.img2;
