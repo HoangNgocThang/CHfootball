@@ -70,14 +70,13 @@ function Home() {
         {/*Mobile* ---start */}
         <div style={{marginTop: 20}}
              className={"d-flex flex-column d-md-none"}>
-            <h2 style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn<br/>CHFoootball ?</h2>
+            <h2 style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn<br/>CHFootball ?</h2>
         </div>
         {/*Mobile ---end*/}
         {/*Desktop ---start*/}
         <div style={{marginTop: 20}}
              className={"d-none d-md-flex flex-row align-items-center justify-content-center"}>
-            <h2 className={"text-center"} style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn CHFoootball
-                ?</h2>
+            <h2 className={"text-center"} style={{color: 'black', fontWeight: 'bold'}}>Vì sao lựa chọn CHFootball ?</h2>
         </div>
         {/*Desktop ---end*/}
 
