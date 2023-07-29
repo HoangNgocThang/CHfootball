@@ -9,6 +9,9 @@ import mail from '../src/images/mail.png';
 import phone from '../src/images/phone.png';
 import location from '../src/images/location.png';
 import pin from '../src/images/pin.png';
+import visa from '../src/images/visa.png';
+import vnpay from '../src/images/vnpay.png';
+import momo from '../src/images/MoMo_Logo.png';
 
 const router = createBrowserRouter([{
     path: "/", element: (<Home/>),
@@ -45,11 +48,16 @@ function App() {
                     <p className={'text-footer'} style={{fontSize: 12.5}}>41/62 Nguyễn Chí Thanh, Láng Thượng, Đống
                         Đa, Hà Nội</p>
                 </div>
-                <div className={'item-footer'} style={{marginBottom: 20}}>
+                <div className={'item-footer'}>
                     <img src={pin} style={{width: 22, height: 22, marginRight: 10}}/>
                     <p className={'text-footer'} style={{fontSize: 12.5}}>123 Đường Thăng Long, Nghi Liên, Vinh,
                         Nghệ An</p>
                 </div>
+                {/*<div className={'item-footer'} style={{gap: 10, marginBottom: 20}}>*/}
+                {/*    <img src={visa} style={{width: 130, height: 50}}/>*/}
+                {/*    <img src={momo} style={{width: 60, height: 50}}/>*/}
+                {/*    <img src={vnpay} style={{width: 50, height: 50}}/>*/}
+                {/*</div>*/}
                 <div className="fb-page" data-href="https://www.facebook.com/chfootballvn" data-tabs="timeline"
                      data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
                      data-hide-cover="false" data-show-facepile="true">
@@ -77,10 +85,15 @@ function App() {
                             <img src={location} style={{width: 22, height: 22, marginRight: 10}}/>
                             <p className={'text-footer'}>41/62 Nguyễn Chi Thanh, Láng Thượng, Đống Đa, Hà Nội</p>
                         </div>
-                        <div className={'item-footer'} style={{marginBottom: 20}}>
+                        <div className={'item-footer'}>
                             <img src={pin} style={{width: 22, height: 22, marginRight: 10}}/>
                             <p className={'text-footer'}>123 Đường Thăng Long, Nghi Liên, Vinh, Nghệ An</p>
                         </div>
+                        {/*<div className={'item-footer'} style={{gap: 10}} style={{marginBottom: 20}}>*/}
+                        {/*    <img src={visa} style={{width: 130, height: 50}}/>*/}
+                        {/*    <img src={momo} style={{width: 60, height: 50}}/>*/}
+                        {/*    <img src={vnpay} style={{width: 50, height: 50}}/>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
                 <div style={{marginTop: 20}}
