@@ -27,8 +27,8 @@ const ModalDetailDesktop = () => {
             <div style={{
                 display: 'flex', flex: 1, flexDirection: 'column', justifyContent:'center', alignItems:'center'}}>
                 <div style={{   padding: 20, display: 'flex', flexDirection: 'row', flex: 1,justifyContent:'center', alignItems:'center'}}>
-                    <img id={'imgMyModalDetailDesktop'} style={isSmall? { width: 480 , height:'auto'}: 
-                    // { width: 480 , height:'auto'}
+                    <img id={'imgMyModalDetailDesktop'} style={isSmall? { width: 420 , height:'auto'}:
+                    // { width: 500 , height:'auto'}
                     { height: 'auto', width: 'auto'}}/>
                     <span style={{color:'black', fontSize:50,paddingRight: 5, paddingLeft: 5, position: 'absolute', top: 0, right: 10}}
                           className="close" onClick={() => {
