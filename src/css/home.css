@@ -463,6 +463,7 @@
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
+
 /* Modal Content */
 .modal-content--thanghn {
     background-color: #fefefe;
@@ -515,7 +516,7 @@
 .modal-content--thanghn5 {
     /*background-color: #fefefe;*/
     margin: auto;
-    border: 1px solid #888;
+    /*border: 1px solid #888;*/
     width: 100%;
     height: 100%;
     overflow: scroll;

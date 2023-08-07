@@ -13,11 +13,19 @@ import visa from '../src/images/visa.png';
 import vnpay from '../src/images/vnpay.png';
 import momo from '../src/images/MoMo_Logo.png';
 
-const router = createBrowserRouter([{
-    path: "/", element: (<Home/>),
-}, {
-    path: "/mauthietke", element: (<Detail/>)
-},]);
+// const router = createBrowserRouter([{
+//     path: "/", element: (<Home/>),
+// }, {
+//     path: "/mauthietke", element: (<Detail/>)
+// },]);
+
+const router = createHashRouter([{
+    path: "/", element: (<Detail/>),
+},
+// {
+//     path: "/mauthietke", element: (<Detail/>)
+// },
+]);
 
 function App() {
 

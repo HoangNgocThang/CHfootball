@@ -74,6 +74,9 @@ import z40_2 from '../images/z40-2.png';
 import z41_1 from '../images/Z41_1.webp';
 import z41_2 from '../images/Z41_2.png';
 
+import trong from '../images/trong.png'
+import ngoai from '../images/ngoai.webp';
+
 import sliceIntoChunks from "../untils";
 import ModalDetailDesktop from "../components/ModalDetailDesktop";
 
@@ -85,9 +88,14 @@ function Detail() {
             id: 2, img1: z2_1, img2: z2_2, name: 'CHF.57.002'
         }, {
             id: 3, img1: z3_1, img2: z3_2, name: 'CHF.57.003'
-        }, {
-            id: 4, img1: z4_1, img2: z4_2, name: 'CHF.57.004'
-        }, {
+        },
+        // {
+        //     id: 4, img1: z4_1, img2: z4_2, name: 'CHF.57.004'
+        // }, 
+        {
+            id: 4, img1: ngoai, img2: trong, name: 'CHF.57.004'
+        }, 
+        {
             id: 5, img1: z5_1, img2: z5_2, name: 'CHF.57.005'
         }, {
             id: 6, img1: z6_1, img2: z6_2, name: 'CHF.57.006'
@@ -208,7 +216,6 @@ function Detail() {
     const renderGrid = () => {
         if (data) {
             const resArr = sliceIntoChunks(data,  value);
-            // console.log('PPP', resArr)
             return <div>{resArr.map((e, i) => {
                 return <div className="d-flex row" key={i}>{e.map((ele, index) => {
                     return (<div
