@@ -7,7 +7,8 @@ const ModalDetailDesktop = () => {
     const [w, setW] = useState(window.innerWidth);
     console.log('w,', w)
     const ref1 = React.useRef(null);
-    const [isActive] = useClickOutside([ref1], event => {
+    const ref2 = React.useRef(null);
+    const [isActive] = useClickOutside([ref1, ref2], event => {
         var modal = document.getElementById("myModalDetailDesktop");
         modal.style.display = "none";
     });
@@ -44,22 +45,19 @@ const ModalDetailDesktop = () => {
                         justifyContent: 'center',
                         alignItems: 'center'
                     }}>
+                    {/*<img id={'imgMyModalDetailDesktop'}*/}
+                    {/*     ref={ref1}*/}
+                    {/*      style={w <= 390 ? {width: 350, height: 'auto'} : {height: 'auto', width: 'auto'}}/>*/}
+
                     <img id={'imgMyModalDetailDesktop'}
                          ref={ref1}
-                         style={w <= 390 ? {width: 350, height: 'auto'} : {height: 'auto', width: 'auto'}}/>
-                    {/*<span style={{*/}
-                    {/*    color: 'black',*/}
-                    {/*    fontSize: 50,*/}
-                    {/*    paddingRight: 5,*/}
-                    {/*    paddingLeft: 5,*/}
-                    {/*    position: 'absolute',*/}
-                    {/*    top: 0,*/}
-                    {/*    right: 10*/}
-                    {/*}}*/}
-                    {/*      className="close" onClick={() => {*/}
-                    {/*    var modal = document.getElementById("myModalDetailDesktop");*/}
-                    {/*    modal.style.display = "none";*/}
-                    {/*}}>&times;</span>*/}
+                         className={'d-flex d-md-none'}
+                         style={{width: 350, height: 'auto'}}/>
+
+                    <img id={'imgMyModalDetailDesktop2'}
+                         className={'d-none d-md-flex'}
+                         ref={ref2}
+                         style={{height: 'auto', width: 'auto'}}/>
                 </div>
             </div>
         </div>

@@ -91,10 +91,10 @@ function Detail() {
         },
         // {
         //     id: 4, img1: z4_1, img2: z4_2, name: 'CHF.57.004'
-        // }, 
+        // },
         {
             id: 4, img1: ngoai, img2: trong, name: 'CHF.57.004'
-        }, 
+        },
         {
             id: 5, img1: z5_1, img2: z5_2, name: 'CHF.57.005'
         }, {
@@ -225,6 +225,8 @@ function Detail() {
                             modal.style.display = "flex";
                             let imgMyModalDetailDesktop = document.getElementById('imgMyModalDetailDesktop');
                             imgMyModalDetailDesktop.src = ele.img2;
+                            let imgMyModalDetailDesktop2 = document.getElementById('imgMyModalDetailDesktop2');
+                            imgMyModalDetailDesktop2.src = ele.img2;
                         }}
                         className="d-flex col-6 col-lg-3 col-md-4 justify-content-around" key={`${ele.id}`}>
                         <div className={"itemDetail"}>
