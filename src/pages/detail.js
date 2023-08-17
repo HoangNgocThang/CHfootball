@@ -81,7 +81,10 @@ import sliceIntoChunks from "../untils";
 import ModalDetailDesktop from "../components/ModalDetailDesktop";
 
 import {collection, getDocs} from 'firebase/firestore';
-import {db} from "../firebase";
+import {db, storage} from "../firebase";
+
+import {ref, uploadBytes, listAll, getDownloadURL} from 'firebase/storage';
+import {v4} from 'uuid';
 
 function Detail() {
 
@@ -167,28 +170,52 @@ function Detail() {
 
     const [value, setValue] = useState(4);
     const [select, setSelect] = useState(data[0]);
-    console.log('width: ', windowWidth.current);
-    console.log('height: ', windowHeight.current);
+    // console.log('width: ', windowWidth.current);
+    // console.log('height: ', windowHeight.current);
+
+    const [imgUpload, setImgUpload] = useState(null);
+    const imgRef = ref(storage, `images/${v4()}`)
+
+    const uploadImage = () => {
+        if (imgUpload == null) return;
+        // const imgRef = ref(storage, `images/${imgUpload.name}`)
+        uploadBytes(imgRef, imgUpload).then((sn) => {
+            console.log(sn);
+            getDownloadURL(sn.ref).then(url=> {
+                console.log('urlUpload', url);
+            })
+        }).catch(err => {
+            console.log(err.message)
+        })
+    }
 
     const getData = () => {
         const ref = collection(db, 'products')
         getDocs(ref)
             .then(res => {
-                // console.log(res)
-                console.log(res.docs.map(doc=> ({
-                    id: doc.data().id,
-                    img1: doc.data().img1,
-                    img2: doc.data().img2,
-                    name: doc.data().name,
+                console.log(res.docs.map(doc => ({
+                    id: doc.data().id, img1: doc.data().img1, img2: doc.data().img2, name: doc.data().name,
                 })));
             }).catch(err => {
-                console.log(err.message)
+            console.log(err.message)
         })
     }
+
+    // const getImg = () => {
+    //     listAll(imgRef).then(res => {
+    //         console.log('listAll', res)
+    //         res.items.forEach((item) => {
+    //             getDownloadURL(item).then((url) => {
+    //                 console.log('url:', url)
+    //             })
+    //         })
+    //     })
+    // }
 
     useEffect(() => {
         window.scrollTo(0, 0)
         getData()
+        // getImg()
     }, [])
 
     function checkMediaQuery() {
@@ -241,6 +268,10 @@ function Detail() {
     }
 
     return (<div className={"container wrapItemDetail"}>
+        {/*<input type={'file'} onChange={(event) => {*/}
+        {/*    setImgUpload(event.target.files[0])*/}
+        {/*}}/>*/}
+        {/*<button onClick={uploadImage}>upload img</button>*/}
         {renderGrid()}
         <ModalDetailDesktop data={select}/>
     </div>)
