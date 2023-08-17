@@ -80,22 +80,23 @@ import ngoai from '../images/ngoai.webp';
 import sliceIntoChunks from "../untils";
 import ModalDetailDesktop from "../components/ModalDetailDesktop";
 
+import {collection, getDocs} from 'firebase/firestore';
+import {db} from "../firebase";
+
 function Detail() {
 
     const [data, setData] = useState([{
-            id: 1, img1: z1_1, img2: z1_2, name: 'CHF.57.001'
-        }, {
-            id: 2, img1: z2_1, img2: z2_2, name: 'CHF.57.002'
-        }, {
-            id: 3, img1: z3_1, img2: z3_2, name: 'CHF.57.003'
-        },
-        // {
+        id: 1, img1: z1_1, img2: z1_2, name: 'CHF.57.001'
+    }, {
+        id: 2, img1: z2_1, img2: z2_2, name: 'CHF.57.002'
+    }, {
+        id: 3, img1: z3_1, img2: z3_2, name: 'CHF.57.003'
+    }, // {
         //     id: 4, img1: z4_1, img2: z4_2, name: 'CHF.57.004'
         // },
         {
             id: 4, img1: ngoai, img2: trong, name: 'CHF.57.004'
-        },
-        {
+        }, {
             id: 5, img1: z5_1, img2: z5_2, name: 'CHF.57.005'
         }, {
             id: 6, img1: z6_1, img2: z6_2, name: 'CHF.57.006'
@@ -119,107 +120,102 @@ function Detail() {
             id: 15, img1: z15_1, img2: z15_2, name: 'CHF.57.0015'
         }, {
             id: 16, img1: z16_1, img2: z16_2, name: 'CHF.57.0016'
-        },
-            {
-                id: 17, img1: z17_1, img2: z17_2, name: 'CHF.57.0017'
-            },
-            {
-                id: 18, img1: z18_1, img2: z18_2, name: 'CHF.57.0018'
-            },
-            {
-                id: 19, img1: z19_1, img2: z19_2, name: 'CHF.57.0019'
-            },
-            {
-                id: 20, img1: z20_1, img2: z20_2, name: 'CHF.57.0015'
-            },
-        {
+        }, {
+            id: 17, img1: z17_1, img2: z17_2, name: 'CHF.57.0017'
+        }, {
+            id: 18, img1: z18_1, img2: z18_2, name: 'CHF.57.0018'
+        }, {
+            id: 19, img1: z19_1, img2: z19_2, name: 'CHF.57.0019'
+        }, {
+            id: 20, img1: z20_1, img2: z20_2, name: 'CHF.57.0015'
+        }, {
             id: 26, img1: z26_1, img2: z26_2, name: 'CHF.57.0026'
-        },
-        {
+        }, {
             id: 27, img1: z27_1, img2: z27_2, name: 'CHF.57.0027'
-        },
-        {
+        }, {
             id: 28, img1: z28_1, img2: z28_2, name: 'CHF.57.0028'
-        },
-        {
+        }, {
             id: 29, img1: z29_1, img2: z29_2, name: 'CHF.57.0029'
-        },
-        {
+        }, {
             id: 30, img1: z30_1, img2: z30_2, name: 'CHF.57.0030'
-        },
-        {
+        }, {
             id: 31, img1: z31_1, img2: z31_2, name: 'CHF.57.0031'
-        },
-        {
+        }, {
             id: 32, img1: z32_1, img2: z32_2, name: 'CHF.57.0032'
-        },
-        {
+        }, {
             id: 33, img1: z33_1, img2: z33_2, name: 'CHF.57.0033'
-        },
-        {
+        }, {
             id: 34, img1: z34_1, img2: z34_2, name: 'CHF.57.0034'
-        },
-        {
+        }, {
             id: 35, img1: z35_1, img2: z35_2, name: 'CHF.57.0035'
-        },
-        {
+        }, {
             id: 36, img1: z36_1, img2: z36_2, name: 'CHF.57.0036'
-        },
-        {
+        }, {
             id: 37, img1: z37_1, img2: z37_2, name: 'CHF.57.0037'
-        },
-        {
+        }, {
             id: 38, img1: z38_1, img2: z38_2, name: 'CHF.57.0038'
-        },
-        {
+        }, {
             id: 39, img1: z39_1, img2: z39_2, name: 'CHF.57.0039'
-        },
-        {
+        }, {
             id: 40, img1: z40_1, img2: z40_2, name: 'CHF.57.0040'
-        },
-        {
+        }, {
             id: 31, img1: z41_1, img2: z41_2, name: 'CHF.57.0041'
-        },
-        ]
-    )
+        },])
 
     const windowWidth = useRef(window.innerWidth);
     const windowHeight = useRef(window.innerHeight);
 
-    const [value,setValue]= useState(4);
+    const [value, setValue] = useState(4);
     const [select, setSelect] = useState(data[0]);
     console.log('width: ', windowWidth.current);
     console.log('height: ', windowHeight.current);
 
+    const getData = () => {
+        const ref = collection(db, 'products')
+        getDocs(ref)
+            .then(res => {
+                // console.log(res)
+                console.log(res.docs.map(doc=> ({
+                    id: doc.data().id,
+                    img1: doc.data().img1,
+                    img2: doc.data().img2,
+                    name: doc.data().name,
+                })));
+            }).catch(err => {
+                console.log(err.message)
+        })
+    }
+
     useEffect(() => {
         window.scrollTo(0, 0)
+        getData()
     }, [])
 
     function checkMediaQuery() {
         // If the inner width of the window is greater then 768px
-        if (window.innerWidth >= 768 && window.innerWidth<=990) {
+        if (window.innerWidth >= 768 && window.innerWidth <= 990) {
             // Then log this message to the console
             console.log('Media Query Matched!')
             setValue(3)
-        }else  {
+        } else {
             setValue(4)
         }
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         window.addEventListener('resize', checkMediaQuery);
-        return ()=> {
+        return () => {
             window.removeEventListener('resize', checkMediaQuery);
         }
     },)
 
     const renderGrid = () => {
         if (data) {
-            const resArr = sliceIntoChunks(data,  value);
+            const resArr = sliceIntoChunks(data, value);
             return <div>{resArr.map((e, i) => {
                 return <div className="d-flex row" key={i}>{e.map((ele, index) => {
                     return (<div
-                        onClick={()=> {
+                        onClick={() => {
                             setSelect(ele)
                             let modal = document.getElementById("myModalDetailDesktop");
                             modal.style.display = "flex";
