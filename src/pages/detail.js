@@ -263,6 +263,7 @@ function Detail() {
                     </div>)
                 })}</div>
             })}</div>
+
         }
         return <></>
     }
@@ -273,8 +274,16 @@ function Detail() {
         {/*}}/>*/}
         {/*<button onClick={uploadImage}>upload img</button>*/}
         {renderGrid()}
+
+        <button 
+         onClick={()=> {
+            window.open('https://drive.google.com/drive/folders/1u0YOmrAUhE0av1wSgGV8OSxRqsZCBT_t?usp=sharing', "_blank");
+         }}
+         style={{marginBottom:10, marginTop:10, paddingTop: 5, paddingBottom: 5, paddingLeft:10, paddingRight:10}}>Xem thêm</button>
+       
         <ModalDetailDesktop data={select}/>
     </div>)
 }
+
 
 export default Detail;
