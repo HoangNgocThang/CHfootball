@@ -7,3 +7,4 @@ export default function sliceIntoChunks(arr, chunkSize) {
     return res;
 }
 
+// "homepage": "https://HoangNgocThang.github.io/CHfootball/",
